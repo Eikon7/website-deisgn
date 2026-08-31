@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suluh Centre — Putting light in people's hands</title>
+<meta name="description" content="Suluh Centre is a ground-up Malaysian civic institution spanning community, education and ideas. Independent, secular and evidence-led.">
+<meta property="og:title" content="Suluh Centre">
+<meta property="og:description" content="Putting light in people's hands. A ground-up Malaysian civic institution spanning community, education and ideas.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Reusable brand mark, defined once, referenced with <use>.
+     Interim interpretation of the flame/S mark from Brand Guidelines v1 —
+     swap for the client's exact vector logo file (SVG/EPS) once cleared. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="suluh-mark" viewBox="0 0 64 100">
+    <defs>
+      <mask id="mark-cut">
+        <rect width="64" height="100" fill="#fff"/>
+        <path d="M22 32C22 23 46 23 46 36C46 47 22 49 22 61C22 73 46 73 46 65" stroke="#000" stroke-width="9" fill="none" stroke-linecap="round"/>
+      </mask>
+    </defs>
+    <path d="M32 2C44 20 60 34 60 52C60 72 46 88 32 98C18 88 4 72 4 52C4 34 20 20 32 2Z" fill="var(--coral)" mask="url(#mark-cut)"/>
+    <path d="M32 2C44 20 60 34 60 52C60 60 58 67 55 73C53 52 46 33 32 14Z" fill="var(--blush)" opacity=".65" mask="url(#mark-cut)"/>
+  </symbol>
+  <symbol id="ico-community" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="9" cy="7.6" r="3.1"/><path d="M2.8 20c0-3.4 2.8-6.2 6.2-6.2s6.2 2.8 6.2 6.2"/>
+    <circle cx="17.8" cy="9.6" r="2.2"/><path d="M17.8 14.2c2.6 0 4.6 2.1 4.6 4.7"/>
+  </symbol>
+  <symbol id="ico-book" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 6.4C10.4 4.9 7.9 4.4 3.8 4.4v13.2c4.1 0 6.6.5 8.2 2 1.6-1.5 4.1-2 8.2-2V4.4c-4.1 0-6.6.5-8.2 2z"/><path d="M12 6.4v13.2"/>
+  </symbol>
+  <symbol id="ico-bulb" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9.2 18.2h5.6"/><path d="M10.4 21h3.2"/><path d="M12 2.8a6.2 6.2 0 0 0-3.6 11.3c.5.4.8 1 .8 1.6v.5h5.6v-.5c0-.6.3-1.2.8-1.6A6.2 6.2 0 0 0 12 2.8z"/>
+  </symbol>
+  <symbol id="ico-research" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="10.6" cy="10.6" r="6.2"/><path d="M15.2 15.2 21 21"/><path d="M8 9.6h5.2M8 12.2h3.4"/>
+  </symbol>
+  <symbol id="ico-search" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="10.8" cy="10.8" r="7"/><path d="M20 20l-4.6-4.6"/>
+  </symbol>
+  <symbol id="ico-arrow" viewBox="0 0 16 16" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M2 8h11M8.5 3.5 13 8l-4.5 4.5"/>
+  </symbol>
+  <symbol id="ico-close" viewBox="0 0 20 20" fill="none" stroke-width="1.6" stroke-linecap="round">
+    <path d="M5 5l10 10M15 5 5 15"/>
+  </symbol>
+</svg>
+
+<div class="announce" id="announce">
+  <span class="tag">Upcoming</span>
+  <span>National Women's Survey findings launch &middot; 24 September 2026, Kuala Lumpur &mdash; <a href="#">details</a></span>
+  <button type="button" id="announceClose" aria-label="Dismiss announcement"><svg width="16" height="16"><use href="#ico-close"/></svg></button>
+</div>
+
+<header>
+  <div class="wrap hd">
+    <a class="brand" href="#top" aria-label="Suluh Centre, home">
+      <svg width="30" height="44"><use href="#suluh-mark"/></svg>
+      <span class="wm">Suluh<br>Centre</span>
+    </a>
+    <nav class="main" id="mainNav" aria-label="Primary">
+      <a href="#work">Our Work</a>
+      <a href="#research">Research</a>
+      <a href="#stories">Stories</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hd-utils">
+      <button class="icon-btn" type="button" aria-label="Search"><svg width="19" height="19"><use href="#ico-search"/></svg></button>
+      <button class="lang-toggle" type="button" title="Bahasa Malaysia content ships alongside English at launch">EN / BM</button>
+      <button class="btn-sm" type="button" id="headerSubscribe">Subscribe</button>
+      <button class="burger" type="button" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="wrap">
+    <div class="hero">
+      <div class="hero-text">
+        <p class="eyebrow reveal">A brighter future is built together</p>
+        <h1 class="reveal">Putting light in<br>people's hands</h1>
+        <p class="standfirst reveal">We build communities with purpose, through the people who lead today, the young people who will lead next, and the ideas that light the way.</p>
+        <div class="cta-row reveal">
+          <a class="btn" href="#work">Explore our work <svg><use href="#ico-arrow"/></svg></a>
+        </div>
+      </div>
+      <figure class="hero-visual reveal" role="img" aria-label="The Suluh Centre flame mark, carried forward. Real cut-out photography of community leaders will replace this placeholder once the shoot day is scheduled.">
+        <svg class="flame-ghost" width="420" height="620" viewBox="0 0 64 100" style="right:-140px;top:-60px"><path d="M32 2C44 20 60 34 60 52C60 72 46 88 32 98C18 88 4 72 4 52C4 34 20 20 32 2Z" fill="#1B4332"/></svg>
+        <svg class="flame-big" width="160" height="250" viewBox="0 0 64 100"><use href="#suluh-mark"/></svg>
+        <figcaption>Placeholder &middot; cut-out photography to follow the brand's photography direction</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ NAVIGATION ROW (signature component) ============ -->
+  <section class="wrap" id="work" aria-label="Our work">
+    <div class="nav-row reveal">
+      <a class="nav-col" href="#" aria-label="Community">
+        <span class="badge"><svg><use href="#ico-community"/></svg></span>
+        <h4>Community</h4>
+        <p>Strengthening communities through collaboration and shared purpose.</p>
+        <span class="pill-link">Explore <svg><use href="#ico-arrow"/></svg></span>
+      </a>
+      <a class="nav-col" href="#" aria-label="Youth and Education">
+        <span class="badge"><svg><use href="#ico-book"/></svg></span>
+        <h4>Youth &amp; Education</h4>
+        <p>Empowering young people with knowledge, skills and confidence.</p>
+        <span class="pill-link">Explore <svg><use href="#ico-arrow"/></svg></span>
+      </a>
+      <a class="nav-col" href="#" aria-label="Ideas">
+        <span class="badge"><svg><use href="#ico-bulb"/></svg></span>
+        <h4>Ideas</h4>
+        <p>Championing ideas that inform, inspire and create impact.</p>
+        <span class="pill-link">Explore <svg><use href="#ico-arrow"/></svg></span>
+      </a>
+      <a class="nav-col" href="#research" aria-label="Research and Advocacy">
+        <span class="badge"><svg><use href="#ico-research"/></svg></span>
+        <h4>Research &amp; Advocacy</h4>
+        <p>Turning evidence into policy, and policy into change on the ground.</p>
+        <span class="pill-link">Explore <svg><use href="#ico-arrow"/></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ THE IDEA — editorial manifesto moment ============ -->
+  <section class="on-dark pad-lg idea">
+    <svg class="flame-wm" width="520" height="810" viewBox="0 0 64 100" style="right:-160px;top:-120px"><path d="M32 2C44 20 60 34 60 52C60 72 46 88 32 98C18 88 4 72 4 52C4 34 20 20 32 2Z" fill="#EC6B6E"/></svg>
+    <div class="wrap">
+      <p class="eyebrow reveal">The idea</p>
+      <h2 class="reveal">Most institutions try to shine a light from above.</h2>
+      <p class="lead reveal">Suluh means the torch you carry to light the way. That is not decoration, it is the argument. We begin where change actually grows: in communities, in young people, and in the values we build on. When people carry their own light, it lasts.</p>
+    </div>
+  </section>
+
+  <!-- ============ IMPACT STRIP ============ -->
+  <section class="on-dark pad" style="border-top:1px solid rgba(255,255,255,.14)">
+    <svg class="flame-wm" width="460" height="720" viewBox="0 0 64 100" style="left:-160px;bottom:-220px;opacity:.08"><path d="M32 2C44 20 60 34 60 52C60 72 46 88 32 98C18 88 4 72 4 52C4 34 20 20 32 2Z" fill="#EC6B6E"/></svg>
+    <div class="wrap">
+      <div class="impact-head reveal">
+        <div>
+          <p class="eyebrow">Impact</p>
+          <h3 style="color:#fff;font-style:italic;margin-top:10px">Groundwork, already laid</h3>
+        </div>
+        <a class="pill-link" style="color:var(--blush)" href="#research">See the evidence <svg><use href="#ico-arrow"/></svg></a>
+      </div>
+      <div class="stats reveal">
+        <div class="stat"><div class="n">300+</div><div class="l">Women community champions trained</div></div>
+        <div class="stat"><div class="n">8</div><div class="l">States reached</div></div>
+        <div class="stat"><div class="n">13</div><div class="l">Collaborators</div></div>
+        <div class="stat"><div class="n">6</div><div class="l">Policy briefs</div></div>
+        <div class="stat"><div class="n">2</div><div class="l">International conferences</div></div>
+        <div class="stat"><div class="n">1</div><div class="l">Regional network launched</div></div>
+      </div>
+      <p class="stat-src reveal">Source: Polity 2026 annual report, p.7. Each figure links to the work behind it.</p>
+      <p class="continuity-line reveal">Suluh Centre grows from the work of Polity, an independent centre established in 2024. <b>The name is new. The work is not.</b></p>
+    </div>
+  </section>
+
+  <!-- ============ HOW WE WORK ============ -->
+  <section class="pad">
+    <div class="wrap">
+      <p class="eyebrow reveal">How we work</p>
+      <h2 class="reveal" style="margin:14px 0 36px">What sets us apart</h2>
+      <div class="principles">
+        <div class="principle reveal">
+          <div class="idx">01</div>
+          <h4>We work on the ground</h4>
+          <p>Ideas become real programmes in real communities, not reports on a shelf.</p>
+        </div>
+        <div class="principle reveal">
+          <div class="idx">02</div>
+          <h4>We bridge divides</h4>
+          <p>Communities, civil society and institutions in the same room.</p>
+        </div>
+        <div class="principle reveal">
+          <div class="idx">03</div>
+          <h4>We back youth and women</h4>
+          <p>Central to how we work, not an afterthought.</p>
+        </div>
+        <div class="principle reveal">
+          <div class="idx">04</div>
+          <h4>Rooted in Malaysia</h4>
+          <p>Locally grounded, globally aware.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LATEST STORIES ============ -->
+  <section class="band-cream pad" id="stories">
+    <div class="wrap">
+      <div class="impact-head reveal">
+        <div>
+          <p class="eyebrow">From the ground</p>
+          <h2 style="margin-top:12px">Latest</h2>
+        </div>
+        <a class="pill-link" href="#stories">All stories <svg><use href="#ico-arrow"/></svg></a>
+      </div>
+      <div class="story-grid reveal">
+        <article class="story-card">
+          <div class="thumb"><img src="https://picsum.photos/seed/suluh-rebrand-launch/640/400" alt="" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="story-body">
+            <span class="tag">News</span>
+            <h4>Suluh Centre: the name is new, the work is not</h4>
+            <p class="dek">Polity becomes Suluh Centre. The same team, the same grassroots strength, a sharper reason for being.</p>
+            <p class="story-meta">14 August 2026</p>
+          </div>
+        </article>
+        <article class="story-card">
+          <div class="thumb"><img src="https://picsum.photos/seed/suluh-care-economy/640/400" alt="" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="story-body">
+            <span class="tag">Grounded &middot; Ep 41</span>
+            <h4>What does a care economy actually cost?</h4>
+            <p class="dek">Caregiving holds up the economy and appears in none of its numbers. A conversation about what it would take to count it.</p>
+            <p class="story-meta">11 August 2026</p>
+          </div>
+        </article>
+        <article class="story-card">
+          <div class="thumb"><img src="https://picsum.photos/seed/suluh-kuala-pilah/640/400" alt="" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="story-body">
+            <span class="tag">From the field</span>
+            <h4>Three days in Kuala Pilah</h4>
+            <p class="dek">School land, licences, rising rents, and young people who leave and do not come back. Notes from a listening session.</p>
+            <p class="story-meta">4 August 2026</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ SUBSCRIBE BAND ============ -->
+<div class="subscribe-band">
+  <svg class="flame-wm" width="290" height="450" viewBox="0 0 64 100" style="left:-90px;top:-90px"><path d="M32 2C44 20 60 34 60 52C60 72 46 88 32 98C18 88 4 72 4 52C4 34 20 20 32 2Z" fill="#EC6B6E"/></svg>
+  <div class="wrap subscribe-in">
+    <p class="t">Light, carried from the ground up. Follow the work as it happens.</p>
+    <form class="subscribe-form" id="subscribeForm" novalidate>
+      <label for="subEmail">Email address</label>
+      <input type="email" id="subEmail" name="email" placeholder="you@example.com" required>
+      <button class="btn" type="submit">Subscribe <svg><use href="#ico-arrow"/></svg></button>
+      <p class="status" id="subStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</div>
+
+<footer id="contact">
+  <svg class="flame-wm" width="420" height="650" viewBox="0 0 64 100" style="right:-110px;bottom:-200px"><path d="M32 2C44 20 60 34 60 52C60 72 46 88 32 98C18 88 4 72 4 52C4 34 20 20 32 2Z" fill="#EC6B6E"/></svg>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="foot-brand">
+        <svg width="34" height="50"><use href="#suluh-mark"/></svg>
+        <span class="wm">Suluh<br>Centre</span>
+        <p class="foot-tag">Putting light in<br>people's hands</p>
+        <p class="foot-addr">30-1, Jalan Medan Setia 2<br>Bukit Damansara, 50490<br>Kuala Lumpur, Malaysia</p>
+      </div>
+      <div>
+        <h5>Work</h5>
+        <ul>
+          <li><a href="#work">Community</a></li>
+          <li><a href="#work">Youth &amp; Education</a></li>
+          <li><a href="#work">Ideas, Ethics &amp; Society</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Read</h5>
+        <ul>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#stories">Stories</a></li>
+          <li><a href="#">Grounded</a></li>
+          <li><a href="#">Convenings</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Organisation</h5>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#about">People</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>Suluh Centre &middot; Kuala Lumpur, Malaysia</span>
+      <span>Independent &middot; Secular &middot; National</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
