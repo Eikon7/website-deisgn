@@ -80,12 +80,19 @@ nav.c2-nav a:hover{ border-color:var(--coral); }
    ========================================================================== */
 .hero2{
   position:relative; min-height:100vh; display:flex; align-items:center;
-  padding:120px 0 80px; overflow:hidden; background:
-    radial-gradient(ellipse 900px 600px at 82% 18%, var(--blush-tint), transparent 60%),
-    var(--white);
+  padding:120px 0 80px; overflow:hidden;
 	background:url(../hero.png);
 	background-size: cover;
     background-repeat: no-repeat;
+}
+/* Readability scrim: the hero photo's dark-green shape can pass directly
+   behind the headline/standfirst depending on viewport crop, which makes
+   dark-on-dark text disappear. A soft cream wash over the text column
+   guarantees contrast at any breakpoint without a hard-edged panel. */
+.hero2::after{
+  content:"";
+  position:absolute; inset:0; z-index:0; pointer-events:none;
+  background:linear-gradient(100deg, rgba(245,239,227,.9) 0%, rgba(245,239,227,.72) 38%, rgba(245,239,227,0) 64%);
 }
 .hero2 .flame-bleed{ position:absolute; right:-8vw; top:50%; transform:translateY(-50%); width:min(52vw,720px); opacity:.9; pointer-events:none; display:none; }
 .hero2 .flame-bleed svg{ width:100%; height:auto; }
