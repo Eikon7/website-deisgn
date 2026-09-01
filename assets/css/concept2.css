@@ -193,12 +193,12 @@ nav.c2-nav a:hover{ border-color:var(--coral); }
 .idea2 h2{ font-family:var(--serif); font-style:italic; font-size:clamp(2rem,4vw,3.1rem); line-height:1.15; margin:16px 0 26px; max-width:16ch; }
 .idea2 p{ font-family:var(--serif); font-style:italic; font-size:1.18rem; line-height:1.6; color:#C9DCD1; max-width:32em; }
 .idea2-mark{ display:flex; justify-content:center; }
-.idea2-mark svg{ width:min(220px,60%); height:auto; }
-.idea2-mark path{
-  stroke-dasharray:340; stroke-dashoffset:340; transition:stroke-dashoffset 1.6s var(--ease);
+.idea2-mark img{
+  width:min(220px,60%); height:auto;
+  opacity:0; transform:scale(.85); transition:opacity 1s var(--ease), transform 1s var(--ease);
 }
-.idea2.in .idea2-mark path{ stroke-dashoffset:0; }
-@media (prefers-reduced-motion: reduce){ .idea2-mark path{ transition:none; stroke-dashoffset:0; } }
+.idea2.in .idea2-mark img{ opacity:1; transform:scale(1); }
+@media (prefers-reduced-motion: reduce){ .idea2-mark img{ transition:none; opacity:1; transform:none; } }
 
 /* ==========================================================================
    Continuity timeline — Polity 2024 -> Suluh 2026
