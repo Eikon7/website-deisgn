@@ -24,6 +24,9 @@
     <path d="M32 2C44 20 60 34 60 52C60 72 46 88 32 98C18 88 4 72 4 52C4 34 20 20 32 2Z" fill="var(--coral)" mask="url(#c2-mark-cut)"/>
     <path d="M32 2C44 20 60 34 60 52C60 60 58 67 55 73C53 52 46 33 32 14Z" fill="var(--blush)" opacity=".65" mask="url(#c2-mark-cut)"/>
   </symbol>
+  <symbol id="c2-flame-shape" viewBox="0 0 64 100">
+    <path d="M32 2C44 20 60 34 60 52C60 72 46 88 32 98C18 88 4 72 4 52C4 34 20 20 32 2Z"/>
+  </symbol>
   <symbol id="c2-ico-arrow" viewBox="0 0 16 16" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
     <path d="M2 8h11M8.5 3.5 13 8l-4.5 4.5"/>
   </symbol>
@@ -72,53 +75,86 @@
 
 <main>
 
-  <section class="page-head2 wrap">
-    <p class="crumb"><a href="work.html">Our Work</a> / Community</p>
-    <span class="badge2"><svg><use href="#ico-community"/></svg></span>
-    <span class="eyebrow">The present &middot; From community, for community &middot; Women lead here</span>
-    <h1>Community</h1>
-    <p class="question">Who leads change on the ground, and what do they need to do it?</p>
-    <p class="lead2">Turns values into lived outcomes. Builds practical leadership, shared responsibility and community-driven solutions, with women and caregivers on the frontline.</p>
-  </section>
-
-  <section class="wrap">
-    <div class="hero-band">
-      <svg viewBox="0 0 64 100" aria-hidden="true"><path d="M32 2C44 20 60 34 60 52C60 72 46 88 32 98C18 88 4 72 4 52C4 34 20 20 32 2Z" fill="#EC6B6E"/></svg>
+  <section class="phero2">
+    <div class="wrap phero2-grid">
+      <div class="phero2-text">
+        <p class="crumb"><a href="work.html">Our Work</a> / Community</p>
+        <span class="badge2"><svg><use href="#ico-community"/></svg></span>
+        <span class="eyebrow">The present &middot; From community, for community &middot; Women lead here</span>
+        <h1>Community</h1>
+        <p class="question">Who leads change on the ground, and what do they need to do it?</p>
+        <p class="lead2">Turns values into lived outcomes. Builds practical leadership, shared responsibility and community-driven solutions, with women and caregivers on the frontline.</p>
+      </div>
+      <div class="phero2-art tone-forest">
+        <img src="assets/hero.png" alt="">
+        <svg class="phero2-flame" viewBox="0 0 64 100" aria-hidden="true"><use href="#c2-flame-shape" fill="#fff"/></svg>
+        <span class="phero2-num">01</span>
+        <span class="phero2-cap">Community</span>
+      </div>
     </div>
   </section>
 
   <section class="pad wrap">
-    <div class="section-head2">
+    <div class="section-head2 reveal2">
       <span class="eyebrow">Where this pillar works</span>
       <h2>Three strands</h2>
     </div>
     <div class="strands-grid">
-      <div class="strand-card"><div class="idx">01</div><h4>Women's Leadership</h4><p>Wanita Mendunia. Training women community champions to lead from where they are.</p></div>
-      <div class="strand-card"><div class="idx">02</div><h4>Care &amp; Wellbeing</h4><p>Projek Komuniti Permata, the care economy, and health and mental health screening.</p></div>
-      <div class="strand-card"><div class="idx">03</div><h4>Livelihoods</h4><p>Financial literacy and community grants. Funding local solutions the community designs itself.</p></div>
+      <div class="strand-card t1 reveal2">
+        <svg class="strand-flame" viewBox="0 0 64 100" aria-hidden="true"><use href="#c2-flame-shape" fill="#fff"/></svg>
+        <span class="idx">01</span><h4>Women's Leadership</h4><p>Wanita Mendunia. Training women community champions to lead from where they are.</p>
+      </div>
+      <div class="strand-card t2 reveal2">
+        <svg class="strand-flame" viewBox="0 0 64 100" aria-hidden="true"><use href="#c2-flame-shape" fill="#fff"/></svg>
+        <span class="idx">02</span><h4>Care &amp; Wellbeing</h4><p>Projek Komuniti Permata, the care economy, and health and mental health screening.</p>
+      </div>
+      <div class="strand-card t3 reveal2">
+        <svg class="strand-flame" viewBox="0 0 64 100" aria-hidden="true"><use href="#c2-flame-shape" fill="#fff"/></svg>
+        <span class="idx">03</span><h4>Livelihoods</h4><p>Financial literacy and community grants. Funding local solutions the community designs itself.</p>
+      </div>
     </div>
   </section>
 
-  <section class="dark-band" id="idea">
-    <svg style="position:absolute;left:-120px;top:-90px;width:420px;opacity:.1" viewBox="0 0 64 100" aria-hidden="true"><path d="M32 2C44 20 60 34 60 52C60 72 46 88 32 98C18 88 4 72 4 52C4 34 20 20 32 2Z" fill="#EC6B6E"/></svg>
+  <section class="dark-band">
+    <div class="glow" aria-hidden="true"></div>
     <div class="wrap">
-      <div class="section-head2">
+      <div class="section-head2 reveal2">
         <span class="eyebrow">Programmes</span>
         <h2>What this looks like in practice</h2>
       </div>
-      <div class="prog-list">
-        <div class="prog-pill"><span>Wanita Mendunia</span></div>
-        <div class="prog-pill"><span>Wanita Mendunia 2.0</span></div>
-        <div class="prog-pill"><span>Projek Komuniti Permata</span></div>
-        <div class="prog-pill"><span>Community Grants</span></div>
-        <div class="prog-pill"><span>Financial Literacy</span></div>
-        <div class="prog-pill"><span>Health &amp; Mental Health Screening</span></div>
+      <div class="prog-grid">
+        <div class="prog-row reveal2"><span class="idx">01</span><div><h4>Wanita Mendunia</h4><p>Flagship women's leadership training, run community by community.</p></div></div>
+        <div class="prog-row reveal2"><span class="idx">02</span><div><h4>Wanita Mendunia 2.0</h4><p>The next chapter of the same programme, deepening the leadership model.</p></div></div>
+        <div class="prog-row reveal2"><span class="idx">03</span><div><h4>Projek Komuniti Permata</h4><p>Community-led care and wellbeing work on the ground.</p></div></div>
+        <div class="prog-row reveal2"><span class="idx">04</span><div><h4>Community Grants</h4><p>Small grants that fund solutions the community designs itself.</p></div></div>
+        <div class="prog-row reveal2"><span class="idx">05</span><div><h4>Financial Literacy</h4><p>Practical money skills that build household resilience.</p></div></div>
+        <div class="prog-row reveal2"><span class="idx">06</span><div><h4>Health &amp; Mental Health Screening</h4><p>Free screening days brought directly into communities.</p></div></div>
       </div>
-      <p class="prog-note">Highlighted programmes have full pages built. The rest are awaiting content.</p>
-      <div class="stat-pair">
+      <div class="stat-pair reveal2">
         <span class="n">20</span>
         <span class="l">community grants awarded</span>
       </div>
+    </div>
+  </section>
+
+  <section class="pillar-next wrap">
+    <div class="pillar-next-head reveal2">
+      <span class="eyebrow">Keep exploring</span>
+      <h2>The other pillars</h2>
+    </div>
+    <div class="pillar-next-grid">
+      <a class="bento-cell a reveal2" href="pillar-youth-education.html">
+        <span class="num">02</span>
+        <h3>Youth &amp; Education</h3>
+        <p>Empowering young people with knowledge, skills and confidence.</p>
+        <span class="go">Explore <svg><use href="#c2-ico-arrow"/></svg></span>
+      </a>
+      <a class="bento-cell b reveal2" href="pillar-ideas-ethics-society.html">
+        <span class="num">03</span>
+        <h3>Ideas, Ethics &amp; Society</h3>
+        <p>Championing ideas that inform, inspire and create impact.</p>
+        <span class="go">Explore <svg><use href="#c2-ico-arrow"/></svg></span>
+      </a>
     </div>
   </section>
 
