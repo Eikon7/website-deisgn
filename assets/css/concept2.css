@@ -154,7 +154,7 @@ nav.c2-nav a:hover{ border-color:var(--coral); }
 
 .scroll-cue{
   position:absolute; left:24px; bottom:34px; display:flex; align-items:center; gap:10px;
-  font-family:var(--sans); font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:#1c4332;
+  font-family:var(--sans); font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:#1c4332; z-index:1000
 }
 @media (min-width:900px){ .scroll-cue{ left:56px; } }
 .scroll-cue .ln{ width:36px; height:1px; background:var(--muted); }
