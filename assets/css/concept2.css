@@ -136,7 +136,7 @@ nav.c2-nav a:hover{ border-color:var(--coral); }
 
 .hero2 .standfirst{
   font-family:var(--sans); font-size:1.2rem; line-height:1.55; color:var(--forest-3);
-  max-width:32em; opacity:0; transform:translateY(14px); transition:opacity .7s var(--ease) .5s, transform .7s var(--ease) .5s;
+  max-width:32em; opacity:0; transform:translateY(14px); transition:opacity .7s var(--ease) .5s, transform .7s var(--ease) .5s; width:500px;
 }
 .hero2.in .standfirst{ opacity:1; transform:none; }
 
