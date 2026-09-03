@@ -366,5 +366,5 @@ footer.c2-footer{ background:var(--forest-2); color:#A9C4B4; padding:52px 0 28px
 .reveal2.in{ opacity:1; transform:none; }
 @media (prefers-reduced-motion: reduce){ .reveal2{ opacity:1; transform:none; } }
 @media (max-width: 480px) {
-	background: url(../Mobile.jpeg);
+	.hero2{background: url(../Mobile.jpeg);}
 }
