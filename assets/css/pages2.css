@@ -49,7 +49,13 @@
 .phero2-art.tone-coral::after{ background:linear-gradient(165deg, #B4474B, #7A2E31 70%); }
 .phero2-art.tone-cream::after{ background:linear-gradient(165deg, #8C7A44, #2F4A3B 75%); }
 .phero2-art.tone-mixed::after{ background:linear-gradient(155deg, #1B4332 15%, #B4474B 100%); }
-.phero2-art .phero2-flame{ position:absolute; right:-16%; top:-12%; width:62%; opacity:.2; pointer-events:none; z-index:1; }
+.phero2-art .phero2-flame{ position: absolute;
+    left: 44%;
+    top: -27%;
+    width: 81%;
+    opacity: .2;
+    pointer-events: none;
+    z-index: 1; }
 .phero2-art .phero2-num{
   position:absolute; left:28px; bottom:40px; font-family:var(--serif); font-size:4.6rem;
   color:rgba(255,255,255,.88); line-height:1; z-index:1;
