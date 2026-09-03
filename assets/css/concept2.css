@@ -208,19 +208,27 @@ nav.c2-nav a:hover{ border-color:var(--coral); }
 /* ==========================================================================
    The idea — full-viewport statement, flame draws itself in
    ========================================================================== */
-.idea2{ background:var(--forest); color:#fff; padding:140px 0; position:relative; overflow:hidden; }
-.idea2-in{ display:grid; grid-template-columns:1fr; gap:56px; align-items:center; }
-@media (min-width:900px){ .idea2-in{ grid-template-columns:1fr .9fr; } }
+.idea2{ background:var(--forest); color:#fff; padding:160px 0; position:relative; overflow:hidden; }
+.idea2-in{ position:relative; z-index:1; display:flex; justify-content:flex-end; }
+.idea2-content{ max-width:560px; }
 .idea2 .eyebrow{ font-family:var(--sans); font-size:.72rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--blush); }
 .idea2 h2{ font-family:var(--serif); font-size:clamp(2rem,4vw,3.1rem); line-height:1.15; margin:16px 0 26px; max-width:16ch; }
 .idea2 p{ font-family:var(--sans); font-size:1.18rem; line-height:1.6; color:#C9DCD1; max-width:32em; }
-.idea2-mark{ display:flex; justify-content:center; }
-.idea2-mark img{
-  width:min(220px,60%); height:auto;
-  opacity:0; transform:scale(.85); transition:opacity 1s var(--ease), transform 1s var(--ease);
+.idea2-mark{
+  position:absolute; left:-10%; top:50%; z-index:0; pointer-events:none;
+  width:min(52vw,760px);
+  opacity:0; transform:translateY(-50%) scale(.92); transition:opacity 1.1s var(--ease), transform 1.1s var(--ease);
 }
-.idea2.in .idea2-mark img{ opacity:1; transform:scale(1); }
-@media (prefers-reduced-motion: reduce){ .idea2-mark img{ transition:none; opacity:1; transform:none; } }
+.idea2-mark img{ width:100%; height:auto; display:block; }
+.idea2.in .idea2-mark{ opacity:1; transform:translateY(-50%) scale(1); }
+@media (max-width:900px){
+  .idea2{ padding:100px 0; }
+  .idea2-mark{ position:relative; left:auto; top:auto; margin:0 auto 40px; width:min(220px,60%); transform:scale(.92); }
+  .idea2.in .idea2-mark{ transform:scale(1); }
+  .idea2-in{ justify-content:flex-start; }
+  .idea2-content{ max-width:none; }
+}
+@media (prefers-reduced-motion: reduce){ .idea2-mark{ transition:none; opacity:1; transform:translateY(-50%); } }
 
 /* ==========================================================================
    Continuity timeline — Polity 2024 -> Suluh 2026
