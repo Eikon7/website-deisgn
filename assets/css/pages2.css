@@ -192,6 +192,10 @@
 .photo-mosaic .m5{ grid-column:span 2; aspect-ratio:1/1; }
 @media (max-width:700px){ .photo-mosaic{ grid-template-columns:repeat(2,1fr); } .photo-mosaic > div{ grid-column:span 1 !important; aspect-ratio:4/3 !important; } }
 
+.thin-prose{ position:relative; }
+.thin-prose .tp-flame{ position:absolute; right:0; top:0; width:30%; max-width:360px; opacity:.055; pointer-events:none; z-index:0; }
+.thin-prose .dblock{ position:relative; z-index:1; }
+
 .next-callout{ border-left:4px solid var(--coral); padding:6px 0 6px 26px; }
 .next-callout h4{ font-family:var(--serif); font-size:1.15rem; color:var(--forest); margin:0 0 10px; }
 .next-callout p{ color:var(--muted); font-size:1rem; line-height:1.6; max-width:62ch; }
