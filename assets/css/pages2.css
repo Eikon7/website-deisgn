@@ -105,7 +105,7 @@
 .dark-band{ background:#1b4332; color:#fff; padding:130px 0; position:relative; overflow:hidden; }
 .dark-band .glow{ position:absolute; left:74%; top:6%; width:620px; height:620px; transform:translateX(-50%); background:radial-gradient(circle, rgba(236,107,110,.22), transparent 62%); pointer-events:none; }
 .dark-band .wrap{ position:relative; z-index:1; }
-.light-band{background: #f5efe3 !importrant;}
+.light-band{background: #f5efe3 !important;}
 .prog-grid{ margin-top:8px; }
 .prog-row{
   display:grid; grid-template-columns:60px 1fr; gap:24px; align-items:start;
