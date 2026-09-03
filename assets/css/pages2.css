@@ -128,6 +128,56 @@
 .work-hero-stats .l{ font-size:.85rem; color:var(--muted); margin-top:6px; max-width:16ch; }
 
 /* ==========================================================================
+   About — Vision & Mission split
+   ========================================================================== */
+.vm-grid{ display:grid; grid-template-columns:1fr; gap:44px; }
+@media (min-width:800px){ .vm-grid{ grid-template-columns:1fr 1fr; gap:64px; } }
+.vm-quote{ font-family:var(--serif); font-size:1.5rem; line-height:1.45; color:#fff; margin-top:16px; }
+.vm-mission{ font-family:var(--sans); font-size:1.05rem; line-height:1.65; color:#C9DCD1; margin-top:16px; }
+.vm-mission b{ color:#fff; }
+.vm-tags{ display:flex; gap:10px; flex-wrap:wrap; margin-top:20px; }
+.vm-tag{ background:rgba(244,160,163,.18); color:var(--blush); border-radius:8px; padding:7px 16px; font-size:.82rem; font-weight:600; font-family:var(--sans); }
+
+/* ==========================================================================
+   About — Continuity mapping (Polity -> Suluh), published as a list of
+   pairs rather than summarised, so the "nothing was dropped" claim can
+   be checked directly.
+   ========================================================================== */
+.cont-table{ margin-top:8px; border-top:1px solid var(--hairline); }
+.cont-head-row, .cont-row{ display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+.cont-head-row{ padding:14px 0; font-family:var(--sans); font-size:.7rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); border-bottom:1px solid var(--hairline); }
+.cont-row{ padding:20px 0; border-bottom:1px solid var(--hairline); align-items:baseline; }
+.cont-row .p{ font-family:var(--sans); font-size:.98rem; color:#2A3B32; }
+.cont-row .s{ font-family:var(--sans); font-size:.98rem; color:var(--forest); font-weight:700; }
+@media (max-width:640px){ .cont-row{ grid-template-columns:1fr; gap:4px; padding:16px 0; } .cont-head-row{ display:none; } .cont-row .p{ color:var(--muted); font-size:.85rem; } }
+
+/* ==========================================================================
+   About — info cards (Independent & secular / Who we are)
+   ========================================================================== */
+.about-cards{ display:grid; grid-template-columns:1fr; gap:22px; }
+@media (min-width:700px){ .about-cards{ grid-template-columns:1fr 1fr; } }
+.about-card{ background:var(--cream); border:1px solid var(--hairline); border-radius:22px; padding:34px; }
+.about-card h4{ font-family:var(--serif); font-size:1.25rem; color:var(--forest); margin:0 0 12px; }
+.about-card p{ font-family:var(--sans); font-size:.98rem; color:var(--muted); line-height:1.6; margin:0; }
+.about-card.link{ display:block; text-decoration:none; transition:transform .25s var(--ease); }
+.about-card.link:hover{ transform:translateY(-4px); }
+.about-card .go{ margin-top:16px; display:inline-flex; align-items:center; gap:8px; font-family:var(--sans); font-size:.78rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--coral-deep); }
+.about-card .go svg{ width:14px; height:14px; }
+
+/* ==========================================================================
+   People page
+   ========================================================================== */
+.people-group + .people-group{ margin-top:56px; }
+.people-group h3{ font-family:var(--serif); font-size:1.3rem; color:var(--forest); margin:0 0 24px; }
+.people-grid{ display:grid; grid-template-columns:1fr; gap:28px; }
+@media (min-width:600px){ .people-grid{ grid-template-columns:repeat(2,1fr); } }
+@media (min-width:1000px){ .people-grid{ grid-template-columns:repeat(4,1fr); } }
+.person-avatar{ width:100%; aspect-ratio:1; border-radius:16px; background:var(--blush-tint); display:flex; align-items:center; justify-content:center; font-family:var(--serif); font-size:1.8rem; color:var(--forest); margin-bottom:16px; }
+.person-role{ font-family:var(--sans); font-size:.68rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--coral-deep); margin-bottom:8px; }
+.person-card h4{ font-family:var(--serif); font-size:1.15rem; color:var(--forest); margin:0 0 8px; }
+.person-card p{ font-family:var(--sans); font-size:.9rem; color:var(--muted); line-height:1.5; margin:0; }
+
+/* ==========================================================================
    About hero — a full-bleed dark statement opener, deliberately distinct
    from the light two-column phero2 used on every pillar/programme/work
    page, so About reads as its own kind of page rather than one more
