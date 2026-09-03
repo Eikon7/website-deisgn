@@ -126,7 +126,7 @@
    Continue exploring — bridges into the footer instead of an abrupt cut,
    reusing the homepage's .bento-cell component for visual continuity.
    ========================================================================== */
-.pillar-next{ padding-top:0px; padding-bottom:110px; }
+.pillar-next{ padding-top:100px; padding-bottom:110px; }
 .pillar-next-head{ max-width:560px; margin-bottom:36px; }
 .pillar-next-grid{ display:grid; grid-template-columns:1fr; gap:20px; }
 @media (min-width:760px){ .pillar-next-grid{ grid-template-columns:1fr 1fr; } }
