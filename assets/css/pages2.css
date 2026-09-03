@@ -141,6 +141,8 @@
 .key-facts{ display:grid; grid-template-columns:repeat(2,1fr); gap:0; margin-top:44px; border-top:1px solid var(--hairline); max-width:800px; }
 @media (min-width:700px){ .key-facts{ grid-template-columns:repeat(4,1fr); } }
 .key-facts > div{ padding:22px 24px 22px 0; border-bottom:1px solid var(--hairline); }
+.key-facts.id-strip{ max-width:none; grid-template-columns:1fr; }
+@media (min-width:700px){ .key-facts.id-strip{ grid-template-columns:repeat(3,1fr); } }
 .key-facts .l{ font-family:var(--sans); font-size:.68rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:8px; }
 .key-facts .v{ font-family:var(--serif); font-size:1.3rem; color:var(--forest); }
 
