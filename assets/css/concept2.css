@@ -84,7 +84,7 @@ nav.c2-nav a:hover{ border-color:var(--coral); }
   display:block; font-family:var(--sans); font-size:.92rem; font-weight:500; color:var(--forest);
   padding:10px 14px; border-radius:9px; border-bottom:none;
 }
-.c2-dropdown a:hover{ background:var(--blush-tint); border-bottom:none; }
+.c2-dropdown a:hover{ background:var(--blush-tint); border-bottom:none; padding-left: 10px;}
 .c2-hd-cta{ font-family:var(--sans); font-size:.94rem; padding:9px 20px; border-radius:999px; border:1.5px solid var(--forest); color:var(--forest); background:transparent; transition:.18s var(--ease); }
 .c2-hd-cta:hover{ background:var(--forest); color:#fff; }
 .c2-burger{ display:none; }
