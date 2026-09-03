@@ -102,7 +102,7 @@
    Programmes — editorial numbered list on dark ground, matching the
    homepage's "How we work" p-row rhythm rather than a flat pill stack.
    ========================================================================== */
-.dark-band{ background:var(--forest); color:#fff; padding:130px 0; position:relative; overflow:hidden; }
+.dark-band{ background:#f5efe3; color:#fff; padding:130px 0; position:relative; overflow:hidden; }
 .dark-band .glow{ position:absolute; left:74%; top:6%; width:620px; height:620px; transform:translateX(-50%); background:radial-gradient(circle, rgba(236,107,110,.22), transparent 62%); pointer-events:none; }
 .dark-band .wrap{ position:relative; z-index:1; }
 
@@ -162,9 +162,9 @@
    ========================================================================== */
 .vm-grid{ display:grid; grid-template-columns:1fr; gap:44px; }
 @media (min-width:800px){ .vm-grid{ grid-template-columns:1fr 1fr; gap:64px; } }
-.vm-quote{ font-family:var(--serif); font-size:1.5rem; line-height:1.45; color:#fff; margin-top:16px; }
-.vm-mission{ font-family:var(--sans); font-size:1.05rem; line-height:1.65; color:#C9DCD1; margin-top:16px; }
-.vm-mission b{ color:#fff; }
+.vm-quote{ font-family:var(--serif); font-size:1.5rem; line-height:1.45; color:#1b4332; margin-top:16px; }
+.vm-mission{ font-family:var(--sans); font-size:1.05rem; line-height:1.65; color:#1b4332; margin-top:16px; }
+.vm-mission b{ color:#f2908f; }
 .vm-tags{ display:flex; gap:10px; flex-wrap:wrap; margin-top:20px; }
 .vm-tag{ background:rgba(244,160,163,.18); color:var(--blush); border-radius:8px; padding:7px 16px; font-size:.82rem; font-weight:600; font-family:var(--sans); }
 
