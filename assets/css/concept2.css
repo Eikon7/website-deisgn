@@ -125,7 +125,7 @@ nav.c2-nav a:hover{ border-color:var(--coral); }
 }
 .hero2 h1{
   font-family:var(--serif); font-weight:600; letter-spacing:-.015em;
-  font-size:clamp(2.8rem,7vw,6.2rem); line-height:.98; margin:0 0 30px;
+  font-size:clamp(2.8rem,7vw,4.2rem); line-height:.98; margin:0 0 30px;
 }
 .hero2 h1 .word{ display:inline-block; overflow:hidden; vertical-align:top; padding-bottom:.14em; }
 .hero2 h1 .word span{ display:inline-block; transform:translateY(115%); transition:transform .8s var(--ease); }
@@ -141,7 +141,7 @@ nav.c2-nav a:hover{ border-color:var(--coral); }
 .hero2.in .standfirst{ opacity:1; transform:none; }
 
 .hero2 .cta{
-  margin-top:34px; opacity:0; transform:translateY(14px); transition:opacity .7s var(--ease) .68s, transform .7s var(--ease) .68s;
+  margin-top:34px; opacity:0; transform:translateY(14px); transition:opacity .7s var(--ease) .68s, transform .7s var(--ease) .68s;width: 500px;
 }
 .hero2.in .cta{ opacity:1; transform:none; }
 .btn2{
