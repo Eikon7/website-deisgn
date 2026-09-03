@@ -141,19 +141,22 @@
 .work-hero-stats .l{ font-size:.85rem; color:var(--muted); margin-top:6px; max-width:16ch; }
 
 /* ==========================================================================
-   About hero — a full-bleed dark statement opener, deliberately distinct
-   from the light two-column phero2 used on every pillar/programme/work
-   page, so About reads as its own kind of page rather than one more
-   inner page. Borrows the glow + flame language from the homepage's
-   closing section, used here as an opener instead.
+   About hero — dark statement opener, left-aligned text (matching the
+   homepage hero's alignment) with a cutout photo bleeding off the
+   bottom-right, instead of the previous fully-centered composition.
    ========================================================================== */
-.about-hero{ position:relative; background:var(--forest); color:#fff; padding:200px 0 130px; overflow:hidden; text-align:center; }
-.about-hero .glow{ position:absolute; left:50%; top:14%; width:900px; height:900px; transform:translate(-50%,-50%); background:radial-gradient(circle, rgba(236,107,110,.24), transparent 62%); pointer-events:none; }
-.about-hero-flame{ position:absolute; left:50%; bottom:-22%; transform:translateX(-50%); width:460px; opacity:.07; pointer-events:none; }
-.about-hero-in{ position:relative; z-index:1; max-width:760px; margin:0 auto; }
+.about-hero{ position:relative; background:var(--forest); color:#fff; padding-top:190px; overflow:hidden; }
+.about-hero .glow{ position:absolute; left:72%; top:10%; width:900px; height:900px; transform:translate(-50%,-50%); background:radial-gradient(circle, rgba(236,107,110,.24), transparent 62%); pointer-events:none; }
+.about-hero-flame{ position:absolute; left:6%; bottom:-24%; width:380px; opacity:.07; pointer-events:none; }
+.about-hero-grid{ position:relative; z-index:1; display:grid; grid-template-columns:1fr; align-items:center; }
+@media (min-width:900px){ .about-hero-grid{ grid-template-columns:1.05fr .95fr; gap:40px; } }
+.about-hero-in{ max-width:620px; padding-bottom:70px; }
 .about-hero .eyebrow{ color:var(--blush); }
-.about-hero h1{ font-family:var(--serif); font-weight:600; font-size:clamp(2.4rem,5.5vw,4.4rem); line-height:1.08; margin:18px 0 28px; color:#fff; }
-.about-hero .lead2{ font-family:var(--sans); font-size:1.15rem; line-height:1.7; color:#C9DCD1; max-width:56ch; margin:0 auto; }
+.about-hero h1{ font-family:var(--serif); font-weight:600; font-size:clamp(2.2rem,5vw,4rem); line-height:1.1; margin:18px 0 26px; color:#fff; }
+.about-hero .lead2{ font-family:var(--sans); font-size:1.1rem; line-height:1.7; color:#C9DCD1; max-width:56ch; }
+.about-hero-photo{ align-self:end; display:flex; justify-content:center; }
+.about-hero-photo img{ width:100%; max-width:420px; height:auto; }
+@media (max-width:899px){ .about-hero-photo img{ max-width:280px; margin-top:20px; } }
 /* ==========================================================================
    About — Vision & Mission split
    ========================================================================== */
@@ -204,21 +207,6 @@
 .person-role{ font-family:var(--sans); font-size:.68rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--coral-deep); margin-bottom:8px; }
 .person-card h4{ font-family:var(--serif); font-size:1.15rem; color:var(--forest); margin:0 0 8px; }
 .person-card p{ font-family:var(--sans); font-size:.9rem; color:var(--muted); line-height:1.5; margin:0; }
-
-/* ==========================================================================
-   About hero — a full-bleed dark statement opener, deliberately distinct
-   from the light two-column phero2 used on every pillar/programme/work
-   page, so About reads as its own kind of page rather than one more
-   inner page. Borrows the glow + flame language from the homepage's
-   closing section, used here as an opener instead.
-   ========================================================================== */
-.about-hero{ position:relative; background:var(--forest); color:#fff; padding:200px 0 130px; overflow:hidden; text-align:center; }
-.about-hero .glow{ position:absolute; left:50%; top:14%; width:900px; height:900px; transform:translate(-50%,-50%); background:radial-gradient(circle, rgba(236,107,110,.24), transparent 62%); pointer-events:none; }
-.about-hero-flame{ position:absolute; left:50%; bottom:-22%; transform:translateX(-50%); width:460px; opacity:.07; pointer-events:none; }
-.about-hero-in{ position:relative; z-index:1; max-width:760px; margin:0 auto; }
-.about-hero .eyebrow{ color:var(--blush); }
-.about-hero h1{ font-family:var(--serif); font-weight:600; font-size:clamp(2.4rem,5.5vw,4.4rem); line-height:1.08; margin:18px 0 28px; color:#fff; }
-.about-hero .lead2{ font-family:var(--sans); font-size:1.15rem; line-height:1.7; color:#C9DCD1; max-width:56ch; margin:0 auto; }
 
 /* ==========================================================================
    Programme: full — the deepest page type. Title + key facts, hero band,
