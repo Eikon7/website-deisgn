@@ -378,4 +378,7 @@ footer.c2-footer{ background:var(--forest-2); color:#A9C4B4; padding:52px 0 28px
 		  background-size: cover;
         background-repeat: no-repeat;
 		  align-items: start;}
+	.hero2-in {
+    margin: 0 auto ;
+	}
 }
