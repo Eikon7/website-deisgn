@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>People — Suluh Centre</title>
-<meta name="description" content="A small team in Kuala Lumpur, working nationally, with advisors across economics, technology and law.">
+<title>Contact — Suluh Centre</title>
+<meta name="description" content="Get in touch with Suluh Centre for partnerships, research collaboration, media enquiries, or to find out about our programmes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -23,6 +23,9 @@
     </defs>
     <path d="M32 2C44 20 60 34 60 52C60 72 46 88 32 98C18 88 4 72 4 52C4 34 20 20 32 2Z" fill="var(--coral)" mask="url(#c2-mark-cut)"/>
     <path d="M32 2C44 20 60 34 60 52C60 60 58 67 55 73C53 52 46 33 32 14Z" fill="var(--blush)" opacity=".65" mask="url(#c2-mark-cut)"/>
+  </symbol>
+  <symbol id="c2-flame-shape" viewBox="0 0 64 100">
+    <path d="M32 2C44 20 60 34 60 52C60 72 46 88 32 98C18 88 4 72 4 52C4 34 20 20 32 2Z"/>
   </symbol>
   <symbol id="c2-ico-arrow" viewBox="0 0 16 16" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
     <path d="M2 8h11M8.5 3.5 13 8l-4.5 4.5"/>
@@ -76,64 +79,77 @@
 
 <main>
 
-  <section class="prog-head2">
-    <div class="wrap prog-head2-in">
-      <p class="crumb"><a href="about.html">About</a> / People</p>
-      <span class="eyebrow">People</span>
-      <h1>Who we are</h1>
-      <p class="lead2">A small team in Kuala Lumpur, working nationally.</p>
+  <!-- ============ Page hero ============ -->
+  <section class="contact-hero">
+    <div class="wrap">
+      <span class="eyebrow">Contact</span>
+      <h1 style="font-family:var(--serif);font-weight:600;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.1;margin:16px 0 18px;color:var(--forest)">Get in touch</h1>
+      <p class="lead2">For partnerships, research collaboration, media enquiries, or to find out about our programmes.</p>
     </div>
   </section>
 
-  <section class="pad wrap">
-
-    <div class="people-group reveal2">
-      <h3>Leadership</h3>
-      <div class="people-grid">
-        <div class="person-card">
-          <div class="person-avatar"><img src="https://polity.my/images/1024/13879119/8.png" alt="Nurul Izzah Anwar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><span style="display:none">NI</span></div>
-          <div class="person-role">Founder &amp; Chair</div>
-          <h4>Nurul Izzah Anwar</h4>
-          <p>Provides strategic vision and leadership in advancing evidence-based, people-centred policymaking.</p>
-        </div>
-        <div class="person-card">
-          <div class="person-avatar">NN</div>
-          <div class="person-role">Executive Director</div>
-          <h4>Nadia Nazri</h4>
-          <p>Runs the organisation day to day, across programmes, research and partnerships.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="people-group reveal2">
-      <h3>Advisors</h3>
-      <div class="people-grid">
-        <div class="person-card">
-          <div class="person-avatar">AR</div>
-          <div class="person-role">Social Security Economist</div>
-          <h4>Dr. Amjad Rabi</h4>
-          <p>Advises on the community and care economy work, and on the research spine.</p>
-        </div>
-        <div class="person-card">
-          <div class="person-avatar">LHW</div>
-          <div class="person-role">Technology Upskilling</div>
-          <h4>Ts. Dr. Lee Hing Wah</h4>
-          <p>Advises on education, digital literacy and technology access.</p>
-        </div>
-        <div class="person-card">
-          <div class="person-avatar">RS</div>
-          <div class="person-role">Legal</div>
-          <h4>Ranjit Singh</h4>
-          <p>Advises on governance, institutional structure and the ideas pillar.</p>
+  <!-- ============ Details + form ============ -->
+  <section class="pad wrap" style="padding-top:56px">
+    <div class="contact-grid">
+      <div class="contact-org reveal2">
+        <h4>Suluh Centre</h4>
+        <p>30-1, Jalan Medan Setia 2<br>Bukit Damansara, 50490<br>Kuala Lumpur, Malaysia</p>
+        <div class="contact-emails">
+          <div>
+            <h5>General</h5>
+            <a href="mailto:hello@suluhcentre.com">hello@suluhcentre.com</a>
+          </div>
+          <div>
+            <h5>Media</h5>
+            <a href="mailto:media@suluhcentre.com">media@suluhcentre.com</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="about-card reveal2" style="margin-top:56px;max-width:none">
-      <h4>Joining us</h4>
-      <p>Maqasid fellows and a communications lead are being appointed. Roles are posted in Stories.</p>
+      <div class="contact-card reveal2">
+        <h4>Send a message</h4>
+        <form id="c2ContactForm" novalidate>
+          <div class="contact-field">
+            <label for="ccName">Name</label>
+            <input type="text" id="ccName" name="name" required>
+          </div>
+          <div class="contact-field">
+            <label for="ccOrg">Organisation</label>
+            <input type="text" id="ccOrg" name="organisation">
+          </div>
+          <div class="contact-field">
+            <label for="ccEmail">Email</label>
+            <input type="email" id="ccEmail" name="email" required>
+          </div>
+          <div class="contact-field">
+            <label for="ccMessage">Message</label>
+            <textarea id="ccMessage" name="message" required></textarea>
+          </div>
+          <button class="btn2" type="submit">Send <svg><use href="#c2-ico-arrow"/></svg></button>
+          <p class="contact-status" id="ccStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
     </div>
+  </section>
 
+  <!-- ============ Closing ============ -->
+  <section class="pillar-next wrap">
+    <div class="pillar-next-head reveal2">
+      <span class="eyebrow">Keep exploring</span>
+      <h2>See the work behind the words</h2>
+    </div>
+    <div class="pillar-next-grid">
+      <a class="bento-cell a reveal2" href="work.html">
+        <h3>Our Work</h3>
+        <p>Community, Youth &amp; Education, and Ideas, Ethics &amp; Society.</p>
+        <span class="go">Explore our work <svg><use href="#c2-ico-arrow"/></svg></span>
+      </a>
+      <a class="bento-cell b reveal2" href="about.html">
+        <h3>About</h3>
+        <p>The story of Suluh Centre, and how it carries Polity's work forward.</p>
+        <span class="go">Learn more <svg><use href="#c2-ico-arrow"/></svg></span>
+      </a>
+    </div>
   </section>
 
 </main>

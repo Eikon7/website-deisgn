@@ -162,4 +162,23 @@
       form.reset();
     });
   }
+
+  /* Contact page form — client-side only in this design concept. */
+  var contactForm = document.getElementById("c2ContactForm");
+  var contactStatus = document.getElementById("ccStatus");
+  if (contactForm && contactStatus) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var name = document.getElementById("ccName");
+      var email = document.getElementById("ccEmail");
+      var message = document.getElementById("ccMessage");
+      var validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim());
+      if (!name.value.trim() || !validEmail || !message.value.trim()) {
+        contactStatus.textContent = "Please fill in your name, a valid email, and a message.";
+        return;
+      }
+      contactStatus.textContent = "Thank you. We'll be in touch shortly.";
+      contactForm.reset();
+    });
+  }
 })();
