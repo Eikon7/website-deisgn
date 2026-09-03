@@ -63,6 +63,28 @@ header.c2-header:not(.solid) .c2-brand span{ color:var(--forest); }
 nav.c2-nav{ display:flex; gap:30px; }
 nav.c2-nav a{ font-family:var(--serif); font-size:1rem; color:var(--forest); border-bottom:2px solid transparent; padding:4px 0; transition:border-color .18s var(--ease); }
 nav.c2-nav a:hover{ border-color:var(--coral); }
+
+/* Pillars dropdown — CSS-only (hover + keyboard focus), desktop nav only;
+   mobile gets the flat grouped list in the drawer instead. */
+.c2-nav-item{ position:relative; }
+.c2-nav-item > a{ display:inline-flex; align-items:center; gap:6px; }
+.c2-nav-item .caret{ width:7px; height:7px; border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor; transform:rotate(45deg) translateY(-1px); transition:transform .18s var(--ease); }
+.c2-nav-item:hover .caret, .c2-nav-item:focus-within .caret{ transform:rotate(225deg) translateY(1px); }
+.c2-dropdown{
+  position:absolute; top:100%; left:50%; transform:translate(-50%,6px);
+  background:#fff; border:1px solid var(--hairline); border-radius:14px; padding:8px;
+  min-width:230px; box-shadow:0 20px 40px -20px rgba(27,67,50,.28);
+  opacity:0; pointer-events:none; transition:opacity .18s var(--ease), transform .18s var(--ease);
+  z-index:120;
+}
+.c2-nav-item:hover .c2-dropdown, .c2-nav-item:focus-within .c2-dropdown{
+  opacity:1; pointer-events:auto; transform:translate(-50%,2px);
+}
+.c2-dropdown a{
+  display:block; font-family:var(--sans); font-size:.92rem; font-weight:500; color:var(--forest);
+  padding:10px 14px; border-radius:9px; border-bottom:none;
+}
+.c2-dropdown a:hover{ background:var(--blush-tint); border-bottom:none; }
 .c2-hd-cta{ font-family:var(--sans); font-size:.94rem; padding:9px 20px; border-radius:999px; border:1.5px solid var(--forest); color:var(--forest); background:transparent; transition:.18s var(--ease); }
 .c2-hd-cta:hover{ background:var(--forest); color:#fff; }
 .c2-burger{ display:none; }
@@ -336,6 +358,9 @@ footer.c2-footer{ background:var(--forest-2); color:#A9C4B4; padding:52px 0 28px
 .c2-drawer.open{ display:flex; }
 .c2-drawer a{ font-family:var(--sans); font-size:1.6rem; color:var(--forest); padding:16px 0; border-bottom:1px solid var(--hairline); }
 .c2-drawer-close{ position:absolute; top:26px; right:24px; background:none; border:none; width:38px; height:38px; }
+.c2-drawer-sub{ display:flex; flex-direction:column; padding-left:20px; border-bottom:1px solid var(--hairline); }
+.c2-drawer-sub .c2-drawer-sublabel{ display:block; font-family:var(--sans); font-size:.7rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--coral-deep); margin:16px 0 4px; }
+.c2-drawer-sub a{ display:block; font-size:1.15rem; padding:9px 0; border-bottom:none; }
 
 .reveal2{ opacity:0; transform:translateY(20px); transition:opacity .6s var(--ease), transform .6s var(--ease); }
 .reveal2.in{ opacity:1; transform:none; }
