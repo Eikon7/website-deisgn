@@ -61,7 +61,7 @@ header.c2-header.solid{
 .c2-brand span{ font-family:var(--sans); font-weight:600; font-size:1.15rem; color:var(--forest); line-height:1.05; }
 header.c2-header:not(.solid) .c2-brand span{ color:var(--forest); }
 nav.c2-nav{ display:flex; gap:30px; }
-nav.c2-nav a{ font-family:var(--sans); font-size:1rem; color:var(--forest); border-bottom:2px solid transparent; padding:4px 0; transition:border-color .18s var(--ease); }
+nav.c2-nav a{ font-family:var(--serif); font-size:1rem; color:var(--forest); border-bottom:2px solid transparent; padding:4px 0; transition:border-color .18s var(--ease); }
 nav.c2-nav a:hover{ border-color:var(--coral); }
 .c2-hd-cta{ font-family:var(--sans); font-size:.94rem; padding:9px 20px; border-radius:999px; border:1.5px solid var(--forest); color:var(--forest); background:transparent; transition:.18s var(--ease); }
 .c2-hd-cta:hover{ background:var(--forest); color:#fff; }
@@ -109,7 +109,7 @@ nav.c2-nav a:hover{ border-color:var(--coral); }
 .hero2 h1 .word span{ display:inline-block; transform:translateY(115%); transition:transform .8s var(--ease); }
 .hero2 h1.in .word span{ transform:translateY(0); }
 .hero2 h1 .c-forest{ color:var(--forest); }
-.hero2 h1 .c-coral{ color:var(--coral-deep); }
+.hero2 h1 .c-coral{ color:#ec6b6e; }
 @media (prefers-reduced-motion: reduce){ .hero2 h1 .word span{ transform:none; } }
 
 .hero2 .standfirst{
@@ -132,7 +132,7 @@ nav.c2-nav a:hover{ border-color:var(--coral); }
 
 .scroll-cue{
   position:absolute; left:24px; bottom:34px; display:flex; align-items:center; gap:10px;
-  font-family:var(--sans); font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:#ffffff;
+  font-family:var(--sans); font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:#1c4332;
 }
 @media (min-width:900px){ .scroll-cue{ left:56px; } }
 .scroll-cue .ln{ width:36px; height:1px; background:var(--muted); }
@@ -316,6 +316,9 @@ nav.c2-nav a:hover{ border-color:var(--coral); }
    Footer
    ========================================================================== */
 footer.c2-footer{ background:var(--forest-2); color:#A9C4B4; padding:52px 0 28px; }
+.footer-logo{
+	width:100px;
+}
 .c2-fgrid{ display:grid; grid-template-columns:1fr; gap:32px; }
 @media (min-width:760px){ .c2-fgrid{ grid-template-columns:1.4fr 1fr 1fr 1fr; } }
 .c2-footer .wm{ font-family:var(--sans); font-size:1.2rem; color:#fff; margin-top:12px; display:block; }
