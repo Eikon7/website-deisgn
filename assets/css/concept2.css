@@ -118,7 +118,7 @@ nav.c2-nav a:hover{ border-color:var(--coral); }
 }
 .hero2 .flame-bleed{ position:absolute; right:-8vw; top:50%; transform:translateY(-50%); width:min(52vw,720px); opacity:.9; pointer-events:none; display:none; }
 .hero2 .flame-bleed svg{ width:100%; height:auto; }
-.hero2-in{ position:relative; z-index:1; width:1320px; }
+.hero2-in{ position:relative; z-index:1; max-width:1320px; }
 .hero2 .eyebrow{
   font-family:var(--sans); font-size:.72rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase;
   color:var(--coral-deep); display:inline-block; margin-bottom:22px;
@@ -141,7 +141,7 @@ nav.c2-nav a:hover{ border-color:var(--coral); }
 .hero2.in .standfirst{ opacity:1; transform:none; }
 
 .hero2 .cta{
-  margin-top:34px; opacity:0; transform:translateY(14px); transition:opacity .7s var(--ease) .68s, transform .7s var(--ease) .68s;width: 500px;
+  margin-top:34px; opacity:0; transform:translateY(14px); transition:opacity .7s var(--ease) .68s, transform .7s var(--ease) .68s;
 }
 .hero2.in .cta{ opacity:1; transform:none; }
 .btn2{
