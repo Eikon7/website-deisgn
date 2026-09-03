@@ -27,7 +27,6 @@
         ?>
         <nav class="c2-nav" aria-label="Primary">
           <a href="<?php echo esc_url( home_url( '/work' ) ); ?>">Our Work</a>
-          <a href="#idea">The Idea</a>
           <a href="<?php echo esc_url( home_url( '/research' ) ); ?>">Research</a>
           <a href="<?php echo esc_url( home_url( '/stories' ) ); ?>">Stories</a>
           <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">Contact</a>
