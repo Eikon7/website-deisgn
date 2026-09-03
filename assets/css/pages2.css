@@ -6,8 +6,15 @@
    generic template bolted onto the brand colours.
    ========================================================================== */
 
-.pad{ padding:100px 0; }
-@media (min-width:1024px){ .pad{ padding:130px 0; } }
+/* Longhand on purpose: .pad is combined with .wrap on the same element
+   (class="pad wrap") throughout the inner pages. A shorthand `padding`
+   here would overwrite .wrap's left/right padding entirely rather than
+   merge with it, since both are single-class selectors and this rule
+   loads after concept2.css's .wrap — silently zeroing the side gutters
+   at any viewport narrower than .wrap's max-width (i.e. every mobile
+   width, where .wrap's own margin:auto provides no gutter of its own). */
+.pad{ padding-top:100px; padding-bottom:100px; }
+@media (min-width:1024px){ .pad{ padding-top:130px; padding-bottom:130px; } }
 
 .eyebrow{
   font-family:var(--sans); font-size:.72rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase;
@@ -113,7 +120,7 @@
    Continue exploring — bridges into the footer instead of an abrupt cut,
    reusing the homepage's .bento-cell component for visual continuity.
    ========================================================================== */
-.pillar-next{ padding:110px 0; }
+.pillar-next{ padding-top:110px; padding-bottom:110px; }
 .pillar-next-head{ max-width:560px; margin-bottom:36px; }
 .pillar-next-grid{ display:grid; grid-template-columns:1fr; gap:20px; }
 @media (min-width:760px){ .pillar-next-grid{ grid-template-columns:1fr 1fr; } }
