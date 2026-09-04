@@ -1,0 +1,1097 @@
+{
+  "content": [
+    {
+      "id": "abe21ff",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1B4332",
+        "padding": {
+          "unit": "px",
+          "top": "160",
+          "right": "24",
+          "bottom": "80",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        },
+        "gap": {
+          "unit": "px",
+          "size": 40,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "616771d",
+          "elType": "column",
+          "settings": {
+            "_column_size": 55,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "638d6f1",
+              "elType": "widget",
+              "settings": {
+                "title": "ABOUT",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#F4A0A3",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "1baf06d",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "78f474d",
+              "elType": "widget",
+              "settings": {
+                "title": "Building communities with purpose",
+                "header_size": "h1",
+                "align": "left",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 52,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.1,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "7f2cb20",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 20,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "0448d6d",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Suluh Centre is the natural evolution of Polity \u2014 the same people and the same grassroots strength, growing into what the work was always becoming. We are independent, and we work across Malaysia.</p>",
+                "text_color": "#C9DCD1",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.7,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "dc0a782",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "5017bf7",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>We don't believe change is handed down. We believe it is grown, patiently, from the ground up.</p>",
+                "text_color": "#C9DCD1",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.7,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        },
+        {
+          "id": "583a833",
+          "elType": "column",
+          "settings": {
+            "_column_size": 45,
+            "_inline_size": null,
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "baf89e4",
+              "elType": "widget",
+              "settings": {
+                "image": {
+                  "url": "{{BASE_URL}}/assets/about-people.png",
+                  "id": "",
+                  "alt": ""
+                },
+                "image_size": "full"
+              },
+              "elements": [],
+              "widgetType": "image"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "df18883",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1B4332",
+        "padding": {
+          "unit": "px",
+          "top": "110",
+          "right": "24",
+          "bottom": "110",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        },
+        "gap": {
+          "unit": "px",
+          "size": 48,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "acef55b",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "3268ccc",
+              "elType": "widget",
+              "settings": {
+                "title": "VISION",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#F4A0A3",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "0205641",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "3e2aca0",
+              "elType": "widget",
+              "settings": {
+                "title": "A Malaysia where a just and humane society can see its way forward: where communities, young people, and honest ideas light the path, and no one is left in the dark.",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "400",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.45,
+                  "sizes": []
+                },
+                "font_style": "italic"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ]
+        },
+        {
+          "id": "81f6d45",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "e72eaf3",
+              "elType": "widget",
+              "settings": {
+                "title": "MISSION",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#F4A0A3",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "4e49937",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "3852d29",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Suluh exists to carry light where it is needed most. We <b style=\"color:#fff\">illuminate</b> public life with ideas grounded in evidence and values. We <b style=\"color:#fff\">empower</b> communities to lead their own change. We <b style=\"color:#fff\">equip</b> the next generation, and the wider public, to see and shape the future.</p><p style=\"margin-top:18px\"><span style=\"background:rgba(244,160,163,.18);color:#F4A0A3;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:600;margin-right:8px;display:inline-block\">Illuminate &rarr; Ideas</span><span style=\"background:rgba(244,160,163,.18);color:#F4A0A3;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:600;margin-right:8px;display:inline-block\">Empower &rarr; Community</span><span style=\"background:rgba(244,160,163,.18);color:#F4A0A3;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:600;display:inline-block\">Equip &rarr; Youth &amp; Education</span></p>",
+                "text_color": "#C9DCD1",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 17,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.65,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "d4a4889",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "24",
+          "bottom": "40",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        },
+        "gap": {
+          "unit": "px",
+          "size": 22,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "f9a7c68",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": null,
+            "background_background": "classic",
+            "background_color": "#F5EFE3",
+            "border_radius": {
+              "unit": "px",
+              "top": "22",
+              "right": "22",
+              "bottom": "22",
+              "left": "22",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#E0D8C6",
+            "padding": {
+              "unit": "px",
+              "top": "34",
+              "right": "34",
+              "bottom": "34",
+              "left": "34",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "77c71bf",
+              "elType": "widget",
+              "settings": {
+                "title": "Independent and secular",
+                "header_size": "h4",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.3,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "658c541",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "8f7ee77",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Suluh Centre is independent. We are secular by design and built to welcome everyone, not one ideology, party or faith. We work with 13 collaborators across government, civil society, academia and industry.</p>",
+                "text_color": "#6E7468",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        },
+        {
+          "id": "fbf084f",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": null,
+            "background_background": "classic",
+            "background_color": "#F5EFE3",
+            "border_radius": {
+              "unit": "px",
+              "top": "22",
+              "right": "22",
+              "bottom": "22",
+              "left": "22",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#E0D8C6",
+            "padding": {
+              "unit": "px",
+              "top": "34",
+              "right": "34",
+              "bottom": "34",
+              "left": "34",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "ae84259",
+              "elType": "widget",
+              "settings": {
+                "title": "Who we are",
+                "header_size": "h4",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.3,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "4bb90fa",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "e661b3e",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>A small team in Kuala Lumpur, working nationally, with advisors across economics, technology and law.</p>",
+                "text_color": "#6E7468",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "e801f97",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "2e2e5b1",
+              "elType": "widget",
+              "settings": {
+                "text": "Meet the team &rarr;",
+                "link": {
+                  "url": "{{SITE_URL}}/people/",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "align": "left",
+                "background_color": "#EC6B6E",
+                "button_text_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": false
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "14",
+                  "right": "26",
+                  "bottom": "14",
+                  "left": "26",
+                  "isLinked": false
+                }
+              },
+              "elements": [],
+              "widgetType": "button"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "e5584bb",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "36",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "cdd7f63",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "e02e284",
+              "elType": "widget",
+              "settings": {
+                "title": "KEEP EXPLORING",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#B4474B",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "b4ee7ec",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "b00d9bb",
+              "elType": "widget",
+              "settings": {
+                "title": "See the work behind the words",
+                "header_size": "h2",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 34,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "5fdffbb",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "110",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        },
+        "gap": {
+          "unit": "px",
+          "size": 20,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "2539ff5",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": null,
+            "background_background": "classic",
+            "background_color": "#FBE4E5",
+            "border_radius": {
+              "unit": "px",
+              "top": "22",
+              "right": "22",
+              "bottom": "22",
+              "left": "22",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "36",
+              "right": "36",
+              "bottom": "36",
+              "left": "36",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "254a71f",
+              "elType": "widget",
+              "settings": {
+                "title": "Our Work",
+                "header_size": "h3",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "a46bc07",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "cf9256b",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Community, Youth &amp; Education, and Ideas, Ethics &amp; Society.</p>",
+                "text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.55,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "525bcf2",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "08c7951",
+              "elType": "widget",
+              "settings": {
+                "text": "Explore our work &rarr;",
+                "link": {
+                  "url": "{{SITE_URL}}/our-work/",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "align": "left",
+                "background_color": "transparent",
+                "button_text_color": "#B4474B",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": false
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "14",
+                  "right": "26",
+                  "bottom": "14",
+                  "left": "26",
+                  "isLinked": false
+                }
+              },
+              "elements": [],
+              "widgetType": "button"
+            }
+          ]
+        },
+        {
+          "id": "7a77661",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": null,
+            "background_background": "classic",
+            "background_color": "#F5EFE3",
+            "border_radius": {
+              "unit": "px",
+              "top": "22",
+              "right": "22",
+              "bottom": "22",
+              "left": "22",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "36",
+              "right": "36",
+              "bottom": "36",
+              "left": "36",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "204fd0c",
+              "elType": "widget",
+              "settings": {
+                "title": "Get in touch",
+                "header_size": "h3",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "eb83cfe",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "19c6472",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Follow the work as it happens, or reach out directly.</p>",
+                "text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.55,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "738149f",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "04e434f",
+              "elType": "widget",
+              "settings": {
+                "text": "Contact us &rarr;",
+                "link": {
+                  "url": "{{SITE_URL}}/contact/",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "align": "left",
+                "background_color": "transparent",
+                "button_text_color": "#B4474B",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": false
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "14",
+                  "right": "26",
+                  "bottom": "14",
+                  "left": "26",
+                  "isLinked": false
+                }
+              },
+              "elements": [],
+              "widgetType": "button"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "About \u2014 Suluh Centre",
+  "type": "page"
+}
