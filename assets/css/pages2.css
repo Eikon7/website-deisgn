@@ -456,3 +456,31 @@
 }
 .story-back svg{ width:13px; height:13px; transform:rotate(180deg); transition:transform .18s var(--ease); }
 .story-back:hover svg{ transform:rotate(180deg) translateX(3px); }
+
+/* ==========================================================================
+   Grounded — the podcast. A filtered view of Stories (Grounded type only),
+   not a separate content model: in WordPress this is a taxonomy archive
+   template (story_type = grounded) reusing the same .story-card partial
+   as stories.html.
+   ========================================================================== */
+.grounded-hero{ background:var(--forest); color:#fff; padding:170px 0 60px; position:relative; overflow:hidden; }
+.grounded-hero .glow{ position:absolute; left:78%; top:8%; width:640px; height:640px; transform:translateX(-50%); background:radial-gradient(circle, rgba(236,107,110,.24), transparent 62%); pointer-events:none; }
+.grounded-hero-flame{ position:absolute; right:-6%; bottom:-30%; width:360px; opacity:.08; pointer-events:none; }
+.grounded-hero .wrap{ position:relative; z-index:1; }
+.grounded-hero .crumb{ color:#A9C4B4; }
+.grounded-hero .crumb a{ color:var(--blush); }
+.grounded-hero .eyebrow{ color:var(--blush); }
+.grounded-hero h1{ font-family:var(--serif); font-weight:600; font-size:clamp(2.4rem,5.6vw,4rem); line-height:1.05; margin:16px 0 18px; color:#fff; }
+.grounded-hero .lead2{ font-family:var(--sans); font-size:1.1rem; line-height:1.7; color:#C9DCD1; max-width:56ch; }
+
+.grounded-links{ display:flex; gap:12px; flex-wrap:wrap; margin-top:30px; }
+.grounded-links a{
+  font-family:var(--sans); font-size:.92rem; font-weight:700; padding:13px 26px; border-radius:999px;
+  transition:.18s var(--ease); display:inline-block;
+}
+.gl-apple{ background:var(--coral); color:#fff; }
+.gl-apple:hover{ background:var(--coral-deep); }
+.gl-spotify{ background:var(--blush); color:var(--forest); }
+.gl-spotify:hover{ background:#f2929a; }
+.gl-rss{ background:transparent; border:1.5px solid var(--blush); color:var(--blush); }
+.gl-rss:hover{ background:rgba(244,160,163,.12); }

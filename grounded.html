@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Stories — Suluh Centre</title>
-<meta name="description" content="News, convenings, podcast episodes and notes from the field. One place, updated as the work happens.">
+<title>Grounded — Suluh Centre</title>
+<meta name="description" content="Grounded: conversations that bridge complex ideas and public understanding. Formerly POLITHINKERS.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -79,58 +79,38 @@
 
 <main>
 
-  <!-- ============ Page hero ============ -->
-  <section class="stories-hero">
+  <!-- ============ Page hero — not a separate content model, a filtered
+       view of Stories (story_type = Grounded). Podcasts still need a
+       stable landing page for directories, so this gets its own URL
+       and platform links rather than living only as a stories.html
+       filter state. ============ -->
+  <section class="grounded-hero">
+    <div class="glow" aria-hidden="true"></div>
+    <svg class="grounded-hero-flame" viewBox="0 0 64 100" aria-hidden="true"><use href="#c2-flame-shape" fill="#fff"/></svg>
     <div class="wrap">
-      <span class="eyebrow">Stories</span>
-      <h1 style="font-family:var(--serif);font-weight:600;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.1;margin:16px 0 18px;color:var(--forest)">What we are doing,<br>and what we are learning</h1>
-      <p class="lead2">News, convenings, podcast episodes and notes from the field. One place, updated as the work happens.</p>
+      <p class="crumb"><a href="stories.html">Stories</a> / Grounded</p>
+      <span class="eyebrow">The podcast</span>
+      <h1>Grounded</h1>
+      <p class="lead2">Conversations that bridge complex ideas and public understanding. Formerly POLITHINKERS.</p>
+      <div class="grounded-links">
+        <a class="gl-apple" href="#">Apple Podcasts</a>
+        <a class="gl-spotify" href="#">Spotify</a>
+        <a class="gl-rss" href="#">RSS</a>
+      </div>
     </div>
   </section>
 
-  <section class="pad wrap" style="padding-top:0">
-    <div class="filters story-filters" role="group" aria-label="Filter by type">
-      <button class="chip on" data-type="All">All</button>
-      <button class="chip" data-type="News">News</button>
-      <button class="chip" data-type="Convenings">Convenings</button>
-      <button class="chip" data-type="Grounded">Grounded</button>
-      <button class="chip" data-type="From the field">From the field</button>
-      <button class="chip" data-type="Notes">Notes</button>
+  <!-- ============ All episodes — reuses the same .story-card partial as
+       stories.html, pre-filtered to Grounded. In WordPress this loop
+       runs WP_Query with a tax_query for story_type = grounded instead
+       of the client-side filter chips used on the unfiltered stream. ============ -->
+  <section class="pad wrap">
+    <div class="section-head2 reveal2">
+      <span class="eyebrow">All episodes</span>
+      <h2>Every conversation</h2>
     </div>
-
-    <!-- ============ Upcoming — pinned above the stream while any convening
-         carries a future date; in WordPress this block only renders when a
-         query for upcoming events returns results. ============ -->
-    <div class="upcoming-band reveal2">
-      <div class="glow" aria-hidden="true"></div>
-      <div class="upcoming-head">
-        <div>
-          <span class="eyebrow">Upcoming &middot; 2 events</span>
-          <h3>National Women's Survey: findings launch</h3>
-          <p>24 September 2026 &middot; Kuala Lumpur</p>
-        </div>
-        <a class="btn2" href="story-detail.html">Details <svg><use href="#c2-ico-arrow"/></svg></a>
-      </div>
-      <div class="upcoming-list">
-        <a href="story-detail.html">
-          <span>Wanita Mendunia 2.0: Johor cohort opens</span>
-          <span class="d">6 September 2026</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- Every card links to the shared story-detail.html template for now;
-         in WordPress each links to its own post permalink. -->
     <div class="story-grid">
-      <a class="story-card reveal2" data-type="News" href="story-detail.html">
-        <div class="story-img t-news">Photograph</div>
-        <span class="eyebrow story-tag">News</span>
-        <h4>Suluh Centre: the name is new, the work is not</h4>
-        <p>Polity becomes Suluh Centre. The same team, the same grassroots strength, a sharper reason for being.</p>
-        <div class="story-meta">14 August 2026</div>
-      </a>
-
-      <a class="story-card reveal2" data-type="Grounded" href="story-detail.html">
+      <a class="story-card reveal2" href="story-detail.html">
         <div class="story-img t-grounded">Episode audio</div>
         <span class="eyebrow story-tag t-grounded">Grounded &middot; Ep 41</span>
         <h4>What does a care economy actually cost?</h4>
@@ -138,47 +118,14 @@
         <div class="story-meta">11 August 2026</div>
       </a>
 
-      <a class="story-card reveal2" data-type="From the field" href="story-detail.html">
-        <div class="story-img t-field">Photograph</div>
-        <span class="eyebrow story-tag t-field">From the field</span>
-        <h4>Three days in Kuala Pilah</h4>
-        <p>School land, licences, rising rents, and young people who leave and do not come back. Notes from a listening session.</p>
-        <div class="story-meta">4 August 2026</div>
-      </a>
-
-      <a class="story-card reveal2" data-type="Convenings" href="story-detail.html">
-        <div class="story-img t-convenings">Photograph</div>
-        <span class="eyebrow story-tag t-convenings">Convenings</span>
-        <h4>KL Conference on a New Just &amp; Humane International Order</h4>
-        <p>Policymakers, scholars and civil society examined the failures of the current international system from Global South perspectives.</p>
-        <div class="story-meta">14 October 2025 &middot; Kuala Lumpur</div>
-      </a>
-
-      <a class="story-card reveal2" data-type="Grounded" href="story-detail.html">
+      <a class="story-card reveal2" href="story-detail.html">
         <div class="story-img t-grounded">Episode audio</div>
         <span class="eyebrow story-tag t-grounded">Grounded &middot; Ep 40</span>
         <h4>Who gets to be a leader in a kampung?</h4>
         <p>Three community champions on what changed after the training, and what did not.</p>
         <div class="story-meta">28 July 2026</div>
       </a>
-
-      <a class="story-card reveal2" data-type="News" href="story-detail.html">
-        <div class="story-img t-news">Photograph</div>
-        <span class="eyebrow story-tag">News</span>
-        <h4>Regional Women Leaders Network convenes second cohort</h4>
-        <p>The network launched at the SEA conference expands across ASEAN.</p>
-        <div class="story-meta">15 July 2026</div>
-      </a>
-
-      <a class="story-card reveal2" data-type="Convenings" href="story-detail.html">
-        <div class="story-img t-convenings">Photograph</div>
-        <span class="eyebrow story-tag t-convenings">Convenings</span>
-        <h4>SEA Women's Leadership Conference: Women, Peace &amp; Security</h4>
-        <p>Over 700 women leaders, policymakers and practitioners from across ASEAN. Launched the Regional Women Leaders Network.</p>
-        <div class="story-meta">20 November 2025 &middot; Parliament of Malaysia</div>
-      </a>
     </div>
-    <p class="story-empty" id="storyEmpty" hidden>Nothing published in this category yet.</p>
   </section>
 
   <!-- ============ Closing ============ -->
@@ -188,15 +135,15 @@
       <h2>See the work behind the words</h2>
     </div>
     <div class="pillar-next-grid">
-      <a class="bento-cell a reveal2" href="research.html">
+      <a class="bento-cell a reveal2" href="stories.html">
+        <h3>All stories</h3>
+        <p>News, convenings, podcast episodes and notes from the field.</p>
+        <span class="go">Browse stories <svg><use href="#c2-ico-arrow"/></svg></span>
+      </a>
+      <a class="bento-cell b reveal2" href="research.html">
         <h3>Research &amp; Advocacy</h3>
         <p>Policy briefs, surveys and reports, filterable and downloadable.</p>
         <span class="go">Browse research <svg><use href="#c2-ico-arrow"/></svg></span>
-      </a>
-      <a class="bento-cell b reveal2" href="contact.html">
-        <h3>Get in touch</h3>
-        <p>For media enquiries, or to be added to a story.</p>
-        <span class="go">Contact us <svg><use href="#c2-ico-arrow"/></svg></span>
       </a>
     </div>
   </section>
