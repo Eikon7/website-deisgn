@@ -1,11 +1,25 @@
 {
   "content": [
     {
-      "id": "0eb131c",
+      "id": "94b56d7",
       "elType": "section",
       "settings": {
         "background_background": "classic",
         "background_color": "#F5EFE3",
+        "background_image": {
+          "url": "{{BASE_URL}}/assets/hero.png",
+          "id": ""
+        },
+        "background_position": "center center",
+        "background_repeat": "no-repeat",
+        "background_size": "cover",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "#F5EFE3",
+        "background_overlay_opacity": {
+          "unit": "px",
+          "size": 0.82,
+          "sizes": []
+        },
         "padding": {
           "unit": "px",
           "top": "160",
@@ -18,11 +32,17 @@
           "unit": "px",
           "size": 900,
           "sizes": []
-        }
+        },
+        "min_height": {
+          "unit": "px",
+          "size": 640,
+          "sizes": []
+        },
+        "height": "min-height"
       },
       "elements": [
         {
-          "id": "5419ce0",
+          "id": "453eb6b",
           "elType": "column",
           "settings": {
             "_column_size": 100,
@@ -30,7 +50,7 @@
           },
           "elements": [
             {
-              "id": "2e95818",
+              "id": "5383ed9",
               "elType": "widget",
               "settings": {
                 "title": "A BRIGHTER FUTURE IS BUILT TOGETHER",
@@ -60,7 +80,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "0989595",
+              "id": "49b58dd",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -73,7 +93,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "ac9a763",
+              "id": "2d713fd",
               "elType": "widget",
               "settings": {
                 "title": "Putting light<br>in people's hands",
@@ -98,7 +118,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "5c531be",
+              "id": "6f550a3",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -111,7 +131,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "8d2c462",
+              "id": "7b8b12f",
               "elType": "widget",
               "settings": {
                 "editor": "<p>We build communities with purpose, through the people who lead today, the young people who will lead next, and the ideas that light the way.</p>",
@@ -134,7 +154,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "b8e10b7",
+              "id": "a49a1ee",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -147,7 +167,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "219f98d",
+              "id": "4263b05",
               "elType": "widget",
               "settings": {
                 "text": "Explore our work &rarr;",
@@ -194,7 +214,7 @@
       "isInner": false
     },
     {
-      "id": "18ac740",
+      "id": "d1df2fa",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -215,7 +235,7 @@
       },
       "elements": [
         {
-          "id": "c9f0888",
+          "id": "e3aee31",
           "elType": "column",
           "settings": {
             "_column_size": 100,
@@ -223,7 +243,7 @@
           },
           "elements": [
             {
-              "id": "f299ee2",
+              "id": "3782888",
               "elType": "widget",
               "settings": {
                 "html": "<div style=\"display:flex;flex-wrap:wrap;justify-content:center;gap:14px;font-family:Manrope,sans-serif;font-size:.85rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#1B4332\"><span style=\"padding:10px 20px;border:1px solid #E0D8C6;border-radius:999px\">Community</span><span style=\"padding:10px 20px;border:1px solid #E0D8C6;border-radius:999px\">Youth &amp; Education</span><span style=\"padding:10px 20px;border:1px solid #E0D8C6;border-radius:999px\">Ideas, Ethics &amp; Society</span><span style=\"padding:10px 20px;border:1px solid #E0D8C6;border-radius:999px\">Research &amp; Advocacy</span></div>"
@@ -237,7 +257,7 @@
       "isInner": false
     },
     {
-      "id": "6122f72",
+      "id": "6b0a322",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -258,7 +278,7 @@
       },
       "elements": [
         {
-          "id": "e5334a9",
+          "id": "d4e5acb",
           "elType": "column",
           "settings": {
             "_column_size": 100,
@@ -266,7 +286,7 @@
           },
           "elements": [
             {
-              "id": "9f45516",
+              "id": "24a94da",
               "elType": "widget",
               "settings": {
                 "title": "OUR WORK",
@@ -296,7 +316,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "21049db",
+              "id": "c870785",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -309,7 +329,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "183e28e",
+              "id": "bf994a4",
               "elType": "widget",
               "settings": {
                 "title": "Three sources of light, one method running through them",
@@ -339,7 +359,7 @@
       "isInner": false
     },
     {
-      "id": "6cc602c",
+      "id": "74473b9",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -365,7 +385,7 @@
       },
       "elements": [
         {
-          "id": "f89c7dc",
+          "id": "dab8f1c",
           "elType": "column",
           "settings": {
             "_column_size": 40,
@@ -391,7 +411,7 @@
           },
           "elements": [
             {
-              "id": "3f47343",
+              "id": "7978913",
               "elType": "widget",
               "settings": {
                 "editor": "<span style=\"font-family:Inria Serif,serif;font-size:.85rem;opacity:.55\">01</span>",
@@ -414,7 +434,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "c9b331f",
+              "id": "49c3b19",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -427,7 +447,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "3b6f6c3",
+              "id": "9076905",
               "elType": "widget",
               "settings": {
                 "title": "Community",
@@ -452,7 +472,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "a2a7029",
+              "id": "5ffe979",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -465,7 +485,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "179853a",
+              "id": "dc07655",
               "elType": "widget",
               "settings": {
                 "editor": "<p>The present. Women lead here. Strengthening communities through collaboration and shared purpose.</p>",
@@ -488,7 +508,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "8ae76db",
+              "id": "e1597f6",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -501,7 +521,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "c8e851e",
+              "id": "b4f82e3",
               "elType": "widget",
               "settings": {
                 "text": "Explore &rarr;",
@@ -555,7 +575,7 @@
           ]
         },
         {
-          "id": "4b8dda3",
+          "id": "09ed05d",
           "elType": "column",
           "settings": {
             "_column_size": 30,
@@ -581,7 +601,7 @@
           },
           "elements": [
             {
-              "id": "6cc2c17",
+              "id": "e0a9d5b",
               "elType": "widget",
               "settings": {
                 "editor": "<span style=\"font-family:Inria Serif,serif;font-size:.85rem;opacity:.55\">02</span>",
@@ -604,7 +624,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "87736fe",
+              "id": "a20b5c0",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -617,7 +637,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "da7437a",
+              "id": "d2930e5",
               "elType": "widget",
               "settings": {
                 "title": "Youth &amp; Education",
@@ -642,7 +662,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "ea90ab2",
+              "id": "8beb4fa",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -655,7 +675,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "4961f86",
+              "id": "9566528",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Empowering young people with knowledge, skills and confidence.</p>",
@@ -678,7 +698,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "8a7ca91",
+              "id": "22ba0e5",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -691,7 +711,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "2871392",
+              "id": "e399cc8",
               "elType": "widget",
               "settings": {
                 "text": "Explore &rarr;",
@@ -745,7 +765,7 @@
           ]
         },
         {
-          "id": "3ee3d06",
+          "id": "680c124",
           "elType": "column",
           "settings": {
             "_column_size": 30,
@@ -771,7 +791,7 @@
           },
           "elements": [
             {
-              "id": "25e4cd3",
+              "id": "e34ce8e",
               "elType": "widget",
               "settings": {
                 "editor": "<span style=\"font-family:Inria Serif,serif;font-size:.85rem;opacity:.55\">03</span>",
@@ -794,7 +814,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "69f4602",
+              "id": "1c0c861",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -807,7 +827,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "216f445",
+              "id": "13ba65d",
               "elType": "widget",
               "settings": {
                 "title": "Ideas",
@@ -832,7 +852,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "705c3ab",
+              "id": "6f7fe75",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -845,7 +865,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "272795a",
+              "id": "41a05d9",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Championing ideas that inform, inspire and create impact.</p>",
@@ -868,7 +888,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "073c0b7",
+              "id": "a9d034b",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -881,7 +901,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "c180f54",
+              "id": "26991e1",
               "elType": "widget",
               "settings": {
                 "text": "Explore &rarr;",
@@ -938,7 +958,7 @@
       "isInner": false
     },
     {
-      "id": "8dad7f5",
+      "id": "8a96e75",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -959,7 +979,7 @@
       },
       "elements": [
         {
-          "id": "a78d7ff",
+          "id": "8119c31",
           "elType": "column",
           "settings": {
             "_column_size": 100,
@@ -985,7 +1005,7 @@
           },
           "elements": [
             {
-              "id": "82f6243",
+              "id": "10dadd5",
               "elType": "widget",
               "settings": {
                 "editor": "<span style=\"font-family:Inria Serif,serif;font-size:.85rem;opacity:.55\">04</span>",
@@ -1008,7 +1028,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "a0c5bc9",
+              "id": "7c10a60",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1021,7 +1041,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "f612252",
+              "id": "10d2193",
               "elType": "widget",
               "settings": {
                 "title": "Research &amp; Advocacy",
@@ -1046,7 +1066,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "4fe8a15",
+              "id": "83e1e17",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1059,7 +1079,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "02c804a",
+              "id": "9217206",
               "elType": "widget",
               "settings": {
                 "editor": "<p>The spine, not a fourth pillar. Turning evidence into policy, and policy into change on the ground.</p>",
@@ -1082,7 +1102,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "6b7d499",
+              "id": "73b7ebb",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1095,7 +1115,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "0202dda",
+              "id": "6391c43",
               "elType": "widget",
               "settings": {
                 "text": "Explore &rarr;",
@@ -1152,7 +1172,7 @@
       "isInner": false
     },
     {
-      "id": "b35a56c",
+      "id": "1350ef1",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -1178,7 +1198,7 @@
       },
       "elements": [
         {
-          "id": "f3fb611",
+          "id": "6234b03",
           "elType": "column",
           "settings": {
             "_column_size": 60,
@@ -1186,7 +1206,7 @@
           },
           "elements": [
             {
-              "id": "6dedcb2",
+              "id": "b306850",
               "elType": "widget",
               "settings": {
                 "title": "THE IDEA",
@@ -1216,7 +1236,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "8e0fd3e",
+              "id": "1cfa564",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1229,7 +1249,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "7e064b0",
+              "id": "0c9a348",
               "elType": "widget",
               "settings": {
                 "title": "Most institutions try to shine a light from above.",
@@ -1254,7 +1274,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "434ea2d",
+              "id": "232868f",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1267,7 +1287,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "3350efb",
+              "id": "e410018",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Suluh means the torch you carry to light the way. That is not decoration, it is the argument. We begin where change actually grows: in communities, in young people, and in the values we build on. When people carry their own light, it lasts.</p>",
@@ -1292,7 +1312,7 @@
           ]
         },
         {
-          "id": "92efd20",
+          "id": "852e872",
           "elType": "column",
           "settings": {
             "_column_size": 40,
@@ -1301,7 +1321,7 @@
           },
           "elements": [
             {
-              "id": "64da242",
+              "id": "b647cca",
               "elType": "widget",
               "settings": {
                 "image": {
@@ -1325,7 +1345,7 @@
       "isInner": false
     },
     {
-      "id": "926ca90",
+      "id": "e03fce0",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -1346,7 +1366,7 @@
       },
       "elements": [
         {
-          "id": "53e1eee",
+          "id": "9ef7688",
           "elType": "column",
           "settings": {
             "_column_size": 100,
@@ -1354,7 +1374,7 @@
           },
           "elements": [
             {
-              "id": "522fcae",
+              "id": "972b198",
               "elType": "widget",
               "settings": {
                 "title": "CONTINUITY",
@@ -1384,7 +1404,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "a86de7c",
+              "id": "87ecc35",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1397,7 +1417,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "5fc3375",
+              "id": "c32ce04",
               "elType": "widget",
               "settings": {
                 "title": "From Polity to Suluh",
@@ -1422,7 +1442,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "5df4180",
+              "id": "7a44306",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1435,7 +1455,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "4f1ff3e",
+              "id": "1fb8a07",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Polity always believed in change from the ground up. Suluh is that belief carried all the way through. Nothing was dropped.</p>",
@@ -1463,7 +1483,7 @@
       "isInner": false
     },
     {
-      "id": "5b14e93",
+      "id": "d92ef51",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -1489,7 +1509,7 @@
       },
       "elements": [
         {
-          "id": "2e9976f",
+          "id": "4057f43",
           "elType": "column",
           "settings": {
             "_column_size": 50,
@@ -1515,7 +1535,7 @@
           },
           "elements": [
             {
-              "id": "87383ba",
+              "id": "59e1af8",
               "elType": "widget",
               "settings": {
                 "editor": "<b style=\"color:#B4474B;font-family:Manrope,sans-serif;font-size:.95rem\">2024</b>",
@@ -1538,7 +1558,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "40ce83f",
+              "id": "c532bcc",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1551,7 +1571,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "b902892",
+              "id": "dd6ba46",
               "elType": "widget",
               "settings": {
                 "title": "Polity is founded",
@@ -1576,7 +1596,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "cac39c9",
+              "id": "19f6118",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1589,7 +1609,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "6f0422e",
+              "id": "ff925cf",
               "elType": "widget",
               "settings": {
                 "editor": "<p>An independent Malaysian centre, built from the ground up on community leadership, research and evidence-led advocacy.</p>",
@@ -1614,7 +1634,7 @@
           ]
         },
         {
-          "id": "0119d45",
+          "id": "399549b",
           "elType": "column",
           "settings": {
             "_column_size": 50,
@@ -1640,7 +1660,7 @@
           },
           "elements": [
             {
-              "id": "c235942",
+              "id": "0fad2df",
               "elType": "widget",
               "settings": {
                 "editor": "<b style=\"color:#B4474B;font-family:Manrope,sans-serif;font-size:.95rem\">2026</b>",
@@ -1663,7 +1683,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "8e0b7eb",
+              "id": "53beff8",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1676,7 +1696,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "05628f1",
+              "id": "742b76a",
               "elType": "widget",
               "settings": {
                 "title": "Suluh Centre carries it forward",
@@ -1701,7 +1721,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "71d1ed2",
+              "id": "86fad14",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1714,7 +1734,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "33d73ce",
+              "id": "14c9ee2",
               "elType": "widget",
               "settings": {
                 "editor": "<p>The same team, the same grassroots strength, a sharper reason for being. The name is new. The work is not.</p>",
@@ -1742,11 +1762,11 @@
       "isInner": false
     },
     {
-      "id": "ff0c0b6",
+      "id": "703ca50",
       "elType": "section",
       "settings": {
         "background_background": "classic",
-        "background_color": "#1B4332",
+        "background_color": "#F5EFE3",
         "padding": {
           "unit": "px",
           "top": "90",
@@ -1763,7 +1783,7 @@
       },
       "elements": [
         {
-          "id": "ce9845f",
+          "id": "7388e19",
           "elType": "column",
           "settings": {
             "_column_size": 70,
@@ -1771,13 +1791,13 @@
           },
           "elements": [
             {
-              "id": "f6d34f6",
+              "id": "13f4cb9",
               "elType": "widget",
               "settings": {
                 "title": "IMPACT",
                 "header_size": "p",
                 "align": "left",
-                "title_color": "#F4A0A3",
+                "title_color": "#B4474B",
                 "typography_typography": "custom",
                 "typography_font_family": "Manrope",
                 "typography_font_weight": "700",
@@ -1801,7 +1821,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "214f6f9",
+              "id": "a519c5d",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1814,13 +1834,13 @@
               "widgetType": "spacer"
             },
             {
-              "id": "b593bac",
+              "id": "6e595c3",
               "elType": "widget",
               "settings": {
                 "title": "Groundwork, already laid",
                 "header_size": "h2",
                 "align": "left",
-                "title_color": "#FFFFFF",
+                "title_color": "#1B4332",
                 "typography_typography": "custom",
                 "typography_font_family": "Inria Serif",
                 "typography_font_weight": "600",
@@ -1841,7 +1861,7 @@
           ]
         },
         {
-          "id": "7f1e329",
+          "id": "c9c052e",
           "elType": "column",
           "settings": {
             "_column_size": 30,
@@ -1850,7 +1870,7 @@
           },
           "elements": [
             {
-              "id": "ea479d6",
+              "id": "9c3ce4c",
               "elType": "widget",
               "settings": {
                 "text": "See the evidence &rarr;",
@@ -1862,7 +1882,7 @@
                 },
                 "align": "right",
                 "background_color": "transparent",
-                "button_text_color": "#F4A0A3",
+                "button_text_color": "#B4474B",
                 "typography_typography": "custom",
                 "typography_font_family": "Manrope",
                 "typography_font_weight": "700",
@@ -1896,7 +1916,7 @@
                   "left": "1.5",
                   "isLinked": true
                 },
-                "border_color": "#F4A0A3"
+                "border_color": "#B4474B"
               },
               "elements": [],
               "widgetType": "button"
@@ -1907,11 +1927,11 @@
       "isInner": false
     },
     {
-      "id": "b32c7a9",
+      "id": "a331ef1",
       "elType": "section",
       "settings": {
         "background_background": "classic",
-        "background_color": "#1B4332",
+        "background_color": "#F5EFE3",
         "padding": {
           "unit": "px",
           "top": "0",
@@ -1933,7 +1953,7 @@
       },
       "elements": [
         {
-          "id": "248b1db",
+          "id": "983b1fe",
           "elType": "column",
           "settings": {
             "_column_size": 33.33,
@@ -1941,13 +1961,13 @@
           },
           "elements": [
             {
-              "id": "9013f9e",
+              "id": "d0f8b19",
               "elType": "widget",
               "settings": {
                 "title": "300+",
                 "header_size": "h3",
                 "align": "left",
-                "title_color": "#F4A0A3",
+                "title_color": "#1B4332",
                 "typography_typography": "custom",
                 "typography_font_family": "Inria Serif",
                 "typography_font_weight": "600",
@@ -1966,7 +1986,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "8c9a536",
+              "id": "325152a",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1979,11 +1999,11 @@
               "widgetType": "spacer"
             },
             {
-              "id": "02f9ef5",
+              "id": "ca5d363",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Women community champions trained</p>",
-                "text_color": "#C9DCD1",
+                "text_color": "#6E7468",
                 "typography_typography": "custom",
                 "typography_font_family": "Manrope",
                 "typography_font_size": {
@@ -2004,7 +2024,7 @@
           ]
         },
         {
-          "id": "25d37e8",
+          "id": "67bb7d1",
           "elType": "column",
           "settings": {
             "_column_size": 33.33,
@@ -2012,13 +2032,13 @@
           },
           "elements": [
             {
-              "id": "033027b",
+              "id": "c579604",
               "elType": "widget",
               "settings": {
                 "title": "8",
                 "header_size": "h3",
                 "align": "left",
-                "title_color": "#F4A0A3",
+                "title_color": "#1B4332",
                 "typography_typography": "custom",
                 "typography_font_family": "Inria Serif",
                 "typography_font_weight": "600",
@@ -2037,7 +2057,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "9fd40dc",
+              "id": "a3355b4",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -2050,11 +2070,11 @@
               "widgetType": "spacer"
             },
             {
-              "id": "8e18487",
+              "id": "a3e3737",
               "elType": "widget",
               "settings": {
                 "editor": "<p>States reached</p>",
-                "text_color": "#C9DCD1",
+                "text_color": "#6E7468",
                 "typography_typography": "custom",
                 "typography_font_family": "Manrope",
                 "typography_font_size": {
@@ -2075,7 +2095,7 @@
           ]
         },
         {
-          "id": "d74f525",
+          "id": "b2a7edc",
           "elType": "column",
           "settings": {
             "_column_size": 33.33,
@@ -2083,13 +2103,13 @@
           },
           "elements": [
             {
-              "id": "02ae5a0",
+              "id": "2e37142",
               "elType": "widget",
               "settings": {
                 "title": "13",
                 "header_size": "h3",
                 "align": "left",
-                "title_color": "#F4A0A3",
+                "title_color": "#1B4332",
                 "typography_typography": "custom",
                 "typography_font_family": "Inria Serif",
                 "typography_font_weight": "600",
@@ -2108,7 +2128,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "2c4f5c6",
+              "id": "e8acea9",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -2121,11 +2141,11 @@
               "widgetType": "spacer"
             },
             {
-              "id": "369aabc",
+              "id": "f7a7751",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Collaborators</p>",
-                "text_color": "#C9DCD1",
+                "text_color": "#6E7468",
                 "typography_typography": "custom",
                 "typography_font_family": "Manrope",
                 "typography_font_size": {
@@ -2149,11 +2169,11 @@
       "isInner": false
     },
     {
-      "id": "65e688e",
+      "id": "9c67fb2",
       "elType": "section",
       "settings": {
         "background_background": "classic",
-        "background_color": "#1B4332",
+        "background_color": "#F5EFE3",
         "padding": {
           "unit": "px",
           "top": "0",
@@ -2175,7 +2195,7 @@
       },
       "elements": [
         {
-          "id": "ae5cdd6",
+          "id": "2e653fe",
           "elType": "column",
           "settings": {
             "_column_size": 33.33,
@@ -2183,13 +2203,13 @@
           },
           "elements": [
             {
-              "id": "90c50e1",
+              "id": "e4d96e5",
               "elType": "widget",
               "settings": {
                 "title": "6",
                 "header_size": "h3",
                 "align": "left",
-                "title_color": "#F4A0A3",
+                "title_color": "#1B4332",
                 "typography_typography": "custom",
                 "typography_font_family": "Inria Serif",
                 "typography_font_weight": "600",
@@ -2208,7 +2228,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "68fc87f",
+              "id": "2883138",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -2221,11 +2241,11 @@
               "widgetType": "spacer"
             },
             {
-              "id": "22978d0",
+              "id": "03ab5c4",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Policy briefs</p>",
-                "text_color": "#C9DCD1",
+                "text_color": "#6E7468",
                 "typography_typography": "custom",
                 "typography_font_family": "Manrope",
                 "typography_font_size": {
@@ -2246,7 +2266,7 @@
           ]
         },
         {
-          "id": "69fdbec",
+          "id": "2f31b92",
           "elType": "column",
           "settings": {
             "_column_size": 33.33,
@@ -2254,13 +2274,13 @@
           },
           "elements": [
             {
-              "id": "d3dabc5",
+              "id": "9df3507",
               "elType": "widget",
               "settings": {
                 "title": "2",
                 "header_size": "h3",
                 "align": "left",
-                "title_color": "#F4A0A3",
+                "title_color": "#1B4332",
                 "typography_typography": "custom",
                 "typography_font_family": "Inria Serif",
                 "typography_font_weight": "600",
@@ -2279,7 +2299,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "d1778cf",
+              "id": "4963997",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -2292,11 +2312,11 @@
               "widgetType": "spacer"
             },
             {
-              "id": "db428e7",
+              "id": "bdc1cbc",
               "elType": "widget",
               "settings": {
                 "editor": "<p>International conferences</p>",
-                "text_color": "#C9DCD1",
+                "text_color": "#6E7468",
                 "typography_typography": "custom",
                 "typography_font_family": "Manrope",
                 "typography_font_size": {
@@ -2317,7 +2337,7 @@
           ]
         },
         {
-          "id": "2e79bd8",
+          "id": "31eb3ff",
           "elType": "column",
           "settings": {
             "_column_size": 33.33,
@@ -2325,13 +2345,13 @@
           },
           "elements": [
             {
-              "id": "7ddd897",
+              "id": "b017862",
               "elType": "widget",
               "settings": {
                 "title": "1",
                 "header_size": "h3",
                 "align": "left",
-                "title_color": "#F4A0A3",
+                "title_color": "#1B4332",
                 "typography_typography": "custom",
                 "typography_font_family": "Inria Serif",
                 "typography_font_weight": "600",
@@ -2350,7 +2370,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "fcbb567",
+              "id": "921f90b",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -2363,11 +2383,11 @@
               "widgetType": "spacer"
             },
             {
-              "id": "2991c9d",
+              "id": "6226aa7",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Regional network launched</p>",
-                "text_color": "#C9DCD1",
+                "text_color": "#6E7468",
                 "typography_typography": "custom",
                 "typography_font_family": "Manrope",
                 "typography_font_size": {
@@ -2391,11 +2411,11 @@
       "isInner": false
     },
     {
-      "id": "2f4689d",
+      "id": "06def89",
       "elType": "section",
       "settings": {
         "background_background": "classic",
-        "background_color": "#1B4332",
+        "background_color": "#F5EFE3",
         "padding": {
           "unit": "px",
           "top": "0",
@@ -2412,7 +2432,7 @@
       },
       "elements": [
         {
-          "id": "567efa5",
+          "id": "990bcaa",
           "elType": "column",
           "settings": {
             "_column_size": 100,
@@ -2420,11 +2440,11 @@
           },
           "elements": [
             {
-              "id": "7d0c56c",
+              "id": "44c8b15",
               "elType": "widget",
               "settings": {
-                "editor": "<p>Suluh Centre grows from the work of Polity, an independent centre established in 2024. <b style=\"color:#fff\">The name is new. The work is not.</b></p>",
-                "text_color": "#C9DCD1",
+                "editor": "<p>Suluh Centre grows from the work of Polity, an independent centre established in 2024. <b style=\"color:#1B4332\">The name is new. The work is not.</b></p>",
+                "text_color": "#265945",
                 "typography_typography": "custom",
                 "typography_font_family": "Manrope",
                 "typography_font_size": {
@@ -2443,7 +2463,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "dd1dc11",
+              "id": "bc10ebc",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -2456,11 +2476,11 @@
               "widgetType": "spacer"
             },
             {
-              "id": "6cb21ea",
+              "id": "5f1a005",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Source: Polity 2026 annual report, p.7. Each figure links to the work behind it.</p>",
-                "text_color": "#8FAE9C",
+                "text_color": "#6E7468",
                 "typography_typography": "custom",
                 "typography_font_family": "Manrope",
                 "typography_font_size": {
@@ -2484,7 +2504,7 @@
       "isInner": false
     },
     {
-      "id": "1f1d557",
+      "id": "88f5876",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -2505,7 +2525,7 @@
       },
       "elements": [
         {
-          "id": "dfc9082",
+          "id": "2d2074b",
           "elType": "column",
           "settings": {
             "_column_size": 100,
@@ -2513,7 +2533,7 @@
           },
           "elements": [
             {
-              "id": "6b24399",
+              "id": "d9c037b",
               "elType": "widget",
               "settings": {
                 "title": "HOW WE WORK",
@@ -2543,7 +2563,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "103271d",
+              "id": "2096f7b",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -2556,7 +2576,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "17c5608",
+              "id": "bf0833e",
               "elType": "widget",
               "settings": {
                 "title": "What sets us apart",
@@ -2586,7 +2606,7 @@
       "isInner": false
     },
     {
-      "id": "7646d0b",
+      "id": "87e8811",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -2612,15 +2632,16 @@
       },
       "elements": [
         {
-          "id": "4ed52a4",
+          "id": "9f2d932",
           "elType": "column",
           "settings": {
             "_column_size": 15,
-            "_inline_size": null
+            "_inline_size": null,
+            "content_position": "middle"
           },
           "elements": [
             {
-              "id": "38952a6",
+              "id": "89f82f4",
               "elType": "widget",
               "settings": {
                 "title": "01",
@@ -2629,10 +2650,10 @@
                 "title_color": "#E0D8C6",
                 "typography_typography": "custom",
                 "typography_font_family": "Manrope",
-                "typography_font_weight": "700",
+                "typography_font_weight": "400",
                 "typography_font_size": {
                   "unit": "px",
-                  "size": 28,
+                  "size": 42,
                   "sizes": []
                 },
                 "typography_line_height": {
@@ -2647,7 +2668,7 @@
           ]
         },
         {
-          "id": "fe345c2",
+          "id": "b98b287",
           "elType": "column",
           "settings": {
             "_column_size": 85,
@@ -2655,7 +2676,7 @@
           },
           "elements": [
             {
-              "id": "6e46fab",
+              "id": "518277f",
               "elType": "widget",
               "settings": {
                 "title": "We work on the ground",
@@ -2680,7 +2701,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "af24b09",
+              "id": "7b70370",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -2693,7 +2714,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "c2f3563",
+              "id": "5084fce",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Ideas become real programmes in real communities, not reports on a shelf.</p>",
@@ -2721,7 +2742,7 @@
       "isInner": false
     },
     {
-      "id": "70b351c",
+      "id": "f81b483",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -2747,15 +2768,16 @@
       },
       "elements": [
         {
-          "id": "24170e5",
+          "id": "9ec91e4",
           "elType": "column",
           "settings": {
             "_column_size": 15,
-            "_inline_size": null
+            "_inline_size": null,
+            "content_position": "middle"
           },
           "elements": [
             {
-              "id": "be90f8d",
+              "id": "4f3606d",
               "elType": "widget",
               "settings": {
                 "title": "02",
@@ -2764,10 +2786,10 @@
                 "title_color": "#E0D8C6",
                 "typography_typography": "custom",
                 "typography_font_family": "Manrope",
-                "typography_font_weight": "700",
+                "typography_font_weight": "400",
                 "typography_font_size": {
                   "unit": "px",
-                  "size": 28,
+                  "size": 42,
                   "sizes": []
                 },
                 "typography_line_height": {
@@ -2782,7 +2804,7 @@
           ]
         },
         {
-          "id": "810f339",
+          "id": "5c67509",
           "elType": "column",
           "settings": {
             "_column_size": 85,
@@ -2790,7 +2812,7 @@
           },
           "elements": [
             {
-              "id": "b299d27",
+              "id": "069151f",
               "elType": "widget",
               "settings": {
                 "title": "We bridge divides",
@@ -2815,7 +2837,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "9e34393",
+              "id": "e769db9",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -2828,7 +2850,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "8f9b8b4",
+              "id": "0228b49",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Communities, civil society and institutions in the same room.</p>",
@@ -2856,7 +2878,7 @@
       "isInner": false
     },
     {
-      "id": "a7fd6a2",
+      "id": "655ba14",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -2882,15 +2904,16 @@
       },
       "elements": [
         {
-          "id": "1e3a2bf",
+          "id": "e076db6",
           "elType": "column",
           "settings": {
             "_column_size": 15,
-            "_inline_size": null
+            "_inline_size": null,
+            "content_position": "middle"
           },
           "elements": [
             {
-              "id": "b8aa239",
+              "id": "0ce157a",
               "elType": "widget",
               "settings": {
                 "title": "03",
@@ -2899,10 +2922,10 @@
                 "title_color": "#E0D8C6",
                 "typography_typography": "custom",
                 "typography_font_family": "Manrope",
-                "typography_font_weight": "700",
+                "typography_font_weight": "400",
                 "typography_font_size": {
                   "unit": "px",
-                  "size": 28,
+                  "size": 42,
                   "sizes": []
                 },
                 "typography_line_height": {
@@ -2917,7 +2940,7 @@
           ]
         },
         {
-          "id": "57c6bb5",
+          "id": "0206343",
           "elType": "column",
           "settings": {
             "_column_size": 85,
@@ -2925,7 +2948,7 @@
           },
           "elements": [
             {
-              "id": "29b266d",
+              "id": "99bebcf",
               "elType": "widget",
               "settings": {
                 "title": "We back youth and women",
@@ -2950,7 +2973,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "9c0d197",
+              "id": "076cdcc",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -2963,7 +2986,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "e191f61",
+              "id": "e338ef8",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Central to how we work, not an afterthought.</p>",
@@ -2991,7 +3014,7 @@
       "isInner": false
     },
     {
-      "id": "f37f68b",
+      "id": "6ef8765",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -3017,15 +3040,16 @@
       },
       "elements": [
         {
-          "id": "0138416",
+          "id": "4011039",
           "elType": "column",
           "settings": {
             "_column_size": 15,
-            "_inline_size": null
+            "_inline_size": null,
+            "content_position": "middle"
           },
           "elements": [
             {
-              "id": "0f963d5",
+              "id": "33dc5b7",
               "elType": "widget",
               "settings": {
                 "title": "04",
@@ -3034,10 +3058,10 @@
                 "title_color": "#E0D8C6",
                 "typography_typography": "custom",
                 "typography_font_family": "Manrope",
-                "typography_font_weight": "700",
+                "typography_font_weight": "400",
                 "typography_font_size": {
                   "unit": "px",
-                  "size": 28,
+                  "size": 42,
                   "sizes": []
                 },
                 "typography_line_height": {
@@ -3052,7 +3076,7 @@
           ]
         },
         {
-          "id": "e404203",
+          "id": "4671649",
           "elType": "column",
           "settings": {
             "_column_size": 85,
@@ -3060,7 +3084,7 @@
           },
           "elements": [
             {
-              "id": "ba25eec",
+              "id": "72661fb",
               "elType": "widget",
               "settings": {
                 "title": "Rooted in Malaysia",
@@ -3085,7 +3109,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "696c89d",
+              "id": "59dc268",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -3098,7 +3122,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "b15030f",
+              "id": "a37105f",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Locally grounded, globally aware.</p>",
@@ -3126,7 +3150,7 @@
       "isInner": false
     },
     {
-      "id": "fd6abd2",
+      "id": "1ecff0a",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -3147,7 +3171,7 @@
       },
       "elements": [
         {
-          "id": "f2cddac",
+          "id": "07b403b",
           "elType": "column",
           "settings": {
             "_column_size": 70,
@@ -3155,7 +3179,7 @@
           },
           "elements": [
             {
-              "id": "e3f1609",
+              "id": "5c99495",
               "elType": "widget",
               "settings": {
                 "title": "FROM THE GROUND",
@@ -3185,7 +3209,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "bb30f71",
+              "id": "f21a8e7",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -3198,7 +3222,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "337a8c9",
+              "id": "b7672e6",
               "elType": "widget",
               "settings": {
                 "title": "Latest",
@@ -3225,7 +3249,7 @@
           ]
         },
         {
-          "id": "8cb9e4b",
+          "id": "2e9c85e",
           "elType": "column",
           "settings": {
             "_column_size": 30,
@@ -3234,7 +3258,7 @@
           },
           "elements": [
             {
-              "id": "e0cc4d3",
+              "id": "51a08af",
               "elType": "widget",
               "settings": {
                 "text": "All stories &rarr;",
@@ -3291,7 +3315,7 @@
       "isInner": false
     },
     {
-      "id": "8ddd75d",
+      "id": "9a8182b",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -3317,7 +3341,7 @@
       },
       "elements": [
         {
-          "id": "42f5b4f",
+          "id": "17141b2",
           "elType": "column",
           "settings": {
             "_column_size": 55,
@@ -3343,7 +3367,7 @@
           },
           "elements": [
             {
-              "id": "f4dbd1e",
+              "id": "a6d7e49",
               "elType": "widget",
               "settings": {
                 "title": "News",
@@ -3373,7 +3397,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "ded0b4c",
+              "id": "5499e44",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -3386,7 +3410,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "c9c301f",
+              "id": "f337924",
               "elType": "widget",
               "settings": {
                 "title": "Suluh Centre: the name is new, the work is not",
@@ -3411,7 +3435,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "b10cc2f",
+              "id": "64fe5bf",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -3424,7 +3448,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "91ac65c",
+              "id": "c69cea0",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Polity becomes Suluh Centre. The same team, the same grassroots strength, a sharper reason for being.</p>",
@@ -3447,7 +3471,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "151dfe2",
+              "id": "032dae9",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -3460,7 +3484,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "399be09",
+              "id": "190bc0b",
               "elType": "widget",
               "settings": {
                 "editor": "<p>14 August 2026</p>",
@@ -3485,7 +3509,7 @@
           ]
         },
         {
-          "id": "e929920",
+          "id": "e64f408",
           "elType": "column",
           "settings": {
             "_column_size": 45,
@@ -3493,7 +3517,7 @@
           },
           "elements": [
             {
-              "id": "c71ef82",
+              "id": "67a925a",
               "elType": "widget",
               "settings": {
                 "editor": "<div style=\"display:flex;gap:18px;padding:18px 0;border-top:1px solid #E0D8C6\"><div style=\"flex:none;width:64px;font-family:Manrope,sans-serif;font-size:.85rem;color:#B4474B\">11 Aug 2026</div><div><span style=\"display:block;font-family:Manrope,sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#B4474B;margin-bottom:6px\">Grounded &middot; Ep 41</span><h4 style=\"font-family:Inria Serif,serif;font-size:1.05rem;color:#1B4332;margin:0 0 6px\">What does a care economy actually cost?</h4><p style=\"font-size:.9rem;color:#6E7468;line-height:1.5;margin:0\">Caregiving holds up the economy and appears in none of its numbers.</p></div></div>",
@@ -3516,7 +3540,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "32a49b5",
+              "id": "ee4ce33",
               "elType": "widget",
               "settings": {
                 "editor": "<div style=\"display:flex;gap:18px;padding:18px 0;border-top:1px solid #E0D8C6\"><div style=\"flex:none;width:64px;font-family:Manrope,sans-serif;font-size:.85rem;color:#B4474B\">4 Aug 2026</div><div><span style=\"display:block;font-family:Manrope,sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#B4474B;margin-bottom:6px\">From the field</span><h4 style=\"font-family:Inria Serif,serif;font-size:1.05rem;color:#1B4332;margin:0 0 6px\">Three days in Kuala Pilah</h4><p style=\"font-size:.9rem;color:#6E7468;line-height:1.5;margin:0\">School land, licences, rising rents, and young people who leave and do not come back.</p></div></div>",
@@ -3539,7 +3563,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "b304458",
+              "id": "9bd7560",
               "elType": "widget",
               "settings": {
                 "editor": "<div style=\"display:flex;gap:18px;padding:18px 0;border-top:1px solid #E0D8C6\"><div style=\"flex:none;width:64px;font-family:Manrope,sans-serif;font-size:.85rem;color:#B4474B\">28 Jul 2026</div><div><span style=\"display:block;font-family:Manrope,sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#B4474B;margin-bottom:6px\">Grounded &middot; Ep 40</span><h4 style=\"font-family:Inria Serif,serif;font-size:1.05rem;color:#1B4332;margin:0 0 6px\">Who gets to be a leader in a kampung?</h4><p style=\"font-size:.9rem;color:#6E7468;line-height:1.5;margin:0\">Three community champions on what changed after the training, and what did not.</p></div></div>",
@@ -3567,7 +3591,7 @@
       "isInner": false
     },
     {
-      "id": "4f81866",
+      "id": "058d412",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -3583,7 +3607,7 @@
       },
       "elements": [
         {
-          "id": "d5c3be9",
+          "id": "7cb1407",
           "elType": "column",
           "settings": {
             "_column_size": 100,
@@ -3591,7 +3615,7 @@
           },
           "elements": [
             {
-              "id": "d2d5f16",
+              "id": "e31430a",
               "elType": "widget",
               "settings": {
                 "html": "\n<div style=\"background:#1B4332;padding:90px 24px;text-align:center;border-radius:0\">\n  <div style=\"max-width:640px;margin:0 auto\">\n    <h2 style=\"font-family:'Inria Serif',serif;font-size:clamp(2rem,4.2vw,3.2rem);line-height:1.2;color:#fff;margin:0 0 34px\">Light, carried from the ground up. Follow the work as it happens.</h2>\n    <form id=\"c2Form\" novalidate style=\"display:flex;gap:10px;justify-content:center;flex-wrap:wrap\">\n      <label for=\"c2Email\" style=\"position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)\">Email address</label>\n      <input type=\"email\" id=\"c2Email\" placeholder=\"you@example.com\" required style=\"font-family:Manrope,sans-serif;font-size:.95rem;padding:14px 20px;border-radius:999px;border:1.5px solid rgba(255,255,255,.35);background:rgba(255,255,255,.06);color:#fff;min-width:260px\">\n      <button type=\"submit\" style=\"font-family:Manrope,sans-serif;font-size:1.05rem;background:#EC6B6E;color:#fff;padding:14px 28px;border-radius:999px;border:none;cursor:pointer\">Subscribe &rarr;</button>\n    </form>\n    <p id=\"c2Status\" role=\"status\" aria-live=\"polite\" style=\"font-family:Manrope,sans-serif;font-size:.85rem;color:#F4A0A3;margin-top:14px;min-height:1.2em\"></p>\n  </div>\n</div>\n"

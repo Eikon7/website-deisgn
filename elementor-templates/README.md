@@ -76,6 +76,11 @@ pixel-perfect HTML-embed approach:
   don't have an easy equivalent for a decorative absolutely-positioned
   bleeding graphic without a background-image trick or Elementor Pro's
   extra positioning controls.
+- **The hero background photo** is set via Elementor's native
+  background-image + a translucent cream overlay (classic background,
+  `{{BASE_URL}}/assets/hero.png`, 82% cream overlay) rather than the
+  static build's own layered/positioned image — same visual effect,
+  simpler markup.
 - **No scroll-reveal animations, and the homepage's word-by-word kinetic
   headline reveal is a plain static heading.** The static build animates
   both via a shared IntersectionObserver/CSS. Elementor's entrance
