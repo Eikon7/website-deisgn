@@ -44,6 +44,22 @@ function suluh_svg_sprite() {
 }
 
 /**
+ * Safe wrapper around ACF's get_field(). Every Story/Publication field
+ * (dek, display_date, year, pdf_file, etc.) is optional data layered on
+ * top of the post — if the ACF plugin isn't installed or gets
+ * deactivated, the page should still render (just without that field),
+ * not fatal with "Call to undefined function get_field()". Every
+ * get_field() call in this theme goes through here rather than calling
+ * ACF's function directly.
+ */
+function suluh_field( $name, $post_id = null ) {
+	if ( ! function_exists( 'get_field' ) ) {
+		return null;
+	}
+	return get_field( $name, $post_id );
+}
+
+/**
  * get_term_link() can return WP_Error. Templates should never have to
  * guard against that individually.
  */
@@ -113,7 +129,7 @@ function suluh_get_stories( $type_slug = null, $count = 12, $upcoming_only = fal
 function suluh_story_card_data( $post_id ) {
 	$types      = get_the_terms( $post_id, 'story_type' );
 	$term       = ( $types && ! is_wp_error( $types ) ) ? $types[0] : null;
-	$episode    = get_field( 'episode_number', $post_id );
+	$episode    = suluh_field( 'episode_number', $post_id );
 	$tag_label  = $term ? $term->name : '';
 	if ( $term && 'grounded' === $term->slug && $episode ) {
 		$tag_label .= ' &middot; Ep ' . esc_html( $episode );
@@ -124,9 +140,9 @@ function suluh_story_card_data( $post_id ) {
 		'type_class' => $term ? suluh_story_type_class( $term->slug ) : '',
 		'tag'        => $tag_label,
 		'title'      => get_the_title( $post_id ),
-		'dek'        => get_field( 'dek', $post_id ),
-		'date'       => get_field( 'display_date', $post_id ) ?: get_the_date( 'j F Y', $post_id ),
-		'location'   => get_field( 'location', $post_id ),
+		'dek'        => suluh_field( 'dek', $post_id ),
+		'date'       => suluh_field( 'display_date', $post_id ) ?: get_the_date( 'j F Y', $post_id ),
+		'location'   => suluh_field( 'location', $post_id ),
 		'link'       => get_permalink( $post_id ),
 	);
 }

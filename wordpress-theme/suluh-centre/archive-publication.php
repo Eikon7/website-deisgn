@@ -21,7 +21,7 @@ $q = new WP_Query( array(
 	'order'          => 'DESC',
 ) );
 usort( $q->posts, function( $a, $b ) {
-	return (int) get_field( 'year', $b->ID ) <=> (int) get_field( 'year', $a->ID );
+	return (int) suluh_field( 'year', $b->ID ) <=> (int) suluh_field( 'year', $a->ID );
 } );
 ?>
 
@@ -45,10 +45,10 @@ usort( $q->posts, function( $a, $b ) {
 
     <div class="pub-list">
       <?php if ( $q->have_posts() ) : while ( $q->have_posts() ) : $q->the_post();
-        $year   = get_field( 'year' );
-        $docid  = get_field( 'document_id' );
-        $pdf    = get_field( 'pdf_file' );
-        $cover  = get_field( 'cover_image' );
+        $year   = suluh_field( 'year' );
+        $docid  = suluh_field( 'document_id' );
+        $pdf    = suluh_field( 'pdf_file' );
+        $cover  = suluh_field( 'cover_image' );
         $terms  = get_the_terms( get_the_ID(), 'publication_type' );
         $type   = ( $terms && ! is_wp_error( $terms ) ) ? $terms[0]->name : '';
       ?>

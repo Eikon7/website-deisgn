@@ -11,10 +11,10 @@ while ( have_posts() ) : the_post();
 	$terms    = get_the_terms( get_the_ID(), 'story_type' );
 	$type     = ( $terms && ! is_wp_error( $terms ) ) ? $terms[0] : null;
 	$is_conv  = $type && 'convenings' === $type->slug;
-	$audio    = get_field( 'audio_url' );
-	$location = get_field( 'location' );
-	$partners = get_field( 'partners' );
-	$scale    = get_field( 'scale' );
+	$audio    = suluh_field( 'audio_url' );
+	$location = suluh_field( 'location' );
+	$partners = suluh_field( 'partners' );
+	$scale    = suluh_field( 'scale' );
 	$thumb    = get_the_post_thumbnail_url( get_the_ID(), 'full' );
 	$has_factbox = $is_conv && ( $location || $partners || $scale );
 ?>
