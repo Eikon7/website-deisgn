@@ -12,7 +12,7 @@
 
 <header class="c2-header<?php echo is_front_page() ? '' : ' solid'; ?>" id="c2Header">
   <div class="wrap c2-hd">
-    <a class="c2-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+    <a class="c2-brand test" href="<?php echo esc_url( home_url( '/' ) ); ?>">
       <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/logo.png' ); ?>" alt="<?php bloginfo( 'name' ); ?>">
     </a>
     <nav class="c2-nav" aria-label="Primary">
