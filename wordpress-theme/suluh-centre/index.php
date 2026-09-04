@@ -1,8 +1,9 @@
 <?php
 /**
- * Fallback template (required by WordPress). Real templates:
- * front-page.php (Home), archive-story.php (Stories/Grounded/Events),
- * single-story.php, single-programme.php, single-publication.php, page.php.
+ * Fallback template (required by WordPress). Real templates in use:
+ * page.php (every Elementor-built page, including Home), archive-story.php
+ * (Stories), single-story.php, archive-publication.php (Research),
+ * page-templates/grounded.php.
  */
 get_header();
 ?>

@@ -1,21 +1,11 @@
 <?php
 /**
- * Publication page — individual research item.
+ * Publications have no standalone detail page in this design — the PDF
+ * is only ever offered from the gated download modal on the /research/
+ * archive (archive-publication.php). A single-publication.php that
+ * rendered its own page would either duplicate that flow or, worse,
+ * link the PDF directly and bypass the name/email gate entirely. Redirect
+ * to the archive instead.
  */
-get_header();
-while ( have_posts() ) : the_post();
-	$year = get_field( 'year' );
-	$docid = get_field( 'document_id' );
-	$pdf = get_field( 'pdf_file' );
-	$authors = get_field( 'authors' );
-?>
-  <section class="page-head wrap">
-    <span class="eyebrow"><?php echo esc_html( $year ); ?><?php if ( $docid ) : ?> &middot; <?php echo esc_html( $docid ); ?><?php endif; ?></span>
-    <h1><?php the_title(); ?></h1>
-    <?php if ( $authors ) : ?><p class="dek"><?php echo esc_html( $authors ); ?></p><?php endif; ?>
-    <?php if ( $pdf ) : ?><div class="meta-row"><a class="btn2" href="<?php echo esc_url( $pdf ); ?>" style="margin-top:10px">Download PDF</a></div><?php endif; ?>
-  </section>
-  <section class="pad wrap">
-    <div class="prose"><?php the_content(); ?></div>
-  </section>
-<?php endwhile; get_footer(); ?>
+wp_safe_redirect( get_post_type_archive_link( 'publication' ), 301 );
+exit;

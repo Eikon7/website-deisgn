@@ -162,4 +162,122 @@
       form.reset();
     });
   }
+
+  /* Contact page form — client-side only in this design concept. */
+  var contactForm = document.getElementById("c2ContactForm");
+  var contactStatus = document.getElementById("ccStatus");
+  if (contactForm && contactStatus) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var name = document.getElementById("ccName");
+      var email = document.getElementById("ccEmail");
+      var message = document.getElementById("ccMessage");
+      var validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim());
+      if (!name.value.trim() || !validEmail || !message.value.trim()) {
+        contactStatus.textContent = "Please fill in your name, a valid email, and a message.";
+        return;
+      }
+      contactStatus.textContent = "Thank you. We'll be in touch shortly.";
+      contactForm.reset();
+    });
+  }
+
+  /* Research library — filter chips. */
+  var chips = document.querySelectorAll(".filters .chip");
+  var pubRows = document.querySelectorAll(".pubrow");
+  var pubEmpty = document.getElementById("pubEmpty");
+  if (chips.length && pubRows.length) {
+    chips.forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        chips.forEach(function (c) { c.classList.remove("on"); });
+        chip.classList.add("on");
+        var type = chip.dataset.type;
+        var visible = 0;
+        pubRows.forEach(function (row) {
+          var show = type === "All" || row.dataset.type === type;
+          row.classList.toggle("hidden", !show);
+          if (show) visible++;
+        });
+        if (pubEmpty) pubEmpty.hidden = visible !== 0;
+      });
+    });
+  }
+
+  /* Stories — filter chips (separate list from the research library so the
+     two pages' filters never cross-talk). */
+  var storyChips = document.querySelectorAll(".story-filters .chip");
+  var storyCards = document.querySelectorAll(".story-card");
+  var storyEmpty = document.getElementById("storyEmpty");
+  if (storyChips.length && storyCards.length) {
+    storyChips.forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        storyChips.forEach(function (c) { c.classList.remove("on"); });
+        chip.classList.add("on");
+        var type = chip.dataset.type;
+        var visible = 0;
+        storyCards.forEach(function (card) {
+          var show = type === "All" || card.dataset.type === type;
+          card.classList.toggle("hidden", !show);
+          if (show) visible++;
+        });
+        if (storyEmpty) storyEmpty.hidden = visible !== 0;
+      });
+    });
+  }
+
+  /* Research library — gated PDF download. Client-side only in this
+     design concept: the name/email are validated but not sent anywhere;
+     wiring this to a real mailing list is a backend integration step. */
+  var dlOverlay = document.getElementById("dlOverlay");
+  if (dlOverlay) {
+    var dlForm = document.getElementById("dlForm");
+    var dlStatus = document.getElementById("dlStatus");
+    var dlDocTitle = document.getElementById("dlDocTitle");
+    var dlClose = document.getElementById("dlClose");
+    var dlName = document.getElementById("dlName");
+    var dlEmail = document.getElementById("dlEmail");
+    var pendingFile = null;
+
+    function openDlModal(file, title) {
+      pendingFile = file;
+      dlDocTitle.textContent = title;
+      dlStatus.textContent = "";
+      dlForm.reset();
+      dlOverlay.classList.add("open");
+      dlName.focus();
+    }
+    function closeDlModal() {
+      dlOverlay.classList.remove("open");
+    }
+
+    document.querySelectorAll(".pub-dl").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        openDlModal(btn.dataset.file, btn.dataset.title);
+      });
+    });
+    dlClose.addEventListener("click", closeDlModal);
+    dlOverlay.addEventListener("click", function (e) {
+      if (e.target === dlOverlay) closeDlModal();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && dlOverlay.classList.contains("open")) closeDlModal();
+    });
+
+    dlForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(dlEmail.value.trim());
+      if (!dlName.value.trim() || !validEmail) {
+        dlStatus.textContent = "Please enter your name and a valid email address.";
+        return;
+      }
+      var a = document.createElement("a");
+      a.href = pendingFile;
+      a.download = "";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      dlStatus.textContent = "Thank you. Your download should begin automatically.";
+      setTimeout(closeDlModal, 1400);
+    });
+  }
 })();

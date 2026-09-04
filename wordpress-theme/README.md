@@ -1,79 +1,99 @@
 # Suluh Centre — WordPress theme
 
-Custom WordPress theme implementing the Home page design (Concept 2,
-"Carried Light") plus the core CMS content model from the Website Master
-Brief and PRD. No page builder — hand-coded PHP templates on top of the
-same HTML/CSS/JS design system used in the static concept.
+This theme is deliberately small. Every marketing page (Home, About,
+Contact, Work, People, the three pillar pages, the programme pages) is a
+plain WordPress Page built and edited visually in **Elementor** — this
+theme doesn't template those at all. It exists only for the parts
+Elementor can't do:
+
+1. **The shared header and footer** (`header.php` / `footer.php`) — the
+   real nav, dropdown, mobile drawer and footer link grid, hardcoded once
+   so every page (Elementor-built or not) shares the same chrome without
+   needing Elementor Pro's Theme Builder.
+2. **The three CMS-driven surfaces**, which need real dynamic loops/
+   filtering that free Elementor can't do:
+   - **Research & Advocacy** (`archive-publication.php`) — the
+     `publication` post type, filterable by type, each row gated behind a
+     name + email modal before the PDF downloads.
+   - **Stories** (`archive-story.php` / `single-story.php`) — the `story`
+     post type, the newsroom stream with an "Upcoming" band for future
+     Convenings.
+   - **Grounded** (`page-templates/grounded.php`) — not a separate post
+     type, a filtered view of Stories where `story_type = grounded`, per
+     the original wireframe's own design note.
+
+Every one of these ports the approved static pages
+(`research.html` / `stories.html` / `story-detail.html` / `grounded.html`
+in the repo root) verbatim: same CSS classes, same
+`assets/js/concept2.js` (filter chips, the gated-download modal, reveal
+animations) — just with the repeated blocks replaced by a WordPress
+loop over real posts.
+
+## Requirements
+
+- **Elementor** (free tier) — builds/edits every non-CMS page.
+- **Advanced Custom Fields** (free) — the Story and Publication field
+  groups in `inc/acf-fields.php` use only free-tier field types.
+- PHP 8.0+.
 
 ## What's here
 
-- **Content model** (`inc/content-types.php`): 5 document types —
-  Programme, Publication, Story, Person — plus `pillar`, `strand`,
-  `story_type`, `publication_type` taxonomies. `/grounded` and `/events`
-  are filtered views of the single Story stream, not separate post types
-  (Master Brief §9, Rule 6).
-- **ACF field groups** (`inc/acf-fields.php`): field-level schemas for
-  each content type, registered in PHP so they're version-controlled.
-- **Templates**: `front-page.php` (Home), `single-programme.php` (the
-  ten-section programme template), `archive-story.php` / `single-story.php`,
-  `archive-publication.php` / `single-publication.php`, `taxonomy-pillar.php`,
-  `page.php`, plus `page-templates/` for `/work` (pillar overview),
-  `/grounded`, and `/events`.
+- `inc/content-types.php` — registers the `story` and `publication` post
+  types and their `story_type` / `publication_type` taxonomies, and seeds
+  the taxonomy terms (News, Convenings, Grounded, From the field, Notes;
+  Policy brief, Survey, Report, Commentary).
+- `inc/acf-fields.php` — field groups for both post types: a Publication
+  has Year, Document ID, Cover image, PDF file; a Story has a dek/
+  standfirst, display date, an "Upcoming" flag, an optional
+  Location/Partners/Scale fact box (Convenings), and an optional episode
+  number + audio URL (Grounded).
+- `inc/template-tags.php` — the SVG icon sprite, and small query/render
+  helpers shared between the Stories archive and the Grounded page so
+  the story-card markup never drifts between the two.
+- `header.php` / `footer.php` / `page.php` / `index.php` — shared chrome
+  plus the bare-passthrough template every Elementor page uses.
+  `page.php` deliberately does nothing but call `the_content()` — no
+  wrapper markup — since Elementor's own sections build their own
+  full-width backgrounds and padding.
+- `archive-publication.php`, `archive-story.php`, `single-story.php`,
+  `page-templates/grounded.php` — the three CMS templates described
+  above.
+- `single-publication.php` — there's no standalone publication page in
+  this design (the PDF is only ever offered from the gated modal on the
+  Research archive), so this just 301-redirects back to `/research/`
+  rather than rendering an ungated direct-download link.
 
-## Known limitations to resolve before real content entry
-
-1. **ACF PRO is required for the real content model.** This was built and
-   tested against ACF **Free** (no license available in the dev sandbox
-   this was built in), which doesn't include Repeater, Gallery, or
-   Flexible Content fields. Those are needed for the Programme template's
-   key facts, partners, voices, and photo set, which are naturally
-   variable-length lists. `inc/acf-fields.php` detects Pro via
-   `acf_is_pro()` and automatically upgrades from the Free fallback (a
-   fixed number of Group fields) to real Repeaters once Pro is installed
-   and activated — no code changes needed, just install the plugin.
-
-2. **Bilingual (EN/BM) plugin needs a proper setup pass.** Polylang was
-   installed and languages (English, Bahasa Malaysia) were added, but its
-   "Directory name" URL mode (`/en/...`, `/ms/...`) conflicted with this
-   theme's `/work/{pillar}` URL structure in testing and was left
-   **deactivated** rather than shipped half-working. Before content entry
-   begins bilingually, either: reconcile Polylang's URL mode with the
-   routes below, or evaluate WPML (Wartek's non-binding preference in the
-   Master Brief §13) which has more mature out-of-the-box handling for
-   this exact scenario. Either way, every ACF field group above is ready
-   to be duplicated per-language once a plugin is properly wired in.
-
-3. **URL structure deviates from the Master Brief's sitemap in one place.**
-   The brief's sitemap (§7) shows programme pages flat under
-   `/work/{programme-slug}`, at the same depth as the three pillar pages
-   (`/work/community`, etc.). WordPress can't cleanly resolve two
-   different content types (a taxonomy archive and a CPT single) on the
-   identical rewrite pattern — attempting it produced an intermittent
-   wrong-template bug where the correct post was queried but the wrong
-   template rendered. Programme URLs are `/work/programme/{slug}` instead.
-   Confirm this with Wartek — it's a URL-structure call the brief
-   delegates to Eikon7 (§5) but worth a sign-off since it's a visible
-   deviation from the documented sitemap.
-
-## Local dev environment this was built against
-
-MariaDB + PHP's built-in server (`php -S`), WP-CLI for setup. WordPress
-core and plugins (ACF, Polylang) are **not** included here — only this
-theme, which is the actual deliverable. To stand it up elsewhere:
+## Install
 
 ```
-wp core download
-wp config create --dbname=... --dbuser=... --dbpass=...
-wp core install --url=... --title="Suluh Centre" --admin_user=... --admin_email=...
-wp plugin install advanced-custom-fields --activate
-# Copy this theme/ into wp-content/themes/, then:
+# Copy wordpress-theme/suluh-centre/ into wp-content/themes/, then:
 wp theme activate suluh-centre
-wp rewrite structure '/%postname%/' && wp rewrite flush
+wp plugin install advanced-custom-fields --activate
+wp rewrite flush
+
+# Elementor (install separately, this theme doesn't bundle it):
+wp plugin install elementor --activate
 ```
 
-## Sample content
+Then in WP Admin:
 
-None is included here (this is the theme only). The dev environment this
-was built in was seeded with a handful of demo posts across each content
-type to prove every template renders — see the commit history / session
-notes for what was created.
+1. **Settings → Reading**: set "Your homepage displays" to a static page,
+   and create/pick a Page called "Home" — build it in Elementor.
+2. Build the rest of the marketing pages (About, Contact, Work, People,
+   Community, Youth & Education, Ideas/Ethics/Society, the programme
+   pages) as normal Pages, each edited in Elementor. `elementor-templates/about.json`
+   in the repo root is a ready-made starting point for About.
+3. Create a Page called "Grounded", and under **Page Attributes → Template**
+   pick "Grounded (podcast)".
+4. Add Story and Publication posts (**Stories** / **Publications** in the
+   admin sidebar) to populate `/research/` and `/stories/` — both archives
+   and `/grounded/` render automatically from whatever posts exist.
+
+## Known gaps
+
+- The gated PDF download is enforced client-side only (matches the
+  approved static build) — the name/email aren't sent anywhere yet.
+  Wiring that to an email service or a stored-leads table is a separate,
+  deliberate follow-up once you decide where those leads should go.
+- No bilingual (EN/BM) support is wired in. If that's still needed,
+  it's a separate pass (Polylang or WPML) on top of this.
