@@ -8,13 +8,21 @@
 get_header();
 
 $types = get_terms( array( 'taxonomy' => 'publication_type', 'hide_empty' => false ) );
-$q     = new WP_Query( array(
+
+// Sorting by 'year' via meta_key/orderby would silently exclude any
+// publication where that ACF field was left empty (WP_Query requires the
+// meta key to exist when it's used for ordering) — the same trap the
+// Stories "Upcoming" query hit. Fetch everything and sort in PHP instead,
+// so a publication published without a Year still shows up (just last).
+$q = new WP_Query( array(
 	'post_type'      => 'publication',
 	'posts_per_page' => -1,
-	'meta_key'       => 'year',
-	'orderby'        => 'meta_value_num',
+	'orderby'        => 'date',
 	'order'          => 'DESC',
 ) );
+usort( $q->posts, function( $a, $b ) {
+	return (int) get_field( 'year', $b->ID ) <=> (int) get_field( 'year', $a->ID );
+} );
 ?>
 
   <!-- ============ Page hero ============ -->
