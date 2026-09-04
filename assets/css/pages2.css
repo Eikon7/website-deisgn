@@ -52,9 +52,7 @@
 @media (min-width:900px){ .phero2-art{ aspect-ratio:3/4; } }
 .phero2-art img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
 .phero2-art::after{ content:""; position:absolute; inset:0; mix-blend-mode:color; opacity:.94; }
-.phero2-art.tone-forest::after{ background:linear-gradient(165deg, #1B4332, #143528 70%); }
-.phero2-art.tone-coral::after{ background:linear-gradient(165deg, #B4474B, #7A2E31 70%); }
-.phero2-art.tone-cream::after{ background:linear-gradient(165deg, #8C7A44, #2F4A3B 75%); }
+
 .phero2-art.tone-mixed::after{ background:linear-gradient(155deg, #1B4332 15%, #B4474B 100%); }
 .phero2-art .phero2-flame{ position: absolute;
     left: 44%;
