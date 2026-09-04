@@ -93,11 +93,13 @@ pixel-perfect HTML-embed approach:
 - **The Impact numbers don't count up on scroll** — shown as their final
   static values. The static build animates 0 → target via JS tied to the
   IntersectionObserver.
-- **The Pillars bento and Continuity timeline lose their exact asymmetric
-  card sizing and connecting line graphic** — approximated with
-  proportionally-sized columns (e.g. a wider Community card) rather than
-  the CSS grid's precise span pattern, and the timeline drops the vertical
-  connector line between the two points (decorative, not load-bearing).
+- **The Pillars bento** reproduces the real 2-row asymmetric grid (Community
+  spanning the full left side, Youth & Education / Ideas stacked on the
+  right) using Elementor's nested "inner section" mechanism rather than an
+  exact CSS-grid span, so the proportions are close but not pixel-identical.
+- **The Continuity timeline's connecting line between the two dots** is a
+  static HTML/CSS line rather than the real page's animate-in version
+  (decorative, not load-bearing).
 - **Card hover-lift** isn't included anywhere — native columns don't
   expose a hover-transform control without Pro's Motion Effects.
 - **Uppercase eyebrow labels are typed as literal caps** rather than
