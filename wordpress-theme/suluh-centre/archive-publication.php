@@ -67,7 +67,7 @@ usort( $q->posts, function( $a, $b ) {
         <div class="pub-meta">
           <?php if ( $type ) : ?><div class="pub-type"><?php echo esc_html( $type ); ?></div><?php endif; ?>
           <?php if ( $pdf ) : ?>
-          <button class="pub-dl" data-file="<?php echo esc_url( $pdf ); ?>" data-title="<?php echo esc_attr( get_the_title() ); ?>">PDF <svg><use href="#c2-ico-download"/></svg></button>
+          <button class="pub-dl" data-file="<?php echo esc_url( $pdf ); ?>" data-title="<?php echo esc_attr( get_the_title() ); ?>" data-pub-id="<?php echo esc_attr( get_the_ID() ); ?>">PDF <svg><use href="#c2-ico-download"/></svg></button>
           <?php endif; ?>
         </div>
       </div>

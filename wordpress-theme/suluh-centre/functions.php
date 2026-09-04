@@ -49,3 +49,9 @@ add_action( 'wp_enqueue_scripts', 'suluh_assets' );
 require get_template_directory() . '/inc/content-types.php';
 require get_template_directory() . '/inc/acf-fields.php';
 require get_template_directory() . '/inc/template-tags.php';
+
+/**
+ * Who downloaded which Research publication: the "Downloads" list in
+ * wp-admin, and the AJAX endpoint the gated-download modal posts to.
+ */
+require get_template_directory() . '/inc/download-leads.php';

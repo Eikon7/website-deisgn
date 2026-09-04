@@ -225,9 +225,14 @@
     });
   }
 
-  /* Research library — gated PDF download. Client-side only in this
-     design concept: the name/email are validated but not sent anywhere;
-     wiring this to a real mailing list is a backend integration step. */
+  /* Research library — gated PDF download. On WordPress (when
+     window.suluhDownloadGate is present, localized by
+     inc/download-leads.php), the name/email are posted to admin-ajax.php,
+     recorded as a "Download" in wp-admin, and the server hands back the
+     confirmed file URL to download. On the plain static HTML build
+     there's no backend to post to, so it falls back to the original
+     client-only behavior: validate, then download the file already named
+     in the button's data-file attribute. */
   var dlOverlay = document.getElementById("dlOverlay");
   if (dlOverlay) {
     var dlForm = document.getElementById("dlForm");
@@ -237,9 +242,11 @@
     var dlName = document.getElementById("dlName");
     var dlEmail = document.getElementById("dlEmail");
     var pendingFile = null;
+    var pendingPubId = null;
 
-    function openDlModal(file, title) {
+    function openDlModal(file, title, pubId) {
       pendingFile = file;
+      pendingPubId = pubId;
       dlDocTitle.textContent = title;
       dlStatus.textContent = "";
       dlForm.reset();
@@ -249,10 +256,18 @@
     function closeDlModal() {
       dlOverlay.classList.remove("open");
     }
+    function triggerDownload(url) {
+      var a = document.createElement("a");
+      a.href = url;
+      a.download = "";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    }
 
     document.querySelectorAll(".pub-dl").forEach(function (btn) {
       btn.addEventListener("click", function () {
-        openDlModal(btn.dataset.file, btn.dataset.title);
+        openDlModal(btn.dataset.file, btn.dataset.title, btn.dataset.pubId);
       });
     });
     dlClose.addEventListener("click", closeDlModal);
@@ -265,17 +280,44 @@
 
     dlForm.addEventListener("submit", function (e) {
       e.preventDefault();
+      var name = dlName.value.trim();
       var validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(dlEmail.value.trim());
-      if (!dlName.value.trim() || !validEmail) {
+      if (!name || !validEmail) {
         dlStatus.textContent = "Please enter your name and a valid email address.";
         return;
       }
-      var a = document.createElement("a");
-      a.href = pendingFile;
-      a.download = "";
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
+
+      if (window.suluhDownloadGate) {
+        var submitBtn = dlForm.querySelector("button[type=submit]");
+        submitBtn.disabled = true;
+        dlStatus.textContent = "";
+        var body = new URLSearchParams({
+          action: "suluh_capture_download_lead",
+          nonce: window.suluhDownloadGate.nonce,
+          name: name,
+          email: dlEmail.value.trim(),
+          pub_id: pendingPubId || "",
+        });
+        fetch(window.suluhDownloadGate.ajaxUrl, { method: "POST", body: body })
+          .then(function (r) { return r.json(); })
+          .then(function (res) {
+            submitBtn.disabled = false;
+            if (res.success) {
+              triggerDownload(res.data.download_url);
+              dlStatus.textContent = "Thank you. Your download should begin automatically.";
+              setTimeout(closeDlModal, 1400);
+            } else {
+              dlStatus.textContent = (res.data && res.data.message) || "Something went wrong. Please try again.";
+            }
+          })
+          .catch(function () {
+            submitBtn.disabled = false;
+            dlStatus.textContent = "Something went wrong. Please try again.";
+          });
+        return;
+      }
+
+      triggerDownload(pendingFile);
       dlStatus.textContent = "Thank you. Your download should begin automatically.";
       setTimeout(closeDlModal, 1400);
     });
