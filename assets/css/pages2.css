@@ -310,3 +310,67 @@
 .contact-field textarea{ min-height:110px; resize:vertical; }
 .contact-field input:focus, .contact-field textarea:focus{ outline:2px solid var(--coral-deep); outline-offset:2px; }
 .contact-status{ font-family:var(--sans); font-size:.85rem; color:var(--coral-deep); margin-top:14px; min-height:1.2em; }
+
+/* ==========================================================================
+   Research & Advocacy — library, gated PDF download
+   ========================================================================== */
+.research-hero{ padding:170px 0 40px; background:var(--cream); }
+.research-hero .lead2{ font-size:1.08rem; line-height:1.68; color:#2A3B32; max-width:60ch; margin-top:14px; }
+
+.filters{ display:flex; gap:10px; flex-wrap:wrap; margin:36px 0 6px; }
+.chip{
+  font-family:var(--sans); font-size:.85rem; font-weight:600; padding:9px 18px; border-radius:999px;
+  border:1.5px solid var(--hairline); background:#fff; color:var(--forest); cursor:pointer; transition:.18s var(--ease);
+}
+.chip:hover{ border-color:var(--coral); }
+.chip.on{ background:var(--forest); color:#fff; border-color:var(--forest); }
+
+.pub-list{ margin-top:20px; border-top:1px solid var(--hairline); }
+.pubrow{ display:grid; grid-template-columns:74px 1fr auto; gap:24px; align-items:center; padding:30px 0; border-bottom:1px solid var(--hairline); }
+.pubrow.hidden{ display:none; }
+.pub-cover{
+  aspect-ratio:3/4; border-radius:7px; background:var(--cream); border:1px solid var(--hairline);
+  display:flex; align-items:center; justify-content:center; font-family:var(--sans); font-size:.6rem;
+  letter-spacing:.1em; text-transform:uppercase; font-weight:700; color:#B5A88C; text-align:center; line-height:1.5;
+}
+.pub-info .yr{ font-family:var(--sans); font-size:.9rem; font-weight:700; color:var(--coral-deep); margin-bottom:6px; }
+.pub-info h4{ font-family:var(--serif); font-size:1.22rem; color:var(--forest); margin:0 0 8px; line-height:1.3; }
+.pub-info p{ font-family:var(--sans); font-size:.92rem; color:var(--muted); line-height:1.55; margin:0 0 10px; max-width:58ch; }
+.pub-docid{ font-family:var(--sans); font-size:.7rem; letter-spacing:.06em; color:#B5A88C; text-transform:uppercase; font-weight:700; }
+.pub-meta{ text-align:right; }
+.pub-type{ font-family:var(--sans); font-size:.82rem; color:var(--muted); margin-bottom:12px; }
+.pub-dl{
+  font-family:var(--sans); font-size:.88rem; font-weight:700; color:var(--coral-deep);
+  background:none; border:none; cursor:pointer; display:inline-flex; align-items:center; gap:6px; padding:0;
+}
+.pub-dl svg{ width:13px; height:13px; }
+.pub-dl:hover{ color:var(--coral); }
+.pub-empty{ font-family:var(--sans); font-size:.95rem; color:var(--muted); padding:36px 0; }
+@media (max-width:700px){
+  .pubrow{ grid-template-columns:56px 1fr; }
+  .pub-meta{ grid-column:1/-1; text-align:left; display:flex; align-items:center; gap:16px; margin-top:6px; }
+}
+
+.pub-note{ font-family:var(--sans); font-size:.9rem; color:var(--muted); margin-top:30px; max-width:66ch; line-height:1.6; }
+
+/* Gated download modal */
+.dl-modal-overlay{
+  position:fixed; inset:0; background:rgba(27,67,50,.55); backdrop-filter:blur(2px);
+  display:flex; align-items:center; justify-content:center; padding:24px; z-index:1000;
+  opacity:0; pointer-events:none; transition:opacity .2s var(--ease);
+}
+.dl-modal-overlay.open{ opacity:1; pointer-events:auto; }
+.dl-modal{
+  background:#fff; border-radius:22px; padding:38px; max-width:440px; width:100%;
+  position:relative; transform:translateY(12px); transition:transform .2s var(--ease);
+}
+.dl-modal-overlay.open .dl-modal{ transform:translateY(0); }
+.dl-modal-close{
+  position:absolute; top:18px; right:18px; width:32px; height:32px; border-radius:50%;
+  border:1px solid var(--hairline); background:#fff; display:flex; align-items:center; justify-content:center;
+  cursor:pointer; color:var(--forest);
+}
+.dl-modal .eyebrow{ display:block; margin-bottom:10px; }
+.dl-modal h4{ font-family:var(--serif); font-size:1.35rem; color:var(--forest); margin:0 0 8px; }
+.dl-modal .dl-doc-title{ font-family:var(--sans); font-size:.92rem; color:var(--muted); margin-bottom:22px; }
+.dl-modal .dl-doc-title b{ color:var(--forest); }
