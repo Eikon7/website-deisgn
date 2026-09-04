@@ -25,6 +25,15 @@ function suluh_setup() {
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption', 'style', 'script' ) );
 	add_theme_support( 'align-wide' );
+
+	// The header nav and mobile drawer both pull from this one location
+	// (see header.php) so editing the menu once in Appearance > Menus
+	// keeps both in sync. Nest "Community" / "Youth & Education" /
+	// "Ideas, Ethics & Society" under a "Pillars" item to reproduce the
+	// dropdown — see wordpress-theme/README.md for the exact structure.
+	register_nav_menus( array(
+		'primary' => __( 'Primary Navigation', 'suluh-centre' ),
+	) );
 }
 add_action( 'after_setup_theme', 'suluh_setup' );
 

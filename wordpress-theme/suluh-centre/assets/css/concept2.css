@@ -85,6 +85,37 @@ nav.c2-nav a:hover{ border-color:var(--coral); }
   padding:10px 14px; border-radius:9px; border-bottom:none;
 }
 .c2-dropdown a:hover{ background:var(--blush-tint); border-bottom:none; padding-left: 10px;}
+
+/* Same dropdown, driven by a real WordPress menu (Appearance > Menus)
+   instead of hardcoded markup: wp_nav_menu()'s own <li class="menu-item-has-children">
+   + <ul class="sub-menu"> output, restyled to match .c2-nav-item/.c2-dropdown
+   above exactly. Only takes effect once a menu is assigned to the
+   Primary Navigation location — see header.php. */
+.c2-nav > li{ list-style:none; }
+.c2-nav .menu-item-has-children{ position:relative; }
+.c2-nav .menu-item-has-children > a{ display:inline-flex; align-items:center; gap:6px; }
+.c2-nav .menu-item-has-children > a::after{
+  content:""; display:inline-block; width:7px; height:7px;
+  border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor;
+  transform:rotate(45deg) translateY(-1px); transition:transform .18s var(--ease);
+}
+.c2-nav .menu-item-has-children:hover > a::after, .c2-nav .menu-item-has-children:focus-within > a::after{ transform:rotate(225deg) translateY(1px); }
+.c2-nav .sub-menu{
+  position:absolute; top:100%; left:50%; transform:translate(-50%,6px);
+  background:#fff; border:1px solid var(--hairline); border-radius:6px; padding:17px; margin:0;
+  min-width:230px; box-shadow:0 20px 40px -20px rgba(27,67,50,.28); list-style:none;
+  opacity:0; pointer-events:none; transition:opacity .18s var(--ease), transform .18s var(--ease);
+  z-index:120;
+}
+.c2-nav .menu-item-has-children:hover > .sub-menu, .c2-nav .menu-item-has-children:focus-within > .sub-menu{
+  opacity:1; pointer-events:auto; transform:translate(-50%,2px);
+}
+.c2-nav .sub-menu a{
+  display:block; font-family:var(--sans); font-size:.92rem; font-weight:500; color:var(--forest);
+  padding:10px 14px; border-radius:9px; border-bottom:none;
+}
+.c2-nav .sub-menu a:hover{ background:var(--blush-tint); border-bottom:none; padding-left:10px; }
+
 .c2-hd-cta{ font-family:var(--sans); font-size:.94rem; padding:9px 20px; border-radius:999px; border:1.5px solid var(--forest); color:var(--forest); background:transparent; transition:.18s var(--ease); }
 .c2-hd-cta:hover{ background:var(--forest); color:#fff; }
 .c2-burger{ display:none; }
@@ -369,6 +400,19 @@ footer.c2-footer{ background:var(--forest-2); color:#A9C4B4; padding:52px 0 28px
 .c2-drawer-sub{ display:flex; flex-direction:column; padding-left:20px; border-bottom:1px solid var(--hairline); }
 .c2-drawer-sub .c2-drawer-sublabel{ display:block; font-family:var(--sans); font-size:.7rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--coral-deep); margin:16px 0 4px; }
 .c2-drawer-sub a{ display:block; font-size:1.15rem; padding:9px 0; border-bottom:none; }
+
+/* Same grouped flat list, driven by a real WordPress menu instead of
+   hardcoded markup: wp_nav_menu()'s <ul class="sub-menu"> is shown
+   inline and indented rather than as a hover dropdown (no hover on
+   touch), matching .c2-drawer-sub above. Only takes effect once a menu
+   is assigned to the Primary Navigation location — see header.php. */
+.c2-drawer > li{ list-style:none; }
+.c2-drawer .sub-menu{
+  display:flex; flex-direction:column; padding-left:20px; border-bottom:1px solid var(--hairline);
+  list-style:none; margin:0;
+}
+.c2-drawer .sub-menu li{ list-style:none; }
+.c2-drawer .sub-menu a{ display:block; font-size:1.15rem; padding:9px 0; border-bottom:none; }
 
 .reveal2{ opacity:0; transform:translateY(20px); transition:opacity .6s var(--ease), transform .6s var(--ease); }
 .reveal2.in{ opacity:1; transform:none; }

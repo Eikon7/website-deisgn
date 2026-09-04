@@ -7,9 +7,13 @@ theme doesn't template those at all. It exists only for the parts
 Elementor can't do:
 
 1. **The shared header and footer** (`header.php` / `footer.php`) — the
-   real nav, dropdown, mobile drawer and footer link grid, hardcoded once
-   so every page (Elementor-built or not) shares the same chrome without
-   needing Elementor Pro's Theme Builder.
+   real nav, dropdown, mobile drawer and footer link grid, so every page
+   (Elementor-built or not) shares the same chrome without needing
+   Elementor Pro's Theme Builder. The header nav and mobile drawer pull
+   from **Appearance → Menus → Primary Navigation** — see below for how
+   to set that menu up so it reproduces the Pillars dropdown/grouped
+   list. The footer's four columns are still hardcoded (they don't
+   change often); ask if you want those menu-driven too.
 2. **The three CMS-driven surfaces**, which need real dynamic loops/
    filtering that free Elementor can't do:
    - **Research & Advocacy** (`archive-publication.php`) — the
@@ -62,6 +66,9 @@ loop over real posts.
   this design (the PDF is only ever offered from the gated modal on the
   Research archive), so this just 301-redirects back to `/research/`
   rather than rendering an ungated direct-download link.
+- `inc/download-leads.php` — the private "Downloads" admin list and the
+  AJAX endpoint that records a name + email before handing back the
+  real PDF URL (validated server-side, not trusted from the client).
 
 ## Install
 
@@ -88,12 +95,32 @@ Then in WP Admin:
 4. Add Story and Publication posts (**Stories** / **Publications** in the
    admin sidebar) to populate `/research/` and `/stories/` — both archives
    and `/grounded/` render automatically from whatever posts exist.
+5. **Appearance → Menus → create a new menu**, add these items, then
+   assign it to the **Primary Navigation** location:
+   - Our Work → `/work/`
+   - Pillars → `/work/` (a Custom Link; the URL doesn't matter much
+     since it's mainly a dropdown trigger)
+     - drag **Community** → `/community/`, **Youth & Education** →
+       `/youth-education/`, and **Ideas, Ethics & Society** →
+       `/ideas-ethics-society/` so each is indented *under* Pillars
+       (this nesting is what produces the dropdown/grouped list)
+   - About → `/about/`
+   - Impact → `/#impact`
+   - Stories → `/stories/`
+   - Contact → `/contact/`
+
+   Until a menu is assigned here, the header/drawer fall back to the
+   exact nav shown above automatically — nothing breaks in the meantime.
+
+## Who downloaded what
+
+Every Research PDF download is recorded once the visitor submits a
+valid name + email: check **wp-admin → Downloads** for a sortable/
+searchable list (Name, Email, Publication, Date). See
+`inc/download-leads.php` for the AJAX endpoint the gated-download modal
+posts to.
 
 ## Known gaps
 
-- The gated PDF download is enforced client-side only (matches the
-  approved static build) — the name/email aren't sent anywhere yet.
-  Wiring that to an email service or a stored-leads table is a separate,
-  deliberate follow-up once you decide where those leads should go.
 - No bilingual (EN/BM) support is wired in. If that's still needed,
   it's a separate pass (Polylang or WPML) on top of this.
