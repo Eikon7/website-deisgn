@@ -203,6 +203,28 @@
     });
   }
 
+  /* Stories — filter chips (separate list from the research library so the
+     two pages' filters never cross-talk). */
+  var storyChips = document.querySelectorAll(".story-filters .chip");
+  var storyCards = document.querySelectorAll(".story-card");
+  var storyEmpty = document.getElementById("storyEmpty");
+  if (storyChips.length && storyCards.length) {
+    storyChips.forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        storyChips.forEach(function (c) { c.classList.remove("on"); });
+        chip.classList.add("on");
+        var type = chip.dataset.type;
+        var visible = 0;
+        storyCards.forEach(function (card) {
+          var show = type === "All" || card.dataset.type === type;
+          card.classList.toggle("hidden", !show);
+          if (show) visible++;
+        });
+        if (storyEmpty) storyEmpty.hidden = visible !== 0;
+      });
+    });
+  }
+
   /* Research library — gated PDF download. Client-side only in this
      design concept: the name/email are validated but not sent anywhere;
      wiring this to a real mailing list is a backend integration step. */
