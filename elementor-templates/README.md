@@ -65,6 +65,20 @@ that are genuinely bespoke rather than a layout free widgets can express:
   shows a status message) keeps working completely unchanged — no
   Elementor Pro Forms widget needed for this one.
 
+## work.json
+
+Ports work.html (the "Our Work" hub page): Page hero (eyebrow/heading/lead
++ a 3-item stat row, with a photo card on the right) → Pillars bento
+(same Community/Youth & Education/Ideas/Research asymmetric grid as
+`home.json`, reused verbatim since it's the same CSS grid on both pages)
+→ "The spine, not a fourth pillar" (same decorative-mark-left/text-right
+pattern as the homepage's "The Idea" section).
+
+One **HTML** widget: the hero's photo card, since its bottom-left caption
+overlay (`.phero2-cap`) needs absolute positioning free-tier Image/Heading
+widgets don't expose — same bespoke-HTML-widget pattern as home.json's
+ticker and subscribe form.
+
 ## What's simplified vs. the static pages
 
 Being upfront about the gap, since "native widgets" was chosen over the
@@ -117,8 +131,9 @@ reproduce without Elementor Pro.
 ## Status
 
 - [x] `about.json` — confirmed working (test-imported successfully)
-- [x] `home.json` — built, awaiting your test-import
-- [ ] Contact, Research, Stories, Story Detail, Grounded, People, Work,
+- [x] `home.json` — built, structure/colors corrected against concept2.css
+- [x] `work.json` — built, awaiting your test-import
+- [ ] Contact, Research, Stories, Story Detail, Grounded, People,
       Community, Youth & Education, Ideas/Ethics/Society, Care &
       Wellbeing, Women's Leadership ×2 — note Research/Stories/Grounded/
       Story Detail are the theme's PHP templates, not Elementor pages
