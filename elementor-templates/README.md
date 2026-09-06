@@ -52,9 +52,8 @@ all free-tier.
 Ports concept2.html's full sequence: Hero → pillar/programme ticker →
 Pillars bento (Community / Youth & Education / Ideas, spanning full-width
 Research row) → The Idea → Continuity timeline → Impact numbers → How we
-work (numbered list) → Publications (featured + list, linking to
-`/publications/` — the `story` post type's archive; see the rename note
-in `wordpress-theme/README.md`) → closing subscribe band.
+work (numbered list) → **Latest Publications** (live, see below) →
+closing subscribe band.
 
 Same widget set as About, plus two **HTML** widgets for the two pieces
 that are genuinely bespoke rather than a layout free widgets can express:
@@ -66,6 +65,35 @@ that are genuinely bespoke rather than a layout free widgets can express:
   already-enqueued `assets/js/concept2.js` (validates the email,
   shows a status message) keeps working completely unchanged — no
   Elementor Pro Forms widget needed for this one.
+
+### Latest Publications — a real custom Elementor widget, not static text
+
+Everything else in this repo's `elementor-templates/*.json` files is
+native Elementor widgets (Heading, Text Editor, Image, Button) with
+hand-typed content — an approximation of the design, since free-tier
+widgets can't always match the source CSS exactly. This section is
+different: it's a genuine custom Elementor widget, registered in PHP
+(`wordpress-theme/suluh-centre/inc/elementor-widgets/class-suluh-latest-publications-widget.php`,
+wired up by `inc/elementor-widgets.php`), that queries the real `story`
+post type ("Publications") at render time and outputs the site's actual
+`.stories2-head` / `.story-spread` / `.feat-story` / `.list-story`
+markup — the same CSS classes the static build itself uses — so it's
+pixel-identical to the source design rather than an approximation, and
+it shows live content that updates automatically as new Publications
+are published, rather than needing this JSON file re-edited by hand
+every time.
+
+**It's editable from the Elementor editor**: click the widget and its
+panel exposes Eyebrow text, Heading text, how many Publications to list
+(besides the featured one), an optional filter to only show one
+Publication Type (populated live from whatever taxonomy terms actually
+exist), and the "view all" link's text. No JSON editing needed for any
+of that.
+
+It requires the theme's PHP to be active — if you ever move this widget
+to a different Elementor page, it'll still work as long as the
+`suluh-centre` theme (or its child theme) is what's running the site,
+since that's where the widget class is registered.
 
 ## work.json
 

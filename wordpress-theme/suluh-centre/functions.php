@@ -70,6 +70,14 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/download-leads.php';
 
 /**
+ * Custom Elementor widgets — currently just "Latest Publications", so
+ * the homepage's Publications section (and any future page that wants
+ * the same block) can pull real, live content instead of static text
+ * typed into an Elementor template's JSON.
+ */
+require get_template_directory() . '/inc/elementor-widgets.php';
+
+/**
  * The newsroom stream's archive moved from /stories/ to /publications/
  * when it was relabeled "Publications" (see inc/content-types.php). This
  * redirects anyone who still has an old /stories/ URL bookmarked or

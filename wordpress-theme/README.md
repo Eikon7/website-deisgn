@@ -88,6 +88,14 @@ rename.)
 - `inc/download-leads.php` — the private "Downloads" admin list and the
   AJAX endpoint that records a name + email before handing back the
   real PDF URL (validated server-side, not trusted from the client).
+- `inc/elementor-widgets.php` + `inc/elementor-widgets/` — a custom
+  "Latest Publications" Elementor widget: drop it into any Elementor
+  page and it queries the real `story` post type and renders the site's
+  actual featured-card + list markup, editable from the Elementor panel
+  (how many to show, an optional Publication Type filter, the
+  heading/eyebrow/link text). Used on the homepage — see
+  `elementor-templates/README.md` for the full writeup. No-ops
+  completely if Elementor isn't active.
 
 ## Child theme
 
