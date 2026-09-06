@@ -99,6 +99,17 @@ standing in for a heading where a programme row title needs to be a
 link — Elementor's Heading widget title field is plain text only and
 won't render an `<a>` tag.
 
+## youth-education.json
+
+Same template shape as community.json (Page hero → Three strands →
+Programmes → Keep exploring), this page's own copy/icon/tone. Two real
+differences confirmed against the actual markup rather than assumed: the
+three strand cards and all five programme rows here have **no links at
+all** (plain `<div>`s, unlike Community's first two strands / first three
+programmes which do link out) — kept faithful rather than inventing
+links, and "Keep exploring" points to Community + Ideas, Ethics & Society
+(excluding this pillar itself).
+
 ## What's simplified vs. the static pages
 
 Being upfront about the gap, since "native widgets" was chosen over the
@@ -154,8 +165,9 @@ reproduce without Elementor Pro.
 - [x] `home.json` — built, structure/colors corrected against concept2.css
 - [x] `work.json` — built, awaiting your test-import
 - [x] `community.json` — built, awaiting your test-import
+- [x] `youth-education.json` — built, awaiting your test-import
 - [ ] Contact, Research, Stories, Story Detail, Grounded, People,
-      Youth & Education, Ideas/Ethics/Society, Care &
+      Ideas/Ethics/Society, Care &
       Wellbeing, Women's Leadership ×2 — note Research/Stories/Grounded/
       Story Detail are the theme's PHP templates, not Elementor pages
       (see wordpress-theme/README.md) — say the word and I'll build the
