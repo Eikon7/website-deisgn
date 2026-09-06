@@ -137,6 +137,7 @@ function suluh_story_card_data( $post_id ) {
 
 	return array(
 		'type_slug'  => $term ? $term->slug : '',
+		'type_name'  => $term ? $term->name : '',
 		'type_class' => $term ? suluh_story_type_class( $term->slug ) : '',
 		'tag'        => $tag_label,
 		'title'      => get_the_title( $post_id ),
@@ -157,7 +158,7 @@ function suluh_render_story_card( $post_id ) {
 	$is_audio = 'grounded' === $row['type_slug'];
 	$thumb    = get_the_post_thumbnail_url( $post_id, 'large' );
 	?>
-	<a class="story-card reveal2" href="<?php echo esc_url( $row['link'] ); ?>">
+	<a class="story-card reveal2" href="<?php echo esc_url( $row['link'] ); ?>" data-type="<?php echo esc_attr( $row['type_name'] ); ?>">
 		<?php if ( $thumb ) : ?>
 			<div class="story-img <?php echo esc_attr( $row['type_class'] ); ?>" style="background-image:url(<?php echo esc_url( $thumb ); ?>);background-size:cover;background-position:center"></div>
 		<?php else : ?>
