@@ -24,7 +24,10 @@ Elementor can't do:
      "Upcoming" band for future Convenings.
    - **Grounded** (`page-templates/grounded.php`) — not a separate post
      type, a filtered view of Publications where `story_type = grounded`,
-     per the original wireframe's own design note.
+     per the original wireframe's own design note. Has its own admin
+     sidebar shortcut too (see "Managing Grounded episodes" below) so
+     finding existing episodes doesn't mean filtering the full
+     Publications list by hand each time.
 
    Renamed at the client's request (2026-09): the PHP post_type keys
    (`publication` and `story`) are the *reverse* of these public labels —
@@ -135,6 +138,23 @@ Then in WP Admin:
 
    Until a menu is assigned here, the header/drawer fall back to the
    exact nav shown above automatically — nothing breaks in the meantime.
+
+## Managing Grounded episodes
+
+Grounded episodes are just Publications tagged with the "Grounded"
+Publication Type — there's no separate "Add New Grounded" screen. To add
+one: **Publications → Add New**, fill it in like any other Publication
+(dek, display date, episode number + audio URL under the "Podcast
+(Grounded)" tab), and tick **Grounded** in the Publication Types box. It
+appears in the main `/publications/` stream immediately, same as any
+other Publication.
+
+For a quick list of just the existing episodes without filtering the
+full Publications screen by hand, use the **Grounded** item in the
+sidebar (added by `suluh_add_grounded_admin_menu()` in
+`inc/content-types.php`) — it's a shortcut to the same Publications list
+table, pre-filtered to `story_type=grounded`. It's not a separate post
+type or a separate database of episodes; it's a one-click filter.
 
 ## Who downloaded what
 

@@ -116,6 +116,45 @@ function suluh_register_post_types() {
 add_action( 'init', 'suluh_register_post_types' );
 
 /**
+ * A dedicated "Grounded" sidebar menu item, so managing episodes doesn't
+ * mean hunting through the full Publications list and manually filtering
+ * by type every time. This is NOT a separate post type or admin screen —
+ * it's a shortcut straight to WordPress's own Publications list table,
+ * pre-filtered to story_type=grounded (the same query
+ * page-templates/grounded.php uses on the front end). Episodes still
+ * live under the `story` post type with the same ACF fields, still show
+ * up in the main /publications/ stream, and "Add New" still happens from
+ * the Publications screen (tick "Grounded" in the Publication Types box)
+ * — this only adds a faster way to find existing ones.
+ */
+function suluh_add_grounded_admin_menu() {
+	$grounded_url = 'edit.php?post_type=story&story_type=grounded';
+
+	add_menu_page(
+		__( 'Grounded', 'suluh-centre' ),
+		__( 'Grounded', 'suluh-centre' ),
+		'edit_posts',
+		$grounded_url,
+		'',
+		'dashicons-format-audio'
+	);
+
+	// Without this, WordPress auto-generates a first submenu item under
+	// the page above using the underlying screen's own title
+	// ("Publications") instead of "Grounded" — registering it explicitly
+	// with a matching slug overrides that so the menu just reads
+	// "Grounded" with no confusing submenu.
+	add_submenu_page(
+		$grounded_url,
+		__( 'Grounded', 'suluh-centre' ),
+		__( 'Grounded', 'suluh-centre' ),
+		'edit_posts',
+		$grounded_url
+	);
+}
+add_action( 'admin_menu', 'suluh_add_grounded_admin_menu' );
+
+/**
  * Default terms for the taxonomies above. Idempotent: only inserts if
  * missing, safe to run on every load via the `after_switch_theme` hook.
  */
