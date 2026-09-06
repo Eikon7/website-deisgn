@@ -110,6 +110,14 @@ programmes which do link out) — kept faithful rather than inventing
 links, and "Keep exploring" points to Community + Ideas, Ethics & Society
 (excluding this pillar itself).
 
+## ideas-ethics-society.json
+
+Same template shape again, this page's own copy/icon (ico-bulb). Confirmed
+against the real markup: only **2** programme rows here (Siyasah Unit, KL
+Conference), not 5-6 like the other pillar pages — built exactly that many,
+not padded to match. "Keep exploring" points to Community + Youth &
+Education (excluding this pillar itself).
+
 ## What's simplified vs. the static pages
 
 Being upfront about the gap, since "native widgets" was chosen over the
@@ -166,8 +174,8 @@ reproduce without Elementor Pro.
 - [x] `work.json` — built, awaiting your test-import
 - [x] `community.json` — built, awaiting your test-import
 - [x] `youth-education.json` — built, awaiting your test-import
-- [ ] Contact, Research, Stories, Story Detail, Grounded, People,
-      Ideas/Ethics/Society, Care &
+- [x] `ideas-ethics-society.json` — built, awaiting your test-import
+- [ ] Contact, Research, Stories, Story Detail, Grounded, People, Care &
       Wellbeing, Women's Leadership ×2 — note Research/Stories/Grounded/
       Story Detail are the theme's PHP templates, not Elementor pages
       (see wordpress-theme/README.md) — say the word and I'll build the

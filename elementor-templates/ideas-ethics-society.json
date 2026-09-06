@@ -1,0 +1,1703 @@
+{
+  "content": [
+    {
+      "id": "bdb9795",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#F5EFE3",
+        "padding": {
+          "unit": "px",
+          "top": "160",
+          "right": "24",
+          "bottom": "64",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        },
+        "gap": {
+          "unit": "px",
+          "size": 64,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "731672f",
+          "elType": "column",
+          "settings": {
+            "_column_size": 53,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "fc18468",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p><a href=\"{{SITE_URL}}/work/\" style=\"color:#B4474B;font-weight:600;text-decoration:none\">Our Work</a> / Ideas, Ethics &amp; Society</p>",
+                "text_color": "#6E7468",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "17df2d8",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "d683774",
+              "elType": "widget",
+              "settings": {
+                "html": "<div style=\"width:56px;height:56px;border-radius:50%;background:#FBE4E5;display:flex;align-items:center;justify-content:center;margin-bottom:22px\"><svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1B4332\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9.2 18.2h5.6\"/><path d=\"M10.4 21h3.2\"/><path d=\"M12 2.8a6.2 6.2 0 0 0-3.6 11.3c.5.4.8 1 .8 1.6v.5h5.6v-.5c0-.6.3-1.2.8-1.6A6.2 6.2 0 0 0 12 2.8z\"/></svg></div>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            },
+            {
+              "id": "ecd0de0",
+              "elType": "widget",
+              "settings": {
+                "title": "THE FOUNDATION",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#B4474B",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "6669173",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "4711391",
+              "elType": "widget",
+              "settings": {
+                "title": "Ideas, Ethics &amp; Society",
+                "header_size": "h1",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 40,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.08,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "9ecfed8",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 4,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "6cdd65f",
+              "elType": "widget",
+              "settings": {
+                "title": "What is a good society for?",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#B4474B",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "400",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "8e682a4",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "576751e",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>The intellectual foundation of the organisation. Honest ideas grounded in evidence and values, developed in open dialogue across traditions.</p>",
+                "text_color": "#2A3B32",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 17,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.65,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        },
+        {
+          "id": "678abaf",
+          "elType": "column",
+          "settings": {
+            "_column_size": 47,
+            "_inline_size": null,
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "c07dbb0",
+              "elType": "widget",
+              "settings": {
+                "html": "<div style=\"position:relative;border-radius:26px;overflow:hidden;aspect-ratio:3/4;background:#1B4332;box-shadow:0 40px 70px -36px rgba(27,67,50,.4)\"><img src=\"{{BASE_URL}}/assets/sources%20of%20light.jpeg\" alt=\"\" style=\"position:absolute;inset:0;width:100%;height:100%;object-fit:cover\"><span style=\"position:absolute;left:28px;bottom:40px;font-family:'Inria Serif',serif;font-size:4.6rem;color:rgba(255,255,255,.88);line-height:1\">03</span><span style=\"position:absolute;left:28px;bottom:24px;font-family:Manrope,sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.75)\">Ideas, Ethics &amp; Society</span></div>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "12be80d",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "90",
+          "right": "24",
+          "bottom": "30",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "2bc7069",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "7c5ad20",
+              "elType": "widget",
+              "settings": {
+                "title": "WHERE THIS PILLAR WORKS",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#B4474B",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "7c20478",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "beebaaa",
+              "elType": "widget",
+              "settings": {
+                "title": "Three strands",
+                "header_size": "h2",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 32,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "fa2f37d",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "90",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        },
+        "gap": {
+          "unit": "px",
+          "size": 20,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "ef90402",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33.33,
+            "_inline_size": null,
+            "background_background": "classic",
+            "background_color": "#1B4332",
+            "border_radius": {
+              "unit": "px",
+              "top": "20",
+              "right": "20",
+              "bottom": "20",
+              "left": "20",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "36",
+              "right": "32",
+              "bottom": "36",
+              "left": "32",
+              "isLinked": false
+            },
+            "content_position": "bottom"
+          },
+          "elements": [
+            {
+              "id": "3f1b7ee",
+              "elType": "widget",
+              "settings": {
+                "editor": "<span style=\"font-family:Inria Serif,serif;font-size:.85rem;opacity:.55\">01</span>",
+                "text_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "8b873e1",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "69ce122",
+              "elType": "widget",
+              "settings": {
+                "title": "Just &amp; Humane Order",
+                "header_size": "h4",
+                "align": "left",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.3,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "bd60e9b",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "a6c562d",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Global justice, the Global South and justice across borders. The KL Conference lineage and network.</p>",
+                "text_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.55,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        },
+        {
+          "id": "302c415",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33.33,
+            "_inline_size": null,
+            "background_background": "classic",
+            "background_color": "#FBE4E5",
+            "border_radius": {
+              "unit": "px",
+              "top": "20",
+              "right": "20",
+              "bottom": "20",
+              "left": "20",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "36",
+              "right": "32",
+              "bottom": "36",
+              "left": "32",
+              "isLinked": false
+            },
+            "content_position": "bottom"
+          },
+          "elements": [
+            {
+              "id": "0141ffa",
+              "elType": "widget",
+              "settings": {
+                "editor": "<span style=\"font-family:Inria Serif,serif;font-size:.85rem;opacity:.55\">02</span>",
+                "text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "e3a7292",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "85c3de9",
+              "elType": "widget",
+              "settings": {
+                "title": "Society &amp; Dignity",
+                "header_size": "h4",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.3,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "c1881f6",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "9498aa7",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>How we build a fairer, more dignified society at home. Belonging, equity and the ideas that shape how we live together.</p>",
+                "text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.55,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        },
+        {
+          "id": "b2e8edb",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33.33,
+            "_inline_size": null,
+            "background_background": "classic",
+            "background_color": "#F5EFE3",
+            "border_radius": {
+              "unit": "px",
+              "top": "20",
+              "right": "20",
+              "bottom": "20",
+              "left": "20",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#E0D8C6",
+            "padding": {
+              "unit": "px",
+              "top": "36",
+              "right": "32",
+              "bottom": "36",
+              "left": "32",
+              "isLinked": false
+            },
+            "content_position": "bottom"
+          },
+          "elements": [
+            {
+              "id": "47d4cdb",
+              "elType": "widget",
+              "settings": {
+                "editor": "<span style=\"font-family:Inria Serif,serif;font-size:.85rem;opacity:.55\">03</span>",
+                "text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "29686c4",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "47d9a25",
+              "elType": "widget",
+              "settings": {
+                "title": "Purpose &amp; Ethics",
+                "header_size": "h4",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.3,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "8c1b170",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "f2bb00b",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Values and public purpose. Ethics as a source of justice, dignity and pluralism, in dialogue with other traditions.</p>",
+                "text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.55,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "a1490e1",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1b4332",
+        "padding": {
+          "unit": "px",
+          "top": "110",
+          "right": "24",
+          "bottom": "20",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "3d5e16e",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "1bafc8c",
+              "elType": "widget",
+              "settings": {
+                "title": "PROGRAMMES",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#F4A0A3",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "65a2f08",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "39741f4",
+              "elType": "widget",
+              "settings": {
+                "title": "What this looks like in practice",
+                "header_size": "h2",
+                "align": "left",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 32,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "a800c47",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1b4332",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "24",
+          "bottom": "20",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        },
+        "gap": {
+          "unit": "px",
+          "size": 20,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "426bdd5",
+          "elType": "column",
+          "settings": {
+            "_column_size": 6,
+            "_inline_size": null,
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "c51e9bd",
+              "elType": "widget",
+              "settings": {
+                "title": "01",
+                "header_size": "span",
+                "align": "left",
+                "title_color": "rgba(255,255,255,.3)",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "400",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.0,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ]
+        },
+        {
+          "id": "acf304b",
+          "elType": "column",
+          "settings": {
+            "_column_size": 94,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "6cd3a24",
+              "elType": "widget",
+              "settings": {
+                "title": "Siyasah Unit",
+                "header_size": "h4",
+                "align": "left",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 20,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.3,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "d4b4450",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 6,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "99e9cf0",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>In-house policy and research on ethics and governance.</p>",
+                "text_color": "#C9DCD1",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.55,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "3ee1fb3",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1b4332",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "24",
+          "bottom": "20",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        },
+        "gap": {
+          "unit": "px",
+          "size": 20,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "62aba03",
+          "elType": "column",
+          "settings": {
+            "_column_size": 6,
+            "_inline_size": null,
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "b11ee55",
+              "elType": "widget",
+              "settings": {
+                "title": "02",
+                "header_size": "span",
+                "align": "left",
+                "title_color": "rgba(255,255,255,.3)",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "400",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.0,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ]
+        },
+        {
+          "id": "6e81c35",
+          "elType": "column",
+          "settings": {
+            "_column_size": 94,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "ca2b7bd",
+              "elType": "widget",
+              "settings": {
+                "title": "KL Conference on a New Just &amp; Humane International Order",
+                "header_size": "h4",
+                "align": "left",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 20,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.3,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "fb055e4",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 6,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "63c18e9",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>An international convening on justice across borders.</p>",
+                "text_color": "#C9DCD1",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.55,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "d34071d",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1b4332",
+        "padding": {
+          "unit": "px",
+          "top": "16",
+          "right": "24",
+          "bottom": "110",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "aa6e385",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "7aeb16a",
+              "elType": "widget",
+              "settings": {
+                "html": "<div style=\"display:flex;align-items:baseline;gap:16px;padding-top:40px;border-top:1px solid rgba(255,255,255,.14)\"><span style=\"font-family:'Inria Serif',serif;font-size:3.2rem;font-weight:600;color:#F4A0A3;line-height:1\">15+</span><span style=\"font-family:Manrope,sans-serif;font-size:1rem;color:#C9DCD1\">countries engaged</span></div>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "7cb7dd5",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "90",
+          "right": "24",
+          "bottom": "30",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "45121af",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "97404be",
+              "elType": "widget",
+              "settings": {
+                "title": "KEEP EXPLORING",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#B4474B",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "969b2a4",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "ca7c3f6",
+              "elType": "widget",
+              "settings": {
+                "title": "The other pillars",
+                "header_size": "h2",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 32,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "b224b23",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "110",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        },
+        "gap": {
+          "unit": "px",
+          "size": 20,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "30cc352",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": null,
+            "background_background": "classic",
+            "background_color": "#FBE4E5",
+            "border_radius": {
+              "unit": "px",
+              "top": "20",
+              "right": "20",
+              "bottom": "20",
+              "left": "20",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "32",
+              "right": "28",
+              "bottom": "32",
+              "left": "28",
+              "isLinked": false
+            },
+            "content_position": "bottom"
+          },
+          "elements": [
+            {
+              "id": "8f1453a",
+              "elType": "widget",
+              "settings": {
+                "editor": "<span style=\"font-family:Inria Serif,serif;font-size:.95rem;opacity:.6\">01</span>",
+                "text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "22bd276",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "a67b175",
+              "elType": "widget",
+              "settings": {
+                "title": "Community",
+                "header_size": "h3",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "4b67a84",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "ea0c9da",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>The present. Women lead here. Strengthening communities through collaboration and shared purpose.</p>",
+                "text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.5,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "8963aa1",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "ed47a7e",
+              "elType": "widget",
+              "settings": {
+                "text": "Explore &rarr;",
+                "link": {
+                  "url": "{{SITE_URL}}/community/",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "align": "left",
+                "background_color": "transparent",
+                "button_text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": false
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "14",
+                  "right": "26",
+                  "bottom": "14",
+                  "left": "26",
+                  "isLinked": false
+                },
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1.5",
+                  "right": "1.5",
+                  "bottom": "1.5",
+                  "left": "1.5",
+                  "isLinked": true
+                },
+                "border_color": "#1B4332"
+              },
+              "elements": [],
+              "widgetType": "button"
+            }
+          ]
+        },
+        {
+          "id": "b4d9c54",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": null,
+            "background_background": "classic",
+            "background_color": "#F5EFE3",
+            "border_radius": {
+              "unit": "px",
+              "top": "20",
+              "right": "20",
+              "bottom": "20",
+              "left": "20",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "32",
+              "right": "28",
+              "bottom": "32",
+              "left": "28",
+              "isLinked": false
+            },
+            "content_position": "bottom"
+          },
+          "elements": [
+            {
+              "id": "10938dd",
+              "elType": "widget",
+              "settings": {
+                "editor": "<span style=\"font-family:Inria Serif,serif;font-size:.95rem;opacity:.6\">02</span>",
+                "text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "4eb58ac",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "81dd313",
+              "elType": "widget",
+              "settings": {
+                "title": "Youth &amp; Education",
+                "header_size": "h3",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "27ce7eb",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "ff5d5e9",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Empowering young people with knowledge, skills and confidence.</p>",
+                "text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.5,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "4a4cef6",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "c12471a",
+              "elType": "widget",
+              "settings": {
+                "text": "Explore &rarr;",
+                "link": {
+                  "url": "{{SITE_URL}}/youth-education/",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "align": "left",
+                "background_color": "transparent",
+                "button_text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": false
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "14",
+                  "right": "26",
+                  "bottom": "14",
+                  "left": "26",
+                  "isLinked": false
+                },
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1.5",
+                  "right": "1.5",
+                  "bottom": "1.5",
+                  "left": "1.5",
+                  "isLinked": true
+                },
+                "border_color": "#1B4332"
+              },
+              "elements": [],
+              "widgetType": "button"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Ideas, Ethics & Society \u2014 Suluh Centre",
+  "type": "page"
+}
