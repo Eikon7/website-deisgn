@@ -49,10 +49,16 @@ usort( $q->posts, function( $a, $b ) {
         $docid  = suluh_field( 'document_id' );
         $pdf    = suluh_field( 'pdf_file' );
         $cover  = suluh_field( 'cover_image' );
-        $terms  = get_the_terms( get_the_ID(), 'publication_type' );
-        $type   = ( $terms && ! is_wp_error( $terms ) ) ? $terms[0]->name : '';
+        $terms      = get_the_terms( get_the_ID(), 'publication_type' );
+        $terms      = ( $terms && ! is_wp_error( $terms ) ) ? $terms : array();
+        // A post can carry more than one Research Type checkbox in
+        // wp-admin, but the row only has room for one visible badge, so
+        // $type (the badge) still uses just the first term. The filter
+        // chips match on ANY assigned term though — see $type_list.
+        $type       = $terms ? $terms[0]->name : '';
+        $type_list  = implode( '|', wp_list_pluck( $terms, 'name' ) );
       ?>
-      <div class="pubrow reveal2" data-type="<?php echo esc_attr( $type ); ?>">
+      <div class="pubrow reveal2" data-type="<?php echo esc_attr( $type_list ); ?>">
         <?php if ( $cover ) : ?>
           <div class="pub-cover" style="background-image:url(<?php echo esc_url( $cover ); ?>);background-size:cover;background-position:center"></div>
         <?php else : ?>

@@ -182,6 +182,14 @@
     });
   }
 
+  /* A row/card can carry more than one category (wp-admin lets you tick
+     several checkboxes), so its data-type attribute is a "|"-delimited
+     list of every assigned type name, not just one — match against any
+     of them, not the whole string. */
+  function typeListIncludes(dataType, type) {
+    return (dataType || "").split("|").indexOf(type) !== -1;
+  }
+
   /* Research library — filter chips. */
   var chips = document.querySelectorAll(".filters .chip");
   var pubRows = document.querySelectorAll(".pubrow");
@@ -194,7 +202,7 @@
         var type = chip.dataset.type;
         var visible = 0;
         pubRows.forEach(function (row) {
-          var show = type === "All" || row.dataset.type === type;
+          var show = type === "All" || typeListIncludes(row.dataset.type, type);
           row.classList.toggle("hidden", !show);
           if (show) visible++;
         });
@@ -216,7 +224,7 @@
         var type = chip.dataset.type;
         var visible = 0;
         storyCards.forEach(function (card) {
-          var show = type === "All" || card.dataset.type === type;
+          var show = type === "All" || typeListIncludes(card.dataset.type, type);
           card.classList.toggle("hidden", !show);
           if (show) visible++;
         });

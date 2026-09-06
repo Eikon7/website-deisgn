@@ -128,7 +128,14 @@ function suluh_get_stories( $type_slug = null, $count = 12, $upcoming_only = fal
  */
 function suluh_story_card_data( $post_id ) {
 	$types      = get_the_terms( $post_id, 'story_type' );
-	$term       = ( $types && ! is_wp_error( $types ) ) ? $types[0] : null;
+	$types      = ( $types && ! is_wp_error( $types ) ) ? $types : array();
+	// A post can carry more than one Publication Type checkbox in
+	// wp-admin, but the card only has room to show one badge — so the
+	// FIRST assigned term still drives the visible tag/badge/class, same
+	// as before. The filter chips, though, need to match on ANY assigned
+	// term, not just the first — see 'type_names' below and its use in
+	// suluh_render_story_card() / assets/js/concept2.js.
+	$term       = $types ? $types[0] : null;
 	$episode    = suluh_field( 'episode_number', $post_id );
 	$tag_label  = $term ? $term->name : '';
 	if ( $term && 'grounded' === $term->slug && $episode ) {
@@ -138,6 +145,7 @@ function suluh_story_card_data( $post_id ) {
 	return array(
 		'type_slug'  => $term ? $term->slug : '',
 		'type_name'  => $term ? $term->name : '',
+		'type_names' => implode( '|', wp_list_pluck( $types, 'name' ) ),
 		'type_class' => $term ? suluh_story_type_class( $term->slug ) : '',
 		'tag'        => $tag_label,
 		'title'      => get_the_title( $post_id ),
@@ -158,7 +166,7 @@ function suluh_render_story_card( $post_id ) {
 	$is_audio = 'grounded' === $row['type_slug'];
 	$thumb    = get_the_post_thumbnail_url( $post_id, 'large' );
 	?>
-	<a class="story-card reveal2" href="<?php echo esc_url( $row['link'] ); ?>" data-type="<?php echo esc_attr( $row['type_name'] ); ?>">
+	<a class="story-card reveal2" href="<?php echo esc_url( $row['link'] ); ?>" data-type="<?php echo esc_attr( $row['type_names'] ); ?>">
 		<?php if ( $thumb ) : ?>
 			<div class="story-img <?php echo esc_attr( $row['type_class'] ); ?>" style="background-image:url(<?php echo esc_url( $thumb ); ?>);background-size:cover;background-position:center"></div>
 		<?php else : ?>
