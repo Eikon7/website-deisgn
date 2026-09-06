@@ -17,7 +17,7 @@ $q = suluh_get_stories( 'grounded', 24 );
   <!-- ============ Page hero ============ -->
   <section class="grounded-hero">
     <div class="glow" aria-hidden="true"></div>
-    <svg class="grounded-hero-flame" viewBox="0 0 64 100" aria-hidden="true"><use href="#c2-flame-shape" fill="#fff"/></svg>
+    <img class="grounded-hero-flame" src="http://localhost/sulu/wp-content/uploads/2026/09/MOTIF-2-scaled.png">
     <div class="wrap">
       <p class="crumb"><a href="<?php echo esc_url( home_url( '/publications/' ) ); ?>">Publications</a> / Grounded</p>
       <span class="eyebrow">The podcast</span>
