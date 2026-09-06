@@ -89,6 +89,15 @@ rename.)
   AJAX endpoint that records a name + email before handing back the
   real PDF URL (validated server-side, not trusted from the client).
 
+## Child theme
+
+`../suluh-centre-child/` is a standard WordPress child theme — an
+initially-empty place for future site-specific tweaks (CSS overrides, a
+copied-and-edited template, small new PHP) so they survive if this
+parent theme is ever updated, instead of editing these files directly.
+See its own README for how to actually use it. Activating it is
+optional — the parent theme works fully on its own.
+
 ## Install
 
 ```
@@ -99,6 +108,10 @@ wp rewrite flush
 
 # Elementor (install separately, this theme doesn't bundle it):
 wp plugin install elementor --activate
+
+# Optional: also copy wordpress-theme/suluh-centre-child/ into
+# wp-content/themes/, then activate that instead of the parent —
+# see "Child theme" above.
 ```
 
 If you're deploying the Publications/Research rename onto a site that

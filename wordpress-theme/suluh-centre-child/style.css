@@ -1,0 +1,19 @@
+/*
+Theme Name: Suluh Center Child
+Template: suluh-centre
+Theme URI: https://suluhcentre.com
+Author: Eikon7
+Description: Child theme of Suluh Center. Put site-specific tweaks here
+  (small CSS overrides, or a template copied from the parent theme and
+  edited) instead of editing the parent theme directly, so nothing is
+  lost if the parent theme is updated later. Empty by default — see
+  README.md in this folder for how to actually override something.
+Version: 1.0.0
+Requires PHP: 8.0
+Text Domain: suluh-centre-child
+*/
+
+/* Add overrides below this line. Anything here loads AFTER the parent
+   theme's own stylesheets (assets/css/concept2.css, pages2.css), so a
+   plain CSS rule of equal specificity here will win without needing
+   !important — see functions.php for the enqueue order. */
