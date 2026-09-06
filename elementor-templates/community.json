@@ -1,0 +1,2241 @@
+{
+  "content": [
+    {
+      "id": "ffa4367",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#F5EFE3",
+        "padding": {
+          "unit": "px",
+          "top": "160",
+          "right": "24",
+          "bottom": "64",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        },
+        "gap": {
+          "unit": "px",
+          "size": 64,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "42a4e37",
+          "elType": "column",
+          "settings": {
+            "_column_size": 53,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "dfeecfd",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p><a href=\"{{SITE_URL}}/work/\" style=\"color:#B4474B;font-weight:600;text-decoration:none\">Our Work</a> / Community</p>",
+                "text_color": "#6E7468",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "bb0cf07",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "b2dca7e",
+              "elType": "widget",
+              "settings": {
+                "html": "<div style=\"width:56px;height:56px;border-radius:50%;background:#FBE4E5;display:flex;align-items:center;justify-content:center;margin-bottom:22px\"><svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1B4332\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"9\" cy=\"7.6\" r=\"3.1\"/><path d=\"M2.8 20c0-3.4 2.8-6.2 6.2-6.2s6.2 2.8 6.2 6.2\"/><circle cx=\"17.8\" cy=\"9.6\" r=\"2.2\"/><path d=\"M17.8 14.2c2.6 0 4.6 2.1 4.6 4.7\"/></svg></div>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            },
+            {
+              "id": "d64606a",
+              "elType": "widget",
+              "settings": {
+                "title": "THE PRESENT &MIDDOT; FROM COMMUNITY, FOR COMMUNITY &MIDDOT; WOMEN LEAD HERE",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#B4474B",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "461bf8b",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "b09fd06",
+              "elType": "widget",
+              "settings": {
+                "title": "Community",
+                "header_size": "h1",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 46,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.08,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "963010d",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 4,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "c4e5ced",
+              "elType": "widget",
+              "settings": {
+                "title": "Who leads change on the ground, and what do they need to do it?",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#B4474B",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "400",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "9b23cbf",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "cb1fd65",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Turns values into lived outcomes. Builds practical leadership, shared responsibility and community-driven solutions, with women and caregivers on the frontline.</p>",
+                "text_color": "#2A3B32",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 17,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.65,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        },
+        {
+          "id": "841aef3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 47,
+            "_inline_size": null,
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "f7f5f58",
+              "elType": "widget",
+              "settings": {
+                "html": "<div style=\"position:relative;border-radius:26px;overflow:hidden;aspect-ratio:3/4;background:#1B4332;box-shadow:0 40px 70px -36px rgba(27,67,50,.4)\"><img src=\"{{BASE_URL}}/assets/Community.png\" alt=\"\" style=\"position:absolute;inset:0;width:100%;height:100%;object-fit:cover\"><span style=\"position:absolute;left:28px;bottom:40px;font-family:'Inria Serif',serif;font-size:4.6rem;color:rgba(255,255,255,.88);line-height:1\">01</span><span style=\"position:absolute;left:28px;bottom:24px;font-family:Manrope,sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.75)\">Community</span></div>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "63164fe",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "90",
+          "right": "24",
+          "bottom": "30",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "5575826",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "8d681ee",
+              "elType": "widget",
+              "settings": {
+                "title": "WHERE THIS PILLAR WORKS",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#B4474B",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "8f6c004",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "21b1b63",
+              "elType": "widget",
+              "settings": {
+                "title": "Three strands",
+                "header_size": "h2",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 32,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "16ecfd7",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "90",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        },
+        "gap": {
+          "unit": "px",
+          "size": 20,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "d8725ca",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33.33,
+            "_inline_size": null,
+            "background_background": "classic",
+            "background_color": "#1B4332",
+            "border_radius": {
+              "unit": "px",
+              "top": "20",
+              "right": "20",
+              "bottom": "20",
+              "left": "20",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "36",
+              "right": "32",
+              "bottom": "36",
+              "left": "32",
+              "isLinked": false
+            },
+            "content_position": "bottom"
+          },
+          "elements": [
+            {
+              "id": "aad708b",
+              "elType": "widget",
+              "settings": {
+                "editor": "<span style=\"font-family:Inria Serif,serif;font-size:.85rem;opacity:.55\">01</span>",
+                "text_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "032c28c",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "62e0824",
+              "elType": "widget",
+              "settings": {
+                "title": "Women's Leadership",
+                "header_size": "h4",
+                "align": "left",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.3,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "e01344f",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "e3fba3c",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Wanita Mendunia. Training women community champions to lead from where they are.</p>",
+                "text_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.55,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        },
+        {
+          "id": "46abd36",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33.33,
+            "_inline_size": null,
+            "background_background": "classic",
+            "background_color": "#FBE4E5",
+            "border_radius": {
+              "unit": "px",
+              "top": "20",
+              "right": "20",
+              "bottom": "20",
+              "left": "20",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "36",
+              "right": "32",
+              "bottom": "36",
+              "left": "32",
+              "isLinked": false
+            },
+            "content_position": "bottom"
+          },
+          "elements": [
+            {
+              "id": "3306b1b",
+              "elType": "widget",
+              "settings": {
+                "editor": "<span style=\"font-family:Inria Serif,serif;font-size:.85rem;opacity:.55\">02</span>",
+                "text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "5843863",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "d641471",
+              "elType": "widget",
+              "settings": {
+                "title": "Care &amp; Wellbeing",
+                "header_size": "h4",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.3,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "dce5315",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "fe208c1",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Projek Komuniti Permata, the care economy, and health and mental health screening.</p>",
+                "text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.55,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        },
+        {
+          "id": "d0f187b",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33.33,
+            "_inline_size": null,
+            "background_background": "classic",
+            "background_color": "#F5EFE3",
+            "border_radius": {
+              "unit": "px",
+              "top": "20",
+              "right": "20",
+              "bottom": "20",
+              "left": "20",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#E0D8C6",
+            "padding": {
+              "unit": "px",
+              "top": "36",
+              "right": "32",
+              "bottom": "36",
+              "left": "32",
+              "isLinked": false
+            },
+            "content_position": "bottom"
+          },
+          "elements": [
+            {
+              "id": "b585edd",
+              "elType": "widget",
+              "settings": {
+                "editor": "<span style=\"font-family:Inria Serif,serif;font-size:.85rem;opacity:.55\">03</span>",
+                "text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "398fea8",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "5551128",
+              "elType": "widget",
+              "settings": {
+                "title": "Livelihoods",
+                "header_size": "h4",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.3,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "e1302db",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "bf9614d",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Financial literacy and community grants. Funding local solutions the community designs itself.</p>",
+                "text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.55,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "c8f2e53",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1b4332",
+        "padding": {
+          "unit": "px",
+          "top": "110",
+          "right": "24",
+          "bottom": "20",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "bc9a782",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "a8550e3",
+              "elType": "widget",
+              "settings": {
+                "title": "PROGRAMMES",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#F4A0A3",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "a4f1ea7",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "1085e29",
+              "elType": "widget",
+              "settings": {
+                "title": "What this looks like in practice",
+                "header_size": "h2",
+                "align": "left",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 32,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "ba93ec5",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1b4332",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "24",
+          "bottom": "20",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        },
+        "gap": {
+          "unit": "px",
+          "size": 20,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "7e5ab5c",
+          "elType": "column",
+          "settings": {
+            "_column_size": 6,
+            "_inline_size": null,
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "4a1240b",
+              "elType": "widget",
+              "settings": {
+                "title": "01",
+                "header_size": "span",
+                "align": "left",
+                "title_color": "rgba(255,255,255,.3)",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "400",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.0,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ]
+        },
+        {
+          "id": "8ccc49a",
+          "elType": "column",
+          "settings": {
+            "_column_size": 94,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "b1b7127",
+              "elType": "widget",
+              "settings": {
+                "editor": "<h4 style=\"margin:0;font-family:'Inria Serif',serif;font-size:1.28rem;color:#fff\"><a href=\"{{SITE_URL}}/women-leadership/\" style=\"color:#fff;text-decoration:none\">Wanita Mendunia &rarr;</a></h4>",
+                "text_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 20,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "e412c6d",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 6,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "2703e67",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Flagship women's leadership training, run community by community.</p>",
+                "text_color": "#C9DCD1",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.55,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "cbae384",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1b4332",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "24",
+          "bottom": "20",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        },
+        "gap": {
+          "unit": "px",
+          "size": 20,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "2bb704f",
+          "elType": "column",
+          "settings": {
+            "_column_size": 6,
+            "_inline_size": null,
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "fd6d164",
+              "elType": "widget",
+              "settings": {
+                "title": "02",
+                "header_size": "span",
+                "align": "left",
+                "title_color": "rgba(255,255,255,.3)",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "400",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.0,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ]
+        },
+        {
+          "id": "d9783de",
+          "elType": "column",
+          "settings": {
+            "_column_size": 94,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "fc6eb33",
+              "elType": "widget",
+              "settings": {
+                "editor": "<h4 style=\"margin:0;font-family:'Inria Serif',serif;font-size:1.28rem;color:#fff\"><a href=\"{{SITE_URL}}/women-leadership-2/\" style=\"color:#fff;text-decoration:none\">Wanita Mendunia 2.0 &rarr;</a></h4>",
+                "text_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 20,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "0a5b633",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 6,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "0d018a2",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>The next chapter of the same programme, deepening the leadership model.</p>",
+                "text_color": "#C9DCD1",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.55,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "af06c4d",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1b4332",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "24",
+          "bottom": "20",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        },
+        "gap": {
+          "unit": "px",
+          "size": 20,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "e081b37",
+          "elType": "column",
+          "settings": {
+            "_column_size": 6,
+            "_inline_size": null,
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "90392ad",
+              "elType": "widget",
+              "settings": {
+                "title": "03",
+                "header_size": "span",
+                "align": "left",
+                "title_color": "rgba(255,255,255,.3)",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "400",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.0,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ]
+        },
+        {
+          "id": "8738a63",
+          "elType": "column",
+          "settings": {
+            "_column_size": 94,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "998f07e",
+              "elType": "widget",
+              "settings": {
+                "editor": "<h4 style=\"margin:0;font-family:'Inria Serif',serif;font-size:1.28rem;color:#fff\"><a href=\"{{SITE_URL}}/care-wellbeing/\" style=\"color:#fff;text-decoration:none\">Projek Komuniti Permata &rarr;</a></h4>",
+                "text_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 20,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "fcf9c30",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 6,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "5be1be8",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Community-led care and wellbeing work on the ground.</p>",
+                "text_color": "#C9DCD1",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.55,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "2c22ec2",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1b4332",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "24",
+          "bottom": "20",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        },
+        "gap": {
+          "unit": "px",
+          "size": 20,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "6d7765a",
+          "elType": "column",
+          "settings": {
+            "_column_size": 6,
+            "_inline_size": null,
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "e466bd3",
+              "elType": "widget",
+              "settings": {
+                "title": "04",
+                "header_size": "span",
+                "align": "left",
+                "title_color": "rgba(255,255,255,.3)",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "400",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.0,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ]
+        },
+        {
+          "id": "34461e6",
+          "elType": "column",
+          "settings": {
+            "_column_size": 94,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "bef98fc",
+              "elType": "widget",
+              "settings": {
+                "title": "Community Grants",
+                "header_size": "h4",
+                "align": "left",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 20,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.3,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "30d723d",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 6,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "498e5c9",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Small grants that fund solutions the community designs itself.</p>",
+                "text_color": "#C9DCD1",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.55,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "cc44703",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1b4332",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "24",
+          "bottom": "20",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        },
+        "gap": {
+          "unit": "px",
+          "size": 20,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "cc2af1d",
+          "elType": "column",
+          "settings": {
+            "_column_size": 6,
+            "_inline_size": null,
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "0d125bf",
+              "elType": "widget",
+              "settings": {
+                "title": "05",
+                "header_size": "span",
+                "align": "left",
+                "title_color": "rgba(255,255,255,.3)",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "400",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.0,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ]
+        },
+        {
+          "id": "3b04cce",
+          "elType": "column",
+          "settings": {
+            "_column_size": 94,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "9c1aab2",
+              "elType": "widget",
+              "settings": {
+                "title": "Financial Literacy",
+                "header_size": "h4",
+                "align": "left",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 20,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.3,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "3c9ba0c",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 6,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "79d9460",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Practical money skills that build household resilience.</p>",
+                "text_color": "#C9DCD1",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.55,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "d51e368",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1b4332",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "24",
+          "bottom": "20",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        },
+        "gap": {
+          "unit": "px",
+          "size": 20,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "ee82534",
+          "elType": "column",
+          "settings": {
+            "_column_size": 6,
+            "_inline_size": null,
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "52d94a5",
+              "elType": "widget",
+              "settings": {
+                "title": "06",
+                "header_size": "span",
+                "align": "left",
+                "title_color": "rgba(255,255,255,.3)",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "400",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.0,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ]
+        },
+        {
+          "id": "816f7cb",
+          "elType": "column",
+          "settings": {
+            "_column_size": 94,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "b39a5b8",
+              "elType": "widget",
+              "settings": {
+                "title": "Health &amp; Mental Health Screening",
+                "header_size": "h4",
+                "align": "left",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 20,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.3,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "d9a95f1",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 6,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "fc48f6b",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Free screening days brought directly into communities.</p>",
+                "text_color": "#C9DCD1",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.55,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "01bded8",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1b4332",
+        "padding": {
+          "unit": "px",
+          "top": "16",
+          "right": "24",
+          "bottom": "110",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "5b91ab5",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "b0ff9c8",
+              "elType": "widget",
+              "settings": {
+                "html": "<div style=\"display:flex;align-items:baseline;gap:16px;padding-top:40px;border-top:1px solid rgba(255,255,255,.14)\"><span style=\"font-family:'Inria Serif',serif;font-size:3.2rem;font-weight:600;color:#F4A0A3;line-height:1\">20</span><span style=\"font-family:Manrope,sans-serif;font-size:1rem;color:#C9DCD1\">community grants awarded</span></div>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "1e13193",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "90",
+          "right": "24",
+          "bottom": "30",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "b4aa4bd",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "cf50aaf",
+              "elType": "widget",
+              "settings": {
+                "title": "KEEP EXPLORING",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#B4474B",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "f100a85",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "868e12f",
+              "elType": "widget",
+              "settings": {
+                "title": "The other pillars",
+                "header_size": "h2",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 32,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "47db8c8",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "110",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 1320,
+          "sizes": []
+        },
+        "gap": {
+          "unit": "px",
+          "size": 20,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "727301e",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": null,
+            "background_background": "classic",
+            "background_color": "#FBE4E5",
+            "border_radius": {
+              "unit": "px",
+              "top": "20",
+              "right": "20",
+              "bottom": "20",
+              "left": "20",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "32",
+              "right": "28",
+              "bottom": "32",
+              "left": "28",
+              "isLinked": false
+            },
+            "content_position": "bottom"
+          },
+          "elements": [
+            {
+              "id": "316d13e",
+              "elType": "widget",
+              "settings": {
+                "editor": "<span style=\"font-family:Inria Serif,serif;font-size:.95rem;opacity:.6\">02</span>",
+                "text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "fa46f71",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "5b1c9cf",
+              "elType": "widget",
+              "settings": {
+                "title": "Youth &amp; Education",
+                "header_size": "h3",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "972f059",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "65a7c7b",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Empowering young people with knowledge, skills and confidence.</p>",
+                "text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.5,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "b541735",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "1296af3",
+              "elType": "widget",
+              "settings": {
+                "text": "Explore &rarr;",
+                "link": {
+                  "url": "{{SITE_URL}}/youth-education/",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "align": "left",
+                "background_color": "transparent",
+                "button_text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": false
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "14",
+                  "right": "26",
+                  "bottom": "14",
+                  "left": "26",
+                  "isLinked": false
+                },
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1.5",
+                  "right": "1.5",
+                  "bottom": "1.5",
+                  "left": "1.5",
+                  "isLinked": true
+                },
+                "border_color": "#1B4332"
+              },
+              "elements": [],
+              "widgetType": "button"
+            }
+          ]
+        },
+        {
+          "id": "1a2c377",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": null,
+            "background_background": "classic",
+            "background_color": "#F5EFE3",
+            "border_radius": {
+              "unit": "px",
+              "top": "20",
+              "right": "20",
+              "bottom": "20",
+              "left": "20",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "32",
+              "right": "28",
+              "bottom": "32",
+              "left": "28",
+              "isLinked": false
+            },
+            "content_position": "bottom"
+          },
+          "elements": [
+            {
+              "id": "4d7ae97",
+              "elType": "widget",
+              "settings": {
+                "editor": "<span style=\"font-family:Inria Serif,serif;font-size:.95rem;opacity:.6\">03</span>",
+                "text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "f5a23f8",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "d8b0dd4",
+              "elType": "widget",
+              "settings": {
+                "title": "Ideas, Ethics &amp; Society",
+                "header_size": "h3",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "b6ff571",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 8,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "128aeac",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Championing ideas that inform, inspire and create impact.</p>",
+                "text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.5,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "ea49836",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "8022f21",
+              "elType": "widget",
+              "settings": {
+                "text": "Explore &rarr;",
+                "link": {
+                  "url": "{{SITE_URL}}/ideas-ethics-society/",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "align": "left",
+                "background_color": "transparent",
+                "button_text_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": false
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "14",
+                  "right": "26",
+                  "bottom": "14",
+                  "left": "26",
+                  "isLinked": false
+                },
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1.5",
+                  "right": "1.5",
+                  "bottom": "1.5",
+                  "left": "1.5",
+                  "isLinked": true
+                },
+                "border_color": "#1B4332"
+              },
+              "elements": [],
+              "widgetType": "button"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Community \u2014 Suluh Centre",
+  "type": "page"
+}

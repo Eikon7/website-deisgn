@@ -79,6 +79,26 @@ overlay (`.phero2-cap`) needs absolute positioning free-tier Image/Heading
 widgets don't expose — same bespoke-HTML-widget pattern as home.json's
 ticker and subscribe form.
 
+## community.json
+
+Ports community.html (a pillar detail page — the same template pattern
+reused for Youth & Education and Ideas, Ethics & Society once you're
+ready for those): Page hero (breadcrumb, icon badge, eyebrow, heading, a
+coral "question" line, lead paragraph, photo panel with a big "01" +
+caption) → Three strands (3 equal cards: Women's Leadership / Care &
+Wellbeing / Livelihoods — pages2.css:83-97, a flat 3-column grid, not the
+asymmetric bento) → Programmes (dark forest band, 6 numbered rows in the
+homepage's p-row rhythm but pale-on-dark, then a big stat-pair number) →
+Keep exploring (2 equal bento-style cards linking to the other two
+pillars).
+
+Two **HTML** widgets: the icon badge and the hero photo panel's "01" +
+caption overlay, both needing absolute positioning free-tier widgets
+don't expose (same pattern as home.json/work.json). One **Text Editor**
+standing in for a heading where a programme row title needs to be a
+link — Elementor's Heading widget title field is plain text only and
+won't render an `<a>` tag.
+
 ## What's simplified vs. the static pages
 
 Being upfront about the gap, since "native widgets" was chosen over the
@@ -133,8 +153,9 @@ reproduce without Elementor Pro.
 - [x] `about.json` — confirmed working (test-imported successfully)
 - [x] `home.json` — built, structure/colors corrected against concept2.css
 - [x] `work.json` — built, awaiting your test-import
+- [x] `community.json` — built, awaiting your test-import
 - [ ] Contact, Research, Stories, Story Detail, Grounded, People,
-      Community, Youth & Education, Ideas/Ethics/Society, Care &
+      Youth & Education, Ideas/Ethics/Society, Care &
       Wellbeing, Women's Leadership ×2 — note Research/Stories/Grounded/
       Story Detail are the theme's PHP templates, not Elementor pages
       (see wordpress-theme/README.md) — say the word and I'll build the
