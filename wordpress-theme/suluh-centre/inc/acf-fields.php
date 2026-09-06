@@ -70,7 +70,8 @@ function suluh_register_acf_fields() {
 				'type'  => 'tab',
 			),
 			array( 'key' => 'field_story_episode', 'label' => 'Episode number', 'name' => 'episode_number', 'type' => 'number' ),
-			array( 'key' => 'field_story_audio', 'label' => 'Audio embed URL', 'name' => 'audio_url', 'type' => 'url', 'instructions' => 'Renders an <audio> player in place of the photo block on the story page when filled in.' ),
+			array( 'key' => 'field_story_video', 'label' => 'Video URL', 'name' => 'video_url', 'type' => 'url', 'instructions' => 'A YouTube, Vimeo, etc. link — renders a proper embedded video player in place of the photo block. Takes priority over Audio embed URL below if both are filled in.' ),
+			array( 'key' => 'field_story_audio', 'label' => 'Audio embed URL', 'name' => 'audio_url', 'type' => 'url', 'instructions' => 'A DIRECT link to an audio file (e.g. ending in .mp3) — renders a plain <audio> player. Not for YouTube/Vimeo links; use Video URL above for those.' ),
 		),
 		'location' => array( array( array( 'param' => 'post_type', 'operator' => '==', 'value' => 'story' ) ) ),
 	) );

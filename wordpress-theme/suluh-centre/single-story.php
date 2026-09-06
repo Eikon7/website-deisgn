@@ -11,6 +11,14 @@ while ( have_posts() ) : the_post();
 	$terms    = get_the_terms( get_the_ID(), 'story_type' );
 	$type     = ( $terms && ! is_wp_error( $terms ) ) ? $terms[0] : null;
 	$is_conv  = $type && 'convenings' === $type->slug;
+	$video       = suluh_field( 'video_url' );
+	// wp_oembed_get() is WordPress core's built-in embed system — it
+	// already knows how to turn a plain YouTube/Vimeo/etc. URL into safe,
+	// correctly-sized iframe markup (no custom URL parsing needed), and
+	// returns false for anything it doesn't recognize or can't reach, so
+	// a bad/unsupported link falls through to audio/photo below instead
+	// of breaking the page.
+	$video_embed = $video ? wp_oembed_get( $video, array( 'width' => 860 ) ) : false;
 	$audio    = suluh_field( 'audio_url' );
 	$location = suluh_field( 'location' );
 	$partners = suluh_field( 'partners' );
@@ -31,9 +39,14 @@ while ( have_posts() ) : the_post();
   </section>
 
   <section class="pad wrap" style="padding-top:36px;max-width:860px">
-    <!-- Media block: an <audio> player for Grounded episodes, a photo
-         (or placeholder) for everything else. -->
-    <?php if ( $audio ) : ?>
+    <!-- Media block: an embedded video player for Grounded episodes with
+         a Video URL, else an <audio> player for ones with just an audio
+         file, else a photo (or placeholder) for everything else. -->
+    <?php if ( $video_embed ) : ?>
+      <div class="story-media story-media-video">
+        <?php echo $video_embed; // phpcs:ignore -- wp_oembed_get() output is already sanitized by core ?>
+      </div>
+    <?php elseif ( $audio ) : ?>
       <div class="story-media" style="background:var(--cream)">
         <audio controls style="width:90%" src="<?php echo esc_url( $audio ); ?>"></audio>
       </div>
