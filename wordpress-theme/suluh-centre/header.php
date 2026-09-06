@@ -37,7 +37,7 @@
         </div>
         <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>">About</a>
         <a href="<?php echo esc_url( home_url( '/#impact' ) ); ?>">Impact</a>
-        <a href="<?php echo esc_url( home_url( '/stories/' ) ); ?>">Stories</a>
+        <a href="<?php echo esc_url( home_url( '/publications/' ) ); ?>">Publications</a>
         <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Contact</a>
       <?php endif; ?>
     </nav>
@@ -67,7 +67,7 @@
     </div>
     <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>">About</a>
     <a href="<?php echo esc_url( home_url( '/#impact' ) ); ?>">Impact</a>
-    <a href="<?php echo esc_url( home_url( '/stories/' ) ); ?>">Stories</a>
+    <a href="<?php echo esc_url( home_url( '/publications/' ) ); ?>">Publications</a>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Contact</a>
   <?php endif; ?>
 </div>

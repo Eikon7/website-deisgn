@@ -107,7 +107,7 @@ usort( $q->posts, function( $a, $b ) {
       <svg width="14" height="14"><use href="#c2-ico-close"/></svg>
     </button>
     <span class="eyebrow">Download</span>
-    <h4>Get this publication</h4>
+    <h4>Get this research item</h4>
     <p class="dl-doc-title">Please share your name and email to download <b id="dlDocTitle"></b>.</p>
     <form id="dlForm" novalidate>
       <div class="contact-field">

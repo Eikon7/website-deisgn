@@ -18,9 +18,9 @@
       <h5>Read</h5>
       <ul>
         <li><a href="<?php echo esc_url( home_url( '/research/' ) ); ?>">Research</a></li>
-        <li><a href="<?php echo esc_url( home_url( '/stories/' ) ); ?>">Stories</a></li>
+        <li><a href="<?php echo esc_url( home_url( '/publications/' ) ); ?>">Publications</a></li>
         <li><a href="<?php echo esc_url( home_url( '/grounded/' ) ); ?>">Grounded</a></li>
-        <li><a href="<?php echo esc_url( home_url( '/stories/' ) ); ?>">Convenings</a></li>
+        <li><a href="<?php echo esc_url( home_url( '/publications/' ) ); ?>">Convenings</a></li>
       </ul>
     </div>
     <div>

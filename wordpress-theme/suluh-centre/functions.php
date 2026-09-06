@@ -3,8 +3,10 @@
  * Suluh Centre theme bootstrap.
  *
  * Scope: this theme exists ONLY to back the three CMS-driven surfaces —
- * Research & Advocacy (publication post type), Stories (story post type),
- * and Grounded (a filtered view of the story stream). Every other page
+ * Research (publication post type, at /research/), Publications (story
+ * post type, at /publications/ — see inc/content-types.php for why the
+ * PHP post_type keys don't match these labels), and Grounded (a filtered
+ * view of the story stream). Every other page
  * (Home, About, Contact, Work, People, the three pillar pages, the
  * programme pages) is a plain WordPress Page built and edited in
  * Elementor — this theme just needs to get out of their way (header.php /
@@ -52,15 +54,36 @@ function suluh_assets() {
 add_action( 'wp_enqueue_scripts', 'suluh_assets' );
 
 /**
- * Content model, taxonomies, and admin field groups for Story and
- * Publication — the only two content types this theme manages.
+ * Content model, taxonomies, and admin field groups for the `story` and
+ * `publication` post types — the only two content types this theme
+ * manages (see inc/content-types.php for their current "Publications"/
+ * "Research" labels).
  */
 require get_template_directory() . '/inc/content-types.php';
 require get_template_directory() . '/inc/acf-fields.php';
 require get_template_directory() . '/inc/template-tags.php';
 
 /**
- * Who downloaded which Research publication: the "Downloads" list in
- * wp-admin, and the AJAX endpoint the gated-download modal posts to.
+ * Who downloaded which Research item: the "Downloads" list in wp-admin,
+ * and the AJAX endpoint the gated-download modal posts to.
  */
 require get_template_directory() . '/inc/download-leads.php';
+
+/**
+ * The newsroom stream's archive moved from /stories/ to /publications/
+ * when it was relabeled "Publications" (see inc/content-types.php). This
+ * redirects anyone who still has an old /stories/ URL bookmarked or
+ * linked, rather than leaving it 404.
+ */
+function suluh_redirect_old_stories_urls() {
+	if ( ! is_404() ) {
+		return;
+	}
+	$path = trim( wp_parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH ), '/' );
+	if ( 'stories' === $path || 0 === strpos( $path, 'stories/' ) ) {
+		$new_path = 'publications' . substr( $path, strlen( 'stories' ) );
+		wp_safe_redirect( home_url( '/' . $new_path . '/' ), 301 );
+		exit;
+	}
+}
+add_action( 'template_redirect', 'suluh_redirect_old_stories_urls' );

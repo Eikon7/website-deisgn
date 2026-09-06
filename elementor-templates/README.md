@@ -52,7 +52,9 @@ all free-tier.
 Ports concept2.html's full sequence: Hero → pillar/programme ticker →
 Pillars bento (Community / Youth & Education / Ideas, spanning full-width
 Research row) → The Idea → Continuity timeline → Impact numbers → How we
-work (numbered list) → Stories (featured + list) → closing subscribe band.
+work (numbered list) → Publications (featured + list, linking to
+`/publications/` — the `story` post type's archive; see the rename note
+in `wordpress-theme/README.md`) → closing subscribe band.
 
 Same widget set as About, plus two **HTML** widgets for the two pieces
 that are genuinely bespoke rather than a layout free widgets can express:
@@ -175,8 +177,10 @@ reproduce without Elementor Pro.
 - [x] `community.json` — built, awaiting your test-import
 - [x] `youth-education.json` — built, awaiting your test-import
 - [x] `ideas-ethics-society.json` — built, awaiting your test-import
-- [ ] Contact, Research, Stories, Story Detail, Grounded, People, Care &
-      Wellbeing, Women's Leadership ×2 — note Research/Stories/Grounded/
-      Story Detail are the theme's PHP templates, not Elementor pages
-      (see wordpress-theme/README.md) — say the word and I'll build the
-      rest of the plain pages the same way.
+- [ ] Contact, Research, Publications, Publication Detail, Grounded,
+      People, Care & Wellbeing, Women's Leadership ×2 — note Research/
+      Publications/Grounded/Publication Detail are the theme's PHP
+      templates (`archive-publication.php`, `archive-story.php`,
+      `single-story.php`, `page-templates/grounded.php`), not Elementor
+      pages (see wordpress-theme/README.md) — say the word and I'll
+      build the rest of the plain pages the same way.

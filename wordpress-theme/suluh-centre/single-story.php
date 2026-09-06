@@ -22,7 +22,7 @@ while ( have_posts() ) : the_post();
   <!-- ============ Story header ============ -->
   <section class="story-hero-s">
     <div class="wrap" style="max-width:860px">
-      <p class="crumb"><a href="<?php echo esc_url( home_url( '/stories/' ) ); ?>">Stories</a><?php echo $type ? ' / ' . esc_html( $type->name ) : ''; ?></p>
+      <p class="crumb"><a href="<?php echo esc_url( home_url( '/publications/' ) ); ?>">Publications</a><?php echo $type ? ' / ' . esc_html( $type->name ) : ''; ?></p>
       <?php if ( $row['tag'] ) : ?><span class="eyebrow story-tag <?php echo esc_attr( $row['type_class'] ); ?>"><?php echo wp_kses_post( $row['tag'] ); ?></span><?php endif; ?>
       <h1 style="font-family:var(--serif);font-weight:600;font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.15;margin:14px 0 20px;color:var(--forest)"><?php the_title(); ?></h1>
       <?php if ( $row['dek'] ) : ?><p class="lead2"><?php echo esc_html( $row['dek'] ); ?></p><?php endif; ?>
@@ -64,7 +64,7 @@ while ( have_posts() ) : the_post();
       <?php the_content(); ?>
     </div>
 
-    <a class="story-back" href="<?php echo esc_url( home_url( '/stories/' ) ); ?>"><svg width="13" height="13"><use href="#c2-ico-arrow"/></svg> All stories</a>
+    <a class="story-back" href="<?php echo esc_url( home_url( '/publications/' ) ); ?>"><svg width="13" height="13"><use href="#c2-ico-arrow"/></svg> All publications</a>
   </section>
 
 <?php endwhile; get_footer(); ?>
