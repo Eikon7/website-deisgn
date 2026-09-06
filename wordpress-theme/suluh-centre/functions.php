@@ -1,6 +1,6 @@
 <?php
 /**
- * Suluh Centre theme bootstrap.
+ * Suluh Center theme bootstrap.
  *
  * Scope: this theme exists ONLY to back the three CMS-driven surfaces —
  * Research (publication post type, at /research/), Publications (story

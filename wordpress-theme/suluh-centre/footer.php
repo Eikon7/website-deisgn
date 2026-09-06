@@ -34,7 +34,7 @@
     </div>
   </div>
   <div class="wrap c2-fbot">
-    <span>Suluh Centre &middot; Kuala Lumpur, Malaysia</span>
+    <span>Suluh Center &middot; Kuala Lumpur, Malaysia</span>
     <span>Independent &middot; Secular &middot; National</span>
   </div>
 </footer>

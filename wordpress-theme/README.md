@@ -1,4 +1,4 @@
-# Suluh Centre — WordPress theme
+# Suluh Center — WordPress theme
 
 This theme is deliberately small. Every marketing page (Home, About,
 Contact, Work, People, the three pillar pages, the programme pages) is a
