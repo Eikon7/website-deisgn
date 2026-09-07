@@ -30,7 +30,8 @@
           "size": 640,
           "sizes": []
         },
-        "height": "min-height"
+        "height": "min-height",
+        "_element_id": "c2Hero"
       },
       "elements": [
         {

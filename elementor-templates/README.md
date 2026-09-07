@@ -65,6 +65,17 @@ that are genuinely bespoke rather than a layout free widgets can express:
   already-enqueued `assets/js/concept2.js` (validates the email,
   shows a status message) keeps working completely unchanged — no
   Elementor Pro Forms widget needed for this one.
+- The **Hero section** has its Elementor "CSS ID" (Advanced tab) set to
+  `c2Hero` (`_element_id` in the JSON). This isn't decorative — the
+  theme's header-solidify-on-scroll effect (`header.c2-header.solid` in
+  `concept2.css`, toggled by an `IntersectionObserver` in
+  `concept2.js`) specifically looks for `#c2Hero` to know when the
+  hero has scrolled out of view. Without that id, the observer never
+  attaches and the header stays permanently transparent on the
+  homepage, even after scrolling — which is exactly what was happening
+  before this was added. If the Hero section is ever rebuilt from
+  scratch in Elementor, this id has to be re-added by hand (Hero
+  section → Edit Section → Advanced → CSS ID → `c2Hero`).
 
 ### Latest Publications — a real custom Elementor widget, not static text
 
