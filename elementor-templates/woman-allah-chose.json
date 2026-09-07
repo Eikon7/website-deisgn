@@ -1,0 +1,704 @@
+{
+  "content": [
+    {
+      "id": "805fc36",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#F5EFE3",
+        "padding": {
+          "unit": "px",
+          "top": "160",
+          "right": "24",
+          "bottom": "88",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 800,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "750a77c",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "efa6433",
+              "elType": "widget",
+              "settings": {
+                "editor": "<a style=\"color: #b4474b; font-weight: 600; text-decoration: none;\" href=\"{{SITE_URL}}/work/\">Our Work</a> / <a style=\"color: #b4474b; font-weight: 600; text-decoration: none;\" href=\"{{SITE_URL}}/ideas-ethics-society/\">Ideas, Ethics &amp; Society</a> / The Woman Allah Chose",
+                "text_color": "#6E7468",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "8d01b9c",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "5ddec81",
+              "elType": "widget",
+              "settings": {
+                "title": "The Woman Allah Chose: Timeless Lessons of Surah Maryam",
+                "header_size": "h1",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 40,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.15,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "3c09f73",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "88",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 800,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "a5301c7",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "0da64a2",
+              "elType": "widget",
+              "settings": {
+                "title": "WHAT IT IS",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#B4474B",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "b284fb9",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "17d3ccd",
+              "elType": "widget",
+              "settings": {
+                "title": "An intimate encounter with Surah Maryam",
+                "header_size": "h2",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 32,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "1addc15",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 20,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "ea0817b",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>An intimate learning session exploring Surah Maryam through Qur\u2019anic scholarship and reflection, led by Shaykh Dr Mohammad Akram Nadwi. The session draws timeless lessons from the women and stories within the surah and connects them to questions of faith, resilience and life today.</p>",
+                "text_color": "#2A3B32",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 17,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.72,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "5addca4",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "88",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 800,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "6fd0914",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "032ce46",
+              "elType": "widget",
+              "settings": {
+                "title": "WHY IT EXISTS",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#B4474B",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "5a3d2fe",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "28cc522",
+              "elType": "widget",
+              "settings": {
+                "title": "Moving from inspiration to deeper understanding",
+                "header_size": "h2",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 32,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "456addf",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 20,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "a8eb58c",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Many Muslims encounter the Qur\u2019an devotionally, but have fewer opportunities to engage deeply with its stories, context and relevance to contemporary life. The programme creates a space to move beyond inspiration alone towards deeper understanding \u2014 particularly of how the Qur\u2019an speaks to women\u2019s experiences, trials, dignity and agency.</p>",
+                "text_color": "#2A3B32",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 17,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.72,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "e977741",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "88",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 800,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "ee15a7c",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "dea3607",
+              "elType": "widget",
+              "settings": {
+                "title": "HOW IT WORKS",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#B4474B",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "568c42c",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "ba62099",
+              "elType": "widget",
+              "settings": {
+                "title": "Lecture, conversation and reflection",
+                "header_size": "h2",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 32,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "2933aae",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 20,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "17ff0f2",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Participants are guided through key passages and themes from Surah Maryam, with scholarly explanation, reflection and contemporary application. The session combines a lecture by Shaykh Dr Mohammad Akram Nadwi, a moderated conversation with Nurul Izzah Anwar, and space for participants to engage with the ideas raised.</p>",
+                "text_color": "#2A3B32",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 17,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.72,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "037b20b",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "88",
+          "right": "24",
+          "bottom": "20",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 800,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "e1233f2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "88595d6",
+              "elType": "widget",
+              "settings": {
+                "title": "PARTICIPANT QUOTE",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#B4474B",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "6cfe713",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "bed4a09",
+              "elType": "widget",
+              "settings": {
+                "title": "In their own words",
+                "header_size": "h2",
+                "align": "left",
+                "title_color": "#1B4332",
+                "typography_typography": "custom",
+                "typography_font_family": "Inria Serif",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 32,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.25,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "22bb4da",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "90",
+          "left": "24",
+          "isLinked": false
+        },
+        "content_width": {
+          "unit": "px",
+          "size": 800,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "55619f2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null,
+            "background_background": "classic",
+            "background_color": "#F5EFE3",
+            "border_radius": {
+              "unit": "px",
+              "top": "20",
+              "right": "20",
+              "bottom": "20",
+              "left": "20",
+              "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#E0D8C6",
+            "padding": {
+              "unit": "px",
+              "top": "32",
+              "right": "32",
+              "bottom": "32",
+              "left": "32",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "5323ad6",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p style=\"font-family:'Inria Serif',serif;font-size:1.15rem;line-height:1.5;color:#1B4332;margin:0 0 18px\">&ldquo;I came away seeing Surah Maryam not simply as a story I had known for years, but as a source of guidance that speaks directly to the realities we navigate today.&rdquo;</p><p style=\"font-family:Manrope,sans-serif;font-size:.86rem;color:#6E7468;margin:0\"><b style=\"color:#1B4332\">Session participant</b></p>",
+                "text_color": "#6E7468",
+                "typography_typography": "custom",
+                "typography_font_family": "Manrope",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.72,
+                  "sizes": []
+                },
+                "align": "left"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "The Woman Allah Chose \u2014 Suluh Centre",
+  "type": "page"
+}

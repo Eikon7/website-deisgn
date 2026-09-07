@@ -204,6 +204,27 @@ source design.
 
 Validated: 62 elements, all IDs unique, 6 top-level sections.
 
+## woman-allah-chose.json
+
+Not ported from a static HTML page — this content was supplied directly
+(no source page exists for it). Built against the client's own
+hand-finished Elementor export of Wanita Mendunia (the reference file
+they sent after editing my original women-leadership.json build), matching
+its exact colors/fonts/sizes, rather than my own build script's version.
+
+Only 5 sections, because the supplied content only covers 5 of that
+template's ~10: Title block → What it is → Why it exists → How it works
+(as plain text, not the 3-numbered-step layout, since this content isn't
+naturally 3 discrete steps) → one participant quote card (the reference
+template's "Voices" has two side by side; only one quote was given).
+Deliberately has no key-facts strip, hero/split photos, Partners, photo
+mosaic, "What comes next" callout, or Related cards — no facts or
+photos were supplied for any of those, and inventing them wasn't the
+brief. Breadcrumb: Our Work / Ideas, Ethics & Society / The Woman Allah
+Chose.
+
+Validated: 34 elements, all IDs unique, 6 top-level sections.
+
 ## What's simplified vs. the static pages
 
 Being upfront about the gap, since "native widgets" was chosen over the
@@ -263,6 +284,7 @@ reproduce without Elementor Pro.
 - [x] `ideas-ethics-society.json` — built, awaiting your test-import
 - [x] `women-leadership.json` — built, awaiting your test-import
 - [x] `people.json` — built, awaiting your test-import
+- [x] `woman-allah-chose.json` — built, awaiting your test-import
 - [ ] Contact, Research, Publications, Publication Detail, Grounded,
       Care & Wellbeing, Women's Leadership 2.0 — note Research/
       Publications/Grounded/Publication Detail are the theme's PHP
