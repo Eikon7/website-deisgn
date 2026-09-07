@@ -210,6 +210,60 @@ left border, serif quote text, same visual family as the site's
 existing `.next-callout` border-left callouts) — nothing else needs
 touching. Drop the `<cite>` line if there's no attribution to give.
 
+## Using Contact Form 7 instead of the built-in Contact form
+
+The Contact page's form (`elementor-templates/contact.json`) is a plain
+`<form>` — client-side validation only via `concept2.js`, no backend
+mailer. If you install Contact Form 7 and want that form's look with a
+real mailer behind it, paste this into the CF7 form's **Form** tab in
+place of the default generated markup:
+
+```html
+<div class="contact-card">
+  <h4>Send a message</h4>
+
+  <div class="contact-field">
+    <label for="ccName">Name</label>
+    [text* your-name id:ccName]
+  </div>
+
+  <div class="contact-field">
+    <label for="ccOrg">Organisation</label>
+    [text your-org id:ccOrg]
+  </div>
+
+  <div class="contact-field">
+    <label for="ccEmail">Email</label>
+    [email* your-email id:ccEmail]
+  </div>
+
+  <div class="contact-field">
+    <label for="ccMessage">Message</label>
+    [textarea* your-message id:ccMessage]
+  </div>
+
+  [submit class:btn2 "Send"]
+</div>
+```
+
+The `id:` option just sets the `id` on CF7's generated input/textarea —
+CF7 still adds its own `wpcf7-form-control` classes underneath, but
+since each field sits inside the existing `.contact-field`/
+`.contact-card` divs, the site's current CSS picks it up with no
+changes. `pages2.css` has a small extra block
+(`.wpcf7-not-valid-tip`, `.wpcf7-response-output`, `.wpcf7-spinner`) for
+the three things CF7 adds that the hand-built form never needed:
+inline validation errors, the overall success/error message, and the
+loading spinner.
+
+To actually use this on the live Contact page: replace the Custom HTML
+widget holding the current `<form>` in the Contact page's Elementor
+layout with CF7's own Elementor widget (or a Shortcode widget with
+`[contact-form-7 id="..."]`), pointed at a form using the markup above.
+That swap isn't done in `elementor-templates/contact.json` — the CSS is
+ready for it, but wiring in a real plugin/shortcode is a call to make
+in wp-admin, not something to bake into the template file.
+
 ## Known gaps
 
 - No bilingual (EN/BM) support is wired in. If that's still needed,
