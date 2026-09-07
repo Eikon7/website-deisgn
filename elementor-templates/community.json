@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "ffa4367",
+      "id": "8a6df20",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -27,7 +27,7 @@
       },
       "elements": [
         {
-          "id": "42a4e37",
+          "id": "64bfe73",
           "elType": "column",
           "settings": {
             "_column_size": 53,
@@ -35,7 +35,7 @@
           },
           "elements": [
             {
-              "id": "dfeecfd",
+              "id": "4631a40",
               "elType": "widget",
               "settings": {
                 "editor": "<p><a href=\"{{SITE_URL}}/work/\" style=\"color:#B4474B;font-weight:600;text-decoration:none\">Our Work</a> / Community</p>",
@@ -58,7 +58,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "bb0cf07",
+              "id": "b48f8eb",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -71,7 +71,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "b2dca7e",
+              "id": "493ca26",
               "elType": "widget",
               "settings": {
                 "html": "<div style=\"width:56px;height:56px;border-radius:50%;background:#FBE4E5;display:flex;align-items:center;justify-content:center;margin-bottom:22px\"><svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1B4332\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"9\" cy=\"7.6\" r=\"3.1\"/><path d=\"M2.8 20c0-3.4 2.8-6.2 6.2-6.2s6.2 2.8 6.2 6.2\"/><circle cx=\"17.8\" cy=\"9.6\" r=\"2.2\"/><path d=\"M17.8 14.2c2.6 0 4.6 2.1 4.6 4.7\"/></svg></div>"
@@ -80,7 +80,7 @@
               "widgetType": "html"
             },
             {
-              "id": "d64606a",
+              "id": "1427a7e",
               "elType": "widget",
               "settings": {
                 "title": "THE PRESENT &MIDDOT; FROM COMMUNITY, FOR COMMUNITY &MIDDOT; WOMEN LEAD HERE",
@@ -110,7 +110,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "461bf8b",
+              "id": "b684c2a",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -123,7 +123,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "b09fd06",
+              "id": "7b97bc1",
               "elType": "widget",
               "settings": {
                 "title": "Community",
@@ -148,7 +148,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "963010d",
+              "id": "0bdb90a",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -161,7 +161,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "c4e5ced",
+              "id": "9713bc9",
               "elType": "widget",
               "settings": {
                 "title": "Who leads change on the ground, and what do they need to do it?",
@@ -186,7 +186,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "9b23cbf",
+              "id": "b97a110",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -199,7 +199,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "cb1fd65",
+              "id": "dacd2da",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Turns values into lived outcomes. Builds practical leadership, shared responsibility and community-driven solutions, with women and caregivers on the frontline.</p>",
@@ -224,7 +224,7 @@
           ]
         },
         {
-          "id": "841aef3",
+          "id": "6ca601e",
           "elType": "column",
           "settings": {
             "_column_size": 47,
@@ -233,7 +233,7 @@
           },
           "elements": [
             {
-              "id": "f7f5f58",
+              "id": "285ab6f",
               "elType": "widget",
               "settings": {
                 "html": "<div style=\"position:relative;border-radius:26px;overflow:hidden;aspect-ratio:3/4;background:#1B4332;box-shadow:0 40px 70px -36px rgba(27,67,50,.4)\"><img src=\"{{BASE_URL}}/assets/Community.png\" alt=\"\" style=\"position:absolute;inset:0;width:100%;height:100%;object-fit:cover\"><span style=\"position:absolute;left:28px;bottom:40px;font-family:'Inria Serif',serif;font-size:4.6rem;color:rgba(255,255,255,.88);line-height:1\">01</span><span style=\"position:absolute;left:28px;bottom:24px;font-family:Manrope,sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.75)\">Community</span></div>"
@@ -247,7 +247,7 @@
       "isInner": false
     },
     {
-      "id": "63164fe",
+      "id": "28a0d8c",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -268,7 +268,7 @@
       },
       "elements": [
         {
-          "id": "5575826",
+          "id": "61abf27",
           "elType": "column",
           "settings": {
             "_column_size": 100,
@@ -276,7 +276,7 @@
           },
           "elements": [
             {
-              "id": "8d681ee",
+              "id": "050f0a3",
               "elType": "widget",
               "settings": {
                 "title": "WHERE THIS PILLAR WORKS",
@@ -306,7 +306,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "8f6c004",
+              "id": "2824fd4",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -319,7 +319,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "21b1b63",
+              "id": "bafcba2",
               "elType": "widget",
               "settings": {
                 "title": "Three strands",
@@ -349,7 +349,7 @@
       "isInner": false
     },
     {
-      "id": "16ecfd7",
+      "id": "f11f967",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -375,390 +375,59 @@
       },
       "elements": [
         {
-          "id": "d8725ca",
+          "id": "8f0ff23",
           "elType": "column",
           "settings": {
             "_column_size": 33.33,
-            "_inline_size": null,
-            "background_background": "classic",
-            "background_color": "#1B4332",
-            "border_radius": {
-              "unit": "px",
-              "top": "20",
-              "right": "20",
-              "bottom": "20",
-              "left": "20",
-              "isLinked": true
-            },
-            "padding": {
-              "unit": "px",
-              "top": "36",
-              "right": "32",
-              "bottom": "36",
-              "left": "32",
-              "isLinked": false
-            },
-            "content_position": "bottom"
+            "_inline_size": null
           },
           "elements": [
             {
-              "id": "aad708b",
+              "id": "367768b",
               "elType": "widget",
               "settings": {
-                "editor": "<span style=\"font-family:Inria Serif,serif;font-size:.85rem;opacity:.55\">01</span>",
-                "text_color": "#FFFFFF",
-                "typography_typography": "custom",
-                "typography_font_family": "Manrope",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 14,
-                  "sizes": []
-                },
-                "typography_line_height": {
-                  "unit": "em",
-                  "size": 1.6,
-                  "sizes": []
-                },
-                "align": "left"
+                "html": "<a class=\"strand-card t1\" href=\"{{SITE_URL}}/women-leadership/\"><span class=\"idx\">01</span><h4>Women's Leadership</h4><p>Wanita Mendunia. Training women community champions to lead from where they are.</p></a>"
               },
               "elements": [],
-              "widgetType": "text-editor"
-            },
-            {
-              "id": "032c28c",
-              "elType": "widget",
-              "settings": {
-                "space": {
-                  "unit": "px",
-                  "size": 12,
-                  "sizes": []
-                }
-              },
-              "elements": [],
-              "widgetType": "spacer"
-            },
-            {
-              "id": "62e0824",
-              "elType": "widget",
-              "settings": {
-                "title": "Women's Leadership",
-                "header_size": "h4",
-                "align": "left",
-                "title_color": "#FFFFFF",
-                "typography_typography": "custom",
-                "typography_font_family": "Inria Serif",
-                "typography_font_weight": "600",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 22,
-                  "sizes": []
-                },
-                "typography_line_height": {
-                  "unit": "em",
-                  "size": 1.3,
-                  "sizes": []
-                }
-              },
-              "elements": [],
-              "widgetType": "heading"
-            },
-            {
-              "id": "e01344f",
-              "elType": "widget",
-              "settings": {
-                "space": {
-                  "unit": "px",
-                  "size": 8,
-                  "sizes": []
-                }
-              },
-              "elements": [],
-              "widgetType": "spacer"
-            },
-            {
-              "id": "e3fba3c",
-              "elType": "widget",
-              "settings": {
-                "editor": "<p>Wanita Mendunia. Training women community champions to lead from where they are.</p>",
-                "text_color": "#FFFFFF",
-                "typography_typography": "custom",
-                "typography_font_family": "Manrope",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 15,
-                  "sizes": []
-                },
-                "typography_line_height": {
-                  "unit": "em",
-                  "size": 1.55,
-                  "sizes": []
-                },
-                "align": "left"
-              },
-              "elements": [],
-              "widgetType": "text-editor"
+              "widgetType": "html"
             }
           ]
         },
         {
-          "id": "46abd36",
+          "id": "3922b5c",
           "elType": "column",
           "settings": {
             "_column_size": 33.33,
-            "_inline_size": null,
-            "background_background": "classic",
-            "background_color": "#FBE4E5",
-            "border_radius": {
-              "unit": "px",
-              "top": "20",
-              "right": "20",
-              "bottom": "20",
-              "left": "20",
-              "isLinked": true
-            },
-            "padding": {
-              "unit": "px",
-              "top": "36",
-              "right": "32",
-              "bottom": "36",
-              "left": "32",
-              "isLinked": false
-            },
-            "content_position": "bottom"
+            "_inline_size": null
           },
           "elements": [
             {
-              "id": "3306b1b",
+              "id": "a7c0125",
               "elType": "widget",
               "settings": {
-                "editor": "<span style=\"font-family:Inria Serif,serif;font-size:.85rem;opacity:.55\">02</span>",
-                "text_color": "#1B4332",
-                "typography_typography": "custom",
-                "typography_font_family": "Manrope",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 14,
-                  "sizes": []
-                },
-                "typography_line_height": {
-                  "unit": "em",
-                  "size": 1.6,
-                  "sizes": []
-                },
-                "align": "left"
+                "html": "<a class=\"strand-card t2\" href=\"{{SITE_URL}}/care-wellbeing/\"><span class=\"idx\">02</span><h4>Care &amp; Wellbeing</h4><p>Projek Komuniti Permata, the care economy, and health and mental health screening.</p></a>"
               },
               "elements": [],
-              "widgetType": "text-editor"
-            },
-            {
-              "id": "5843863",
-              "elType": "widget",
-              "settings": {
-                "space": {
-                  "unit": "px",
-                  "size": 12,
-                  "sizes": []
-                }
-              },
-              "elements": [],
-              "widgetType": "spacer"
-            },
-            {
-              "id": "d641471",
-              "elType": "widget",
-              "settings": {
-                "title": "Care &amp; Wellbeing",
-                "header_size": "h4",
-                "align": "left",
-                "title_color": "#1B4332",
-                "typography_typography": "custom",
-                "typography_font_family": "Inria Serif",
-                "typography_font_weight": "600",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 22,
-                  "sizes": []
-                },
-                "typography_line_height": {
-                  "unit": "em",
-                  "size": 1.3,
-                  "sizes": []
-                }
-              },
-              "elements": [],
-              "widgetType": "heading"
-            },
-            {
-              "id": "dce5315",
-              "elType": "widget",
-              "settings": {
-                "space": {
-                  "unit": "px",
-                  "size": 8,
-                  "sizes": []
-                }
-              },
-              "elements": [],
-              "widgetType": "spacer"
-            },
-            {
-              "id": "fe208c1",
-              "elType": "widget",
-              "settings": {
-                "editor": "<p>Projek Komuniti Permata, the care economy, and health and mental health screening.</p>",
-                "text_color": "#1B4332",
-                "typography_typography": "custom",
-                "typography_font_family": "Manrope",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 15,
-                  "sizes": []
-                },
-                "typography_line_height": {
-                  "unit": "em",
-                  "size": 1.55,
-                  "sizes": []
-                },
-                "align": "left"
-              },
-              "elements": [],
-              "widgetType": "text-editor"
+              "widgetType": "html"
             }
           ]
         },
         {
-          "id": "d0f187b",
+          "id": "2cecf40",
           "elType": "column",
           "settings": {
             "_column_size": 33.33,
-            "_inline_size": null,
-            "background_background": "classic",
-            "background_color": "#F5EFE3",
-            "border_radius": {
-              "unit": "px",
-              "top": "20",
-              "right": "20",
-              "bottom": "20",
-              "left": "20",
-              "isLinked": true
-            },
-            "border_border": "solid",
-            "border_width": {
-              "unit": "px",
-              "top": "1",
-              "right": "1",
-              "bottom": "1",
-              "left": "1",
-              "isLinked": true
-            },
-            "border_color": "#E0D8C6",
-            "padding": {
-              "unit": "px",
-              "top": "36",
-              "right": "32",
-              "bottom": "36",
-              "left": "32",
-              "isLinked": false
-            },
-            "content_position": "bottom"
+            "_inline_size": null
           },
           "elements": [
             {
-              "id": "b585edd",
+              "id": "13f195f",
               "elType": "widget",
               "settings": {
-                "editor": "<span style=\"font-family:Inria Serif,serif;font-size:.85rem;opacity:.55\">03</span>",
-                "text_color": "#1B4332",
-                "typography_typography": "custom",
-                "typography_font_family": "Manrope",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 14,
-                  "sizes": []
-                },
-                "typography_line_height": {
-                  "unit": "em",
-                  "size": 1.6,
-                  "sizes": []
-                },
-                "align": "left"
+                "html": "<div class=\"strand-card t3\"><span class=\"idx\">03</span><h4>Livelihoods</h4><p>Financial literacy and community grants. Funding local solutions the community designs itself.</p></div>"
               },
               "elements": [],
-              "widgetType": "text-editor"
-            },
-            {
-              "id": "398fea8",
-              "elType": "widget",
-              "settings": {
-                "space": {
-                  "unit": "px",
-                  "size": 12,
-                  "sizes": []
-                }
-              },
-              "elements": [],
-              "widgetType": "spacer"
-            },
-            {
-              "id": "5551128",
-              "elType": "widget",
-              "settings": {
-                "title": "Livelihoods",
-                "header_size": "h4",
-                "align": "left",
-                "title_color": "#1B4332",
-                "typography_typography": "custom",
-                "typography_font_family": "Inria Serif",
-                "typography_font_weight": "600",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 22,
-                  "sizes": []
-                },
-                "typography_line_height": {
-                  "unit": "em",
-                  "size": 1.3,
-                  "sizes": []
-                }
-              },
-              "elements": [],
-              "widgetType": "heading"
-            },
-            {
-              "id": "e1302db",
-              "elType": "widget",
-              "settings": {
-                "space": {
-                  "unit": "px",
-                  "size": 8,
-                  "sizes": []
-                }
-              },
-              "elements": [],
-              "widgetType": "spacer"
-            },
-            {
-              "id": "bf9614d",
-              "elType": "widget",
-              "settings": {
-                "editor": "<p>Financial literacy and community grants. Funding local solutions the community designs itself.</p>",
-                "text_color": "#1B4332",
-                "typography_typography": "custom",
-                "typography_font_family": "Manrope",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 15,
-                  "sizes": []
-                },
-                "typography_line_height": {
-                  "unit": "em",
-                  "size": 1.55,
-                  "sizes": []
-                },
-                "align": "left"
-              },
-              "elements": [],
-              "widgetType": "text-editor"
+              "widgetType": "html"
             }
           ]
         }
@@ -766,7 +435,7 @@
       "isInner": false
     },
     {
-      "id": "c8f2e53",
+      "id": "58a375d",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -787,7 +456,7 @@
       },
       "elements": [
         {
-          "id": "bc9a782",
+          "id": "f23041a",
           "elType": "column",
           "settings": {
             "_column_size": 100,
@@ -795,7 +464,7 @@
           },
           "elements": [
             {
-              "id": "a8550e3",
+              "id": "d4de0dc",
               "elType": "widget",
               "settings": {
                 "title": "PROGRAMMES",
@@ -825,7 +494,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "a4f1ea7",
+              "id": "ed54030",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -838,7 +507,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "1085e29",
+              "id": "7e1b133",
               "elType": "widget",
               "settings": {
                 "title": "What this looks like in practice",
@@ -868,7 +537,7 @@
       "isInner": false
     },
     {
-      "id": "ba93ec5",
+      "id": "3bdae0f",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -894,7 +563,7 @@
       },
       "elements": [
         {
-          "id": "7e5ab5c",
+          "id": "1193993",
           "elType": "column",
           "settings": {
             "_column_size": 6,
@@ -903,7 +572,7 @@
           },
           "elements": [
             {
-              "id": "4a1240b",
+              "id": "880f710",
               "elType": "widget",
               "settings": {
                 "title": "01",
@@ -930,7 +599,7 @@
           ]
         },
         {
-          "id": "8ccc49a",
+          "id": "2841d12",
           "elType": "column",
           "settings": {
             "_column_size": 94,
@@ -938,7 +607,7 @@
           },
           "elements": [
             {
-              "id": "b1b7127",
+              "id": "35642de",
               "elType": "widget",
               "settings": {
                 "editor": "<h4 style=\"margin:0;font-family:'Inria Serif',serif;font-size:1.28rem;color:#fff\"><a href=\"{{SITE_URL}}/women-leadership/\" style=\"color:#fff;text-decoration:none\">Wanita Mendunia &rarr;</a></h4>",
@@ -961,7 +630,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "e412c6d",
+              "id": "1b94eda",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -974,7 +643,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "2703e67",
+              "id": "0bebfa0",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Flagship women's leadership training, run community by community.</p>",
@@ -1002,7 +671,7 @@
       "isInner": false
     },
     {
-      "id": "cbae384",
+      "id": "1f1a936",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -1028,7 +697,7 @@
       },
       "elements": [
         {
-          "id": "2bb704f",
+          "id": "d03b562",
           "elType": "column",
           "settings": {
             "_column_size": 6,
@@ -1037,7 +706,7 @@
           },
           "elements": [
             {
-              "id": "fd6d164",
+              "id": "78be9d3",
               "elType": "widget",
               "settings": {
                 "title": "02",
@@ -1064,7 +733,7 @@
           ]
         },
         {
-          "id": "d9783de",
+          "id": "6e482a4",
           "elType": "column",
           "settings": {
             "_column_size": 94,
@@ -1072,7 +741,7 @@
           },
           "elements": [
             {
-              "id": "fc6eb33",
+              "id": "562c900",
               "elType": "widget",
               "settings": {
                 "editor": "<h4 style=\"margin:0;font-family:'Inria Serif',serif;font-size:1.28rem;color:#fff\"><a href=\"{{SITE_URL}}/women-leadership-2/\" style=\"color:#fff;text-decoration:none\">Wanita Mendunia 2.0 &rarr;</a></h4>",
@@ -1095,7 +764,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "0a5b633",
+              "id": "67f1d12",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1108,7 +777,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "0d018a2",
+              "id": "943b505",
               "elType": "widget",
               "settings": {
                 "editor": "<p>The next chapter of the same programme, deepening the leadership model.</p>",
@@ -1136,7 +805,7 @@
       "isInner": false
     },
     {
-      "id": "af06c4d",
+      "id": "a8b63d2",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -1162,7 +831,7 @@
       },
       "elements": [
         {
-          "id": "e081b37",
+          "id": "223dd1e",
           "elType": "column",
           "settings": {
             "_column_size": 6,
@@ -1171,7 +840,7 @@
           },
           "elements": [
             {
-              "id": "90392ad",
+              "id": "6b09725",
               "elType": "widget",
               "settings": {
                 "title": "03",
@@ -1198,7 +867,7 @@
           ]
         },
         {
-          "id": "8738a63",
+          "id": "9a89c84",
           "elType": "column",
           "settings": {
             "_column_size": 94,
@@ -1206,7 +875,7 @@
           },
           "elements": [
             {
-              "id": "998f07e",
+              "id": "f227cba",
               "elType": "widget",
               "settings": {
                 "editor": "<h4 style=\"margin:0;font-family:'Inria Serif',serif;font-size:1.28rem;color:#fff\"><a href=\"{{SITE_URL}}/care-wellbeing/\" style=\"color:#fff;text-decoration:none\">Projek Komuniti Permata &rarr;</a></h4>",
@@ -1229,7 +898,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "fcf9c30",
+              "id": "56eb0c3",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1242,7 +911,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "5be1be8",
+              "id": "e6de409",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Community-led care and wellbeing work on the ground.</p>",
@@ -1270,7 +939,7 @@
       "isInner": false
     },
     {
-      "id": "2c22ec2",
+      "id": "fdf3be7",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -1296,7 +965,7 @@
       },
       "elements": [
         {
-          "id": "6d7765a",
+          "id": "bea87d5",
           "elType": "column",
           "settings": {
             "_column_size": 6,
@@ -1305,7 +974,7 @@
           },
           "elements": [
             {
-              "id": "e466bd3",
+              "id": "ff83d3b",
               "elType": "widget",
               "settings": {
                 "title": "04",
@@ -1332,7 +1001,7 @@
           ]
         },
         {
-          "id": "34461e6",
+          "id": "a474193",
           "elType": "column",
           "settings": {
             "_column_size": 94,
@@ -1340,7 +1009,7 @@
           },
           "elements": [
             {
-              "id": "bef98fc",
+              "id": "a87e54c",
               "elType": "widget",
               "settings": {
                 "title": "Community Grants",
@@ -1365,7 +1034,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "30d723d",
+              "id": "a5a1ebb",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1378,7 +1047,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "498e5c9",
+              "id": "76ae7b9",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Small grants that fund solutions the community designs itself.</p>",
@@ -1406,7 +1075,7 @@
       "isInner": false
     },
     {
-      "id": "cc44703",
+      "id": "5704386",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -1432,7 +1101,7 @@
       },
       "elements": [
         {
-          "id": "cc2af1d",
+          "id": "2f189c7",
           "elType": "column",
           "settings": {
             "_column_size": 6,
@@ -1441,7 +1110,7 @@
           },
           "elements": [
             {
-              "id": "0d125bf",
+              "id": "ddeff61",
               "elType": "widget",
               "settings": {
                 "title": "05",
@@ -1468,7 +1137,7 @@
           ]
         },
         {
-          "id": "3b04cce",
+          "id": "174a7e7",
           "elType": "column",
           "settings": {
             "_column_size": 94,
@@ -1476,7 +1145,7 @@
           },
           "elements": [
             {
-              "id": "9c1aab2",
+              "id": "b198fa8",
               "elType": "widget",
               "settings": {
                 "title": "Financial Literacy",
@@ -1501,7 +1170,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "3c9ba0c",
+              "id": "dfc4907",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1514,7 +1183,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "79d9460",
+              "id": "d03c403",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Practical money skills that build household resilience.</p>",
@@ -1542,7 +1211,7 @@
       "isInner": false
     },
     {
-      "id": "d51e368",
+      "id": "f9534cb",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -1568,7 +1237,7 @@
       },
       "elements": [
         {
-          "id": "ee82534",
+          "id": "4c807b3",
           "elType": "column",
           "settings": {
             "_column_size": 6,
@@ -1577,7 +1246,7 @@
           },
           "elements": [
             {
-              "id": "52d94a5",
+              "id": "adf4629",
               "elType": "widget",
               "settings": {
                 "title": "06",
@@ -1604,7 +1273,7 @@
           ]
         },
         {
-          "id": "816f7cb",
+          "id": "85cdd32",
           "elType": "column",
           "settings": {
             "_column_size": 94,
@@ -1612,7 +1281,7 @@
           },
           "elements": [
             {
-              "id": "b39a5b8",
+              "id": "a35f87b",
               "elType": "widget",
               "settings": {
                 "title": "Health &amp; Mental Health Screening",
@@ -1637,7 +1306,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "d9a95f1",
+              "id": "c6be169",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1650,7 +1319,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "fc48f6b",
+              "id": "ee1df55",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Free screening days brought directly into communities.</p>",
@@ -1678,7 +1347,7 @@
       "isInner": false
     },
     {
-      "id": "01bded8",
+      "id": "55d1014",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -1699,7 +1368,7 @@
       },
       "elements": [
         {
-          "id": "5b91ab5",
+          "id": "c82d98b",
           "elType": "column",
           "settings": {
             "_column_size": 100,
@@ -1707,7 +1376,7 @@
           },
           "elements": [
             {
-              "id": "b0ff9c8",
+              "id": "00fc9e1",
               "elType": "widget",
               "settings": {
                 "html": "<div style=\"display:flex;align-items:baseline;gap:16px;padding-top:40px;border-top:1px solid rgba(255,255,255,.14)\"><span style=\"font-family:'Inria Serif',serif;font-size:3.2rem;font-weight:600;color:#F4A0A3;line-height:1\">20</span><span style=\"font-family:Manrope,sans-serif;font-size:1rem;color:#C9DCD1\">community grants awarded</span></div>"
@@ -1721,7 +1390,7 @@
       "isInner": false
     },
     {
-      "id": "1e13193",
+      "id": "6738ebf",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -1742,7 +1411,7 @@
       },
       "elements": [
         {
-          "id": "b4aa4bd",
+          "id": "cd76cf3",
           "elType": "column",
           "settings": {
             "_column_size": 100,
@@ -1750,7 +1419,7 @@
           },
           "elements": [
             {
-              "id": "cf50aaf",
+              "id": "d748906",
               "elType": "widget",
               "settings": {
                 "title": "KEEP EXPLORING",
@@ -1780,7 +1449,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "f100a85",
+              "id": "c22f022",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1793,7 +1462,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "868e12f",
+              "id": "0f22b8c",
               "elType": "widget",
               "settings": {
                 "title": "The other pillars",
@@ -1823,7 +1492,7 @@
       "isInner": false
     },
     {
-      "id": "47db8c8",
+      "id": "bccf076",
       "elType": "section",
       "settings": {
         "background_background": "classic",
@@ -1849,7 +1518,7 @@
       },
       "elements": [
         {
-          "id": "727301e",
+          "id": "c041b2c",
           "elType": "column",
           "settings": {
             "_column_size": 50,
@@ -1876,7 +1545,7 @@
           },
           "elements": [
             {
-              "id": "316d13e",
+              "id": "1517b08",
               "elType": "widget",
               "settings": {
                 "editor": "<span style=\"font-family:Inria Serif,serif;font-size:.95rem;opacity:.6\">02</span>",
@@ -1899,7 +1568,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "fa46f71",
+              "id": "823fd5c",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1912,7 +1581,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "5b1c9cf",
+              "id": "b1b355d",
               "elType": "widget",
               "settings": {
                 "title": "Youth &amp; Education",
@@ -1937,7 +1606,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "972f059",
+              "id": "19c1505",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1950,7 +1619,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "65a7c7b",
+              "id": "f3f362f",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Empowering young people with knowledge, skills and confidence.</p>",
@@ -1973,7 +1642,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "b541735",
+              "id": "64f1ba1",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -1986,7 +1655,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "1296af3",
+              "id": "51ecba4",
               "elType": "widget",
               "settings": {
                 "text": "Explore &rarr;",
@@ -2040,7 +1709,7 @@
           ]
         },
         {
-          "id": "1a2c377",
+          "id": "d6237a3",
           "elType": "column",
           "settings": {
             "_column_size": 50,
@@ -2067,7 +1736,7 @@
           },
           "elements": [
             {
-              "id": "4d7ae97",
+              "id": "7af10cc",
               "elType": "widget",
               "settings": {
                 "editor": "<span style=\"font-family:Inria Serif,serif;font-size:.95rem;opacity:.6\">03</span>",
@@ -2090,7 +1759,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "f5a23f8",
+              "id": "7c8963d",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -2103,7 +1772,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "d8b0dd4",
+              "id": "46c833f",
               "elType": "widget",
               "settings": {
                 "title": "Ideas, Ethics &amp; Society",
@@ -2128,7 +1797,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "b6ff571",
+              "id": "6352b22",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -2141,7 +1810,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "128aeac",
+              "id": "4f389ef",
               "elType": "widget",
               "settings": {
                 "editor": "<p>Championing ideas that inform, inspire and create impact.</p>",
@@ -2164,7 +1833,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "ea49836",
+              "id": "b32ef80",
               "elType": "widget",
               "settings": {
                 "space": {
@@ -2177,7 +1846,7 @@
               "widgetType": "spacer"
             },
             {
-              "id": "8022f21",
+              "id": "319ce26",
               "elType": "widget",
               "settings": {
                 "text": "Explore &rarr;",

@@ -122,12 +122,22 @@ homepage's p-row rhythm but pale-on-dark, then a big stat-pair number) →
 Keep exploring (2 equal bento-style cards linking to the other two
 pillars).
 
-Two **HTML** widgets: the icon badge and the hero photo panel's "01" +
+Two **HTML** widgets for the icon badge and the hero photo panel's "01" +
 caption overlay, both needing absolute positioning free-tier widgets
 don't expose (same pattern as home.json/work.json). One **Text Editor**
 standing in for a heading where a programme row title needs to be a
 link — Elementor's Heading widget title field is plain text only and
 won't render an `<a>` tag.
+
+The two linked strand cards (Women's Leadership, Care & Wellbeing — the
+real markup wraps each in a whole-card `<a>`; Livelihoods stays a plain
+`<div>`, matching the source, since there's no Livelihoods page to link
+to) are also **HTML** widgets, outputting the theme's real
+`.strand-card`/`.t1`/`.t2` classes directly rather than a styled Column —
+a Column can never be wrapped in a link at all on free-tier Elementor,
+whole-card or not, so this was the only way to make them clickable. Using
+the real CSS class also restores the `.strand-card:hover` lift transform
+for free, which the native-widget version couldn't do either.
 
 ## youth-education.json
 
