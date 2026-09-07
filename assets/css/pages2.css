@@ -451,6 +451,14 @@
 
 .story-prose{ font-family:var(--sans); font-size:1.05rem; line-height:1.75; color:#2A3B32; max-width:70ch; margin-top:28px; }
 .story-prose em{ color:var(--muted); }
+
+/* Pull-quote for use inside a Story's body content (a Custom HTML block
+   in the editor) — same border-left-callout family as .next-callout,
+   sized up for a standalone quote rather than an inline aside. */
+.story-quote{ border-left:4px solid var(--coral); margin:32px 0; padding:4px 0 4px 26px; font-family:var(--serif); font-size:1.3rem; line-height:1.5; color:var(--forest); max-width:70ch; }
+.story-quote cite{ display:block; margin-top:14px; font-family:var(--sans); font-size:.82rem; font-style:normal; font-weight:700; color:var(--muted); }
+.story-quote cite b{ color:var(--forest); }
+
 .story-back{
   margin-top:36px; display:inline-flex; align-items:center; gap:8px; font-family:var(--sans); font-size:.82rem;
   font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--coral-deep);

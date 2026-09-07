@@ -186,6 +186,30 @@ To change a link or add another platform: edit the `<a>` tags in
 `footer.php` directly, and add a matching `<symbol>` in
 `suluh_svg_sprite()` if it's a new platform.
 
+## Adding a pull quote inside a Story
+
+The Story content editor (the normal WordPress editor for the `story`
+post type) has no dedicated "quote" field — a quote inside a story's
+body is just part of `the_content()`. The block editor's default Quote
+block will render, but with no theme styling (plain browser default),
+which won't match the site.
+
+To get an on-brand quote, add a **Custom HTML** block (block editor) or
+switch to the **Text** tab (Classic editor) at the point in the story
+where the quote goes, and paste:
+
+```html
+<blockquote class="story-quote">
+  “Quote text goes here.”
+  <cite>Name, role</cite>
+</blockquote>
+```
+
+`.story-quote` is a real CSS class in `assets/css/pages2.css` (coral
+left border, serif quote text, same visual family as the site's
+existing `.next-callout` border-left callouts) — nothing else needs
+touching. Drop the `<cite>` line if there's no attribution to give.
+
 ## Known gaps
 
 - No bilingual (EN/BM) support is wired in. If that's still needed,
