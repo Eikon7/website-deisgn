@@ -163,6 +163,29 @@ searchable list (Name, Email, Publication, Date). See
 `inc/download-leads.php` for the AJAX endpoint the gated-download modal
 posts to.
 
+## Footer social links
+
+The footer's first column now has a row of 5 social icons (Facebook,
+Instagram, Threads, LinkedIn, TikTok), linking to the client's real
+accounts. This is hardcoded in `footer.php` (`.footer-social`), not
+menu-driven — same reasoning as the rest of the footer's four link
+columns.
+
+The icons are inline SVGs, added as new `<symbol>` entries in the shared
+sprite (`suluh_svg_sprite()` in `inc/template-tags.php`), same mechanism
+as the site's existing arrow/close/download icons. This is a new
+addition — none of the static demo HTML pages have a social row in
+their footer to port from. Facebook/Instagram/Threads/TikTok are exact
+paths from Simple Icons (CC0); LinkedIn isn't in Simple Icons anymore
+(removed at LinkedIn's own request), so that one is from Bootstrap
+Icons (MIT) instead. Styling is in `assets/css/concept2.css`
+(`.footer-social`) — small circular buttons, coral on hover, matching
+the site's existing accent color.
+
+To change a link or add another platform: edit the `<a>` tags in
+`footer.php` directly, and add a matching `<symbol>` in
+`suluh_svg_sprite()` if it's a new platform.
+
 ## Known gaps
 
 - No bilingual (EN/BM) support is wired in. If that's still needed,
