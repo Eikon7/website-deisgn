@@ -225,6 +225,22 @@ Chose.
 
 Validated: 34 elements, all IDs unique, 6 top-level sections.
 
+## kl-conference.json
+
+Same shape and reasoning as woman-allah-chose.json — content supplied
+directly, no source static page. Title block → What it is (2 given
+paragraphs) → Why it exists (2 paragraphs) → How it works (2 paragraphs,
+plain text, not the 3-step layout) → one participant quote. Breadcrumb:
+Our Work / Ideas, Ethics & Society / KL Conference — kept at the
+established 3-level pattern even though the client noted this programme
+also sits under the "Just & Humane Order" strand specifically, since no
+other programme page breadcrumbs to a 4th, strand-level crumb and adding
+one here alone would be inconsistent. Same omissions as
+woman-allah-chose.json (no key facts, photos, Partners, mosaic, "What
+comes next", or Related) for the same reason: none were supplied.
+
+Validated: 40 elements, all IDs unique, 6 top-level sections.
+
 ## What's simplified vs. the static pages
 
 Being upfront about the gap, since "native widgets" was chosen over the
@@ -285,6 +301,7 @@ reproduce without Elementor Pro.
 - [x] `women-leadership.json` — built, awaiting your test-import
 - [x] `people.json` — built, awaiting your test-import
 - [x] `woman-allah-chose.json` — built, awaiting your test-import
+- [x] `kl-conference.json` — built, awaiting your test-import
 - [ ] Contact, Research, Publications, Publication Detail, Grounded,
       Care & Wellbeing, Women's Leadership 2.0 — note Research/
       Publications/Grounded/Publication Detail are the theme's PHP
