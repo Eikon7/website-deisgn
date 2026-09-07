@@ -229,15 +229,13 @@
       "id": "8a67cb5",
       "elType": "section",
       "settings": {
-        "background_background": "classic",
-        "background_color": "#1B4332",
         "padding": {
           "unit": "px",
-          "top": "20",
-          "right": "24",
-          "bottom": "20",
-          "left": "24",
-          "isLinked": false
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
         },
         "content_width": {
           "unit": "px",
@@ -258,7 +256,7 @@
               "id": "ef6a308",
               "elType": "widget",
               "settings": {
-                "html": "<div style=\"display:flex;flex-wrap:wrap;justify-content:center;gap:14px;font-family:Manrope,sans-serif;font-size:.85rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#DCEAE1\"><span style=\"padding:10px 20px;border:1px solid rgba(255,255,255,.25);border-radius:999px\">Community</span><span style=\"padding:10px 20px;border:1px solid rgba(255,255,255,.25);border-radius:999px\">Youth &amp; Education</span><span style=\"padding:10px 20px;border:1px solid rgba(255,255,255,.25);border-radius:999px\">Ideas, Ethics &amp; Society</span><span style=\"padding:10px 20px;border:1px solid rgba(255,255,255,.25);border-radius:999px\">Research &amp; Advocacy</span></div>"
+                "html": "<div class=\"marquee-band\" aria-hidden=\"true\"><div class=\"marquee-track\"><span><svg width=\"16\" height=\"16\"><use href=\"#c2-ico-flame-sm\"/></svg> Community</span><span><svg width=\"16\" height=\"16\"><use href=\"#c2-ico-flame-sm\"/></svg> Youth &amp; Education</span><span><svg width=\"16\" height=\"16\"><use href=\"#c2-ico-flame-sm\"/></svg> Ideas, Ethics &amp; Society</span><span><svg width=\"16\" height=\"16\"><use href=\"#c2-ico-flame-sm\"/></svg> Research &amp; Advocacy</span><span aria-hidden=\"true\"><svg width=\"16\" height=\"16\"><use href=\"#c2-ico-flame-sm\"/></svg> Community</span><span aria-hidden=\"true\"><svg width=\"16\" height=\"16\"><use href=\"#c2-ico-flame-sm\"/></svg> Youth &amp; Education</span><span aria-hidden=\"true\"><svg width=\"16\" height=\"16\"><use href=\"#c2-ico-flame-sm\"/></svg> Ideas, Ethics &amp; Society</span><span aria-hidden=\"true\"><svg width=\"16\" height=\"16\"><use href=\"#c2-ico-flame-sm\"/></svg> Research &amp; Advocacy</span></div></div>"
               },
               "elements": [],
               "widgetType": "html"

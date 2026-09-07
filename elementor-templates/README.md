@@ -58,8 +58,19 @@ closing subscribe band.
 Same widget set as About, plus two **HTML** widgets for the two pieces
 that are genuinely bespoke rather than a layout free widgets can express:
 
-- The **pillar ticker** (originally an auto-scrolling marquee) is a
-  static wrapped row of pills instead — see "What's simplified" below.
+- The **pillar ticker** now renders as a real auto-scrolling marquee
+  (`.marquee-band`/`.marquee-track`, same classes and `@keyframes
+  marquee` as concept2.html), not the earlier static row of pills — the
+  animation CSS was already sitting unused in concept2.css, this just
+  wires the HTML widget's markup up to those classes (8 spans: the 4
+  pillar/programme names, then the same 4 again marked
+  `aria-hidden="true"` for the seamless 50%-translateX loop). Needed
+  one new sprite symbol, `c2-ico-flame-sm`, added to
+  `suluh_svg_sprite()` in `inc/template-tags.php` (ported from
+  concept2.html's own sprite). The section's own background/padding
+  were cleared to 0, since `.marquee-band` supplies both itself —
+  leaving the section's old ones in place would have doubled up the
+  green background and padding around it.
 - The **closing subscribe form** is a real `<form id="c2Form">` with the
   exact same field IDs as the static build, specifically so the theme's
   already-enqueued `assets/js/concept2.js` (validates the email,
@@ -326,9 +337,6 @@ pixel-perfect HTML-embed approach:
   animations (Motion Effects) could approximate the reveal per-widget if
   you want it back, but that's a Pro feature and a per-element manual
   setting, not something that survives a JSON import.
-- **The pillar ticker doesn't auto-scroll** — shown as a static wrapped
-  row instead of an infinite marquee, which needs a CSS keyframe
-  animation with no native widget equivalent.
 - **The Impact numbers don't count up on scroll** — shown as their final
   static values. The static build animates 0 → target via JS tied to the
   IntersectionObserver.

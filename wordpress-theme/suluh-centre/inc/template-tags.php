@@ -11,14 +11,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /**
  * The reusable icon sprite, defined once per page. Mostly the same
- * markup as the static build's inline <symbol> sprite (see research.html
- * / stories.html / story-detail.html / grounded.html), plus five brand
- * icons (Facebook, Instagram, Threads, LinkedIn, TikTok) added for the
- * footer's social links — those aren't in the static build, since the
- * footer there has no social row. Facebook/Instagram/Threads/TikTok
- * paths are from Simple Icons (CC0); LinkedIn isn't in Simple Icons
- * (removed at LinkedIn's request), so that one path is from Bootstrap
- * Icons (MIT) instead.
+ * markup as the static build's inline <symbol> sprite (see concept2.html,
+ * research.html, stories.html, story-detail.html, grounded.html), plus:
+ * - c2-ico-flame-sm, ported from concept2.html's own sprite for the
+ *   homepage's pillar/programme marquee (see home.json).
+ * - Five brand icons (Facebook, Instagram, Threads, LinkedIn, TikTok)
+ *   for the footer's social links — genuinely new, since the static
+ *   build's footer has no social row. Facebook/Instagram/Threads/TikTok
+ *   paths are from Simple Icons (CC0); LinkedIn isn't in Simple Icons
+ *   (removed at LinkedIn's request), so that one path is from Bootstrap
+ *   Icons (MIT) instead.
  */
 function suluh_svg_sprite() {
 	?>
@@ -38,6 +40,9 @@ function suluh_svg_sprite() {
 	  </symbol>
 	  <symbol id="c2-ico-arrow" viewBox="0 0 16 16" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
 	    <path d="M2 8h11M8.5 3.5 13 8l-4.5 4.5"/>
+	  </symbol>
+	  <symbol id="c2-ico-flame-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+	    <path d="M12 2.5c3 3.4 6 6.6 6 10.4a6 6 0 1 1-12 0c0-3.8 3-7 6-10.4Z"/>
 	  </symbol>
 	  <symbol id="c2-ico-close" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
 	    <path d="M5 5l10 10M15 5 5 15"/>
