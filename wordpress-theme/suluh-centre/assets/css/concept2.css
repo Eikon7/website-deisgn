@@ -116,6 +116,30 @@ nav.c2-nav a:hover{ border-color:var(--coral); }
 }
 .c2-nav .sub-menu a:hover{ background:var(--blush-tint); border-bottom:none; padding-left:10px; }
 
+/* GTranslate's WordPress-menu integration always renders a parent
+   trigger item ("English") plus a dropdown listing every language,
+   including the current one again (.gt-current-lang) — which reused
+   the Pillars-dropdown look above and read as a bug (the same word
+   twice). With only 2 languages a hover dropdown is unnecessary
+   anyway, so this flattens it into an always-visible inline toggle
+   instead: hide the redundant parent trigger, force its .sub-menu to
+   render inline rather than as a hover dropdown. Every rule is scoped
+   to .menu-item-gtranslate so the real Pillars dropdown is untouched. */
+.c2-nav .menu-item-gtranslate > a.gt-current-wrapper{ display:none; }
+.c2-nav .menu-item-gtranslate .sub-menu{
+  position:static; transform:none; opacity:1; pointer-events:auto;
+  display:flex; flex-direction:row; align-items:center; gap:0;
+  background:none; border:none; box-shadow:none; padding:0; margin:0; min-width:0; border-radius:0;
+}
+.c2-nav .menu-item-gtranslate .sub-menu li{ list-style:none; }
+.c2-nav .menu-item-gtranslate .sub-menu a{
+  display:inline-block; padding:4px 8px; border-radius:0; font-family:var(--sans);
+  font-size:.92rem; font-weight:500; color:var(--forest); border-bottom:none;
+}
+.c2-nav .menu-item-gtranslate .sub-menu a:hover{ background:none; padding-left:8px; color:var(--coral-deep); }
+.c2-nav .menu-item-gtranslate .sub-menu li:not(:last-child){ border-right:1px solid var(--hairline); }
+.c2-nav .menu-item-gtranslate .gt-current-lang{ font-weight:700; }
+
 .c2-hd-cta{ font-family:var(--sans); font-size:.94rem; padding:9px 20px; border-radius:999px; border:1.5px solid var(--forest); color:var(--forest); background:transparent; transition:.18s var(--ease); }
 .c2-hd-cta:hover{ background:var(--forest); color:#fff; }
 .c2-burger{ display:none; }
@@ -422,6 +446,23 @@ footer.c2-footer{ background:var(--forest-2); color:#A9C4B4; padding:52px 0 28px
 }
 .c2-drawer .sub-menu li{ list-style:none; }
 .c2-drawer .sub-menu a{ display:block; font-size:1.15rem; padding:9px 0; border-bottom:none; }
+
+/* GTranslate in the mobile drawer — same fix as the desktop nav above:
+   flatten the redundant parent-trigger + repeated-current-language
+   dropdown into one inline "English / Malay" row instead of a second
+   vertical list nested inside the drawer. */
+.c2-drawer .menu-item-gtranslate{ border-bottom:1px solid var(--hairline); padding:16px 0; }
+.c2-drawer .menu-item-gtranslate > a.gt-current-wrapper{ display:none; }
+.c2-drawer .menu-item-gtranslate .sub-menu{
+  display:flex; flex-direction:row; align-items:center; gap:0;
+  padding-left:0; border-bottom:none; margin:0;
+}
+.c2-drawer .menu-item-gtranslate .sub-menu a{
+  padding:0 10px; font-size:1.05rem; border-bottom:none; color:var(--forest);
+}
+.c2-drawer .menu-item-gtranslate .sub-menu a:first-child{ padding-left:0; }
+.c2-drawer .menu-item-gtranslate .sub-menu li:not(:last-child){ border-right:1px solid var(--hairline); }
+.c2-drawer .menu-item-gtranslate .gt-current-lang{ font-weight:700; }
 
 .reveal2{ opacity:0; transform:translateY(20px); transition:opacity .6s var(--ease), transform .6s var(--ease); }
 .reveal2.in{ opacity:1; transform:none; }

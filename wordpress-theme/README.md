@@ -264,6 +264,29 @@ That swap isn't done in `elementor-templates/contact.json` — the CSS is
 ready for it, but wiring in a real plugin/shortcode is a call to make
 in wp-admin, not something to bake into the template file.
 
+## GTranslate language switcher styling
+
+The live site added GTranslate (WordPress-menu integration mode) to the
+Primary Navigation menu. Left unstyled, it renders as a parent trigger
+item ("English") plus a dropdown listing every language including the
+current one again — literally "English" appearing twice, which reused
+the Pillars-dropdown's vertical-list CSS and read as a bug rather than
+a design choice.
+
+`concept2.css` now has rules scoped to GTranslate's own classes
+(`.menu-item-gtranslate`, `.gt-current-wrapper`, `.gt-current-lang`) that
+flatten this into a plain inline "English / Malay" toggle instead —
+appropriate since there are only 2 languages, so a click-to-open
+dropdown isn't really needed. The redundant parent trigger is hidden;
+the actual language links (which carry GTranslate's own
+`data-gt-lang` attribute and click handlers) stay fully functional,
+just laid out horizontally with the active language bolded. Covers both
+the desktop nav and the mobile drawer.
+
+If a language is ever added or removed, no CSS changes are needed —
+this targets GTranslate's own generated classes generically, not a
+fixed language count.
+
 ## Known gaps
 
 - No bilingual (EN/BM) support is wired in. If that's still needed,
