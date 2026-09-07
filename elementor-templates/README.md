@@ -258,6 +258,41 @@ supplied.
 
 Validated: 36 elements, all IDs unique, 6 top-level sections.
 
+## contact.json
+
+Built from `contact.html` + `pages2.css` (`.contact-hero`, `.contact-grid`,
+`.contact-org`, `.contact-card`, `.contact-field`) plus the client's real
+contact/social details. 4 top-level sections: hero (eyebrow/H1/lead) →
+contact-grid (org details + social icons on the left, message form on the
+right) → "Keep exploring" heading → 2 bento-cell cards (Our Work, About).
+
+Two decisions worth flagging:
+
+- **One email, not two.** The static page splits General/Media into two
+  addresses. The client only supplied one (`enquiries@suluhcentre.com`), so
+  only "General" is shown — inventing a second "Media" address would have
+  been fabricating contact information.
+- **Social icons via Elementor's native Social Icons widget**, not a
+  hardcoded HTML/image row. Same reasoning as the Latest Publications
+  widget: it stays genuinely editable (add/reorder/restyle icons, change
+  links) from the Elementor panel. All 5 links are wired in: Facebook,
+  Instagram, Threads, LinkedIn, TikTok, using Font Awesome brand icons. If
+  your Elementor version's icon-picker setting keys differ slightly from
+  what's baked in here, the icons will still render and link correctly —
+  worst case they show Font Awesome's default brand colors instead of the
+  custom forest-green scheme, which is a safe fallback, not a break.
+
+The message form reuses the exact same technique as home.json's subscribe
+form: a real `<form>` in an HTML widget with the exact field IDs the
+existing `concept2.js` validation already expects (`c2ContactForm`,
+`ccName`, `ccOrg`, `ccEmail`, `ccMessage`, `ccStatus`) — so the existing
+client-side validation/status messaging keeps working with zero new
+JavaScript. The form has no backend submit handler (same as the static
+source page) — it's client-side validation only, no email is actually
+sent yet.
+
+Validated: 34 elements, all IDs unique, 4 top-level sections.
+
 ## What's simplified vs. the static pages
 
 Being upfront about the gap, since "native widgets" was chosen over the
@@ -320,7 +355,8 @@ reproduce without Elementor Pro.
 - [x] `woman-allah-chose.json` — built, awaiting your test-import
 - [x] `kl-conference.json` — built, awaiting your test-import
 - [x] `sea-womens-leadership-conference.json` — built, awaiting your test-import
-- [ ] Contact, Research, Publications, Publication Detail, Grounded,
+- [x] `contact.json` — built, awaiting your test-import
+- [ ] Research, Publications, Publication Detail, Grounded,
       Care & Wellbeing, Women's Leadership 2.0 — note Research/
       Publications/Grounded/Publication Detail are the theme's PHP
       templates (`archive-publication.php`, `archive-story.php`,
