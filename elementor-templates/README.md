@@ -148,6 +148,34 @@ Conference), not 5-6 like the other pillar pages — built exactly that many,
 not padded to match. "Keep exploring" points to Community + Youth &
 Education (excluding this pillar itself).
 
+## women-leadership.json
+
+Ports women-leadership.html — a programme detail page under Community, a
+different template shape from the pillar pages above (this one matches
+pages2.css's "prog-head2"/"dblock" pattern used by programme pages, not
+"phero2"/pillar-next only). Title block with a 4-cell key-facts strip
+(Pillar/Format/Reach/States) → full-bleed tinted hero photo → "What it
+is" → "Why it exists" (text + tinted split image) → "How it works"
+(3 numbered steps — a distinct idx style from every other numbered list
+on the site: serif, coral-deep, 1.5rem, not reused from home.json or
+community.json) → "Partners" (pill chips) → "Voices" (2 quote cards) →
+"Photo set" (a 6-column mixed-aspect-ratio mosaic) → a bordered "What
+comes next" callout linking to Wanita Mendunia 2.0 → Related (2 cards,
+Community + Our Work).
+
+Four **HTML** widgets for things free-tier native widgets structurally
+cannot do at all, not just approximate: the hero band and split-block
+image both need a CSS `mix-blend-mode` color tint over a photo (free
+Elementor's background overlay is one flat opacity, no blend mode); the
+photo mosaic needs a 6-column CSS grid with mixed spans (3+3, then
+2+2+2) and mixed aspect ratios (4:3, 4:3, then three 1:1) per tile,
+which free columns — always a single horizontal row — cannot express;
+and the callout needs a `border-left` accent free Elementor's Button/Text
+widgets don't expose directly. All four reproduce the exact source CSS
+rather than approximating it.
+
+Validated: 116 elements, all IDs unique, 16 top-level sections.
+
 ## What's simplified vs. the static pages
 
 Being upfront about the gap, since "native widgets" was chosen over the
@@ -205,8 +233,9 @@ reproduce without Elementor Pro.
 - [x] `community.json` — built, awaiting your test-import
 - [x] `youth-education.json` — built, awaiting your test-import
 - [x] `ideas-ethics-society.json` — built, awaiting your test-import
+- [x] `women-leadership.json` — built, awaiting your test-import
 - [ ] Contact, Research, Publications, Publication Detail, Grounded,
-      People, Care & Wellbeing, Women's Leadership ×2 — note Research/
+      People, Care & Wellbeing, Women's Leadership 2.0 — note Research/
       Publications/Grounded/Publication Detail are the theme's PHP
       templates (`archive-publication.php`, `archive-story.php`,
       `single-story.php`, `page-templates/grounded.php`), not Elementor
