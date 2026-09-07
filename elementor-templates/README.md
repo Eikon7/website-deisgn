@@ -241,6 +241,23 @@ comes next", or Related) for the same reason: none were supplied.
 
 Validated: 40 elements, all IDs unique, 6 top-level sections.
 
+## sea-womens-leadership-conference.json
+
+Same shape and reasoning as woman-allah-chose.json / kl-conference.json
+— content supplied directly, no source static page. Title block → What
+it is (1 paragraph) → Why it exists (2 paragraphs, including the
+Malaysia National Action Plan on Women, Peace and Security 2025–2030
+detail) → How it works (1 paragraph, plain text) → one participant
+quote. Breadcrumb: Our Work / Youth & Education / SEA Women's Leadership
+Conference — pillar per the client's note, kept at the same 3-level
+pattern as the other two supplied-content programme pages (the noted
+"Convening & Voice" strand isn't a 4th breadcrumb level here either, for
+the same consistency reason). Same intentional omissions (no key facts,
+photos, Partners, mosaic, "What comes next", or Related) — none
+supplied.
+
+Validated: 36 elements, all IDs unique, 6 top-level sections.
+
 ## What's simplified vs. the static pages
 
 Being upfront about the gap, since "native widgets" was chosen over the
@@ -302,6 +319,7 @@ reproduce without Elementor Pro.
 - [x] `people.json` — built, awaiting your test-import
 - [x] `woman-allah-chose.json` — built, awaiting your test-import
 - [x] `kl-conference.json` — built, awaiting your test-import
+- [x] `sea-womens-leadership-conference.json` — built, awaiting your test-import
 - [ ] Contact, Research, Publications, Publication Detail, Grounded,
       Care & Wellbeing, Women's Leadership 2.0 — note Research/
       Publications/Grounded/Publication Detail are the theme's PHP
