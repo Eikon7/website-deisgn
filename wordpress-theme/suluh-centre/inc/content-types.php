@@ -1,20 +1,10 @@
 <?php
 /**
- * Content model for the two CMS-driven surfaces: the research library
- * (post type key `publication`, labeled "Research" in wp-admin, archive
- * at /research/) and the newsroom stream (post type key `story`, labeled
- * "Publications" in wp-admin, archive at /publications/). Grounded is NOT
+ * Content model for the two CMS-driven surfaces: Research & Advocacy
+ * (publication) and the Stories newsroom stream (story). Grounded is NOT
  * a separate post type — it's a filtered view of "story" where
  * story_type = grounded (see page-templates/grounded.php and
  * suluh_get_stories() in template-tags.php).
- *
- * Renamed at the client's request (2026-09): what wp-admin/the public
- * site call "Research" and "Publications" are the reverse of the PHP
- * post_type keys (`publication` and `story`). The keys are left alone
- * deliberately — renaming them would mean migrating every existing post's
- * post_type in the database — so only labels, URLs and on-page text
- * changed. If you're hunting for "Publications" content, you want the
- * `story` post type below, not `publication`.
  *
  * Every other page on the site (Home, About, Contact, Work, People, the
  * pillar pages, the programme pages) is a plain Elementor-built Page and
@@ -27,17 +17,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 function suluh_register_taxonomies() {
 
-	// Taxonomy key `story_type` drives the /publications filter chips and
-	// the /grounded filtered view — labeled "Publication Types" since the
-	// `story` post type is now branded "Publications" (see the note atop
-	// this file on why the PHP key and the label don't match).
+	// Story type: drives the /stories filter chips and the /grounded
+	// filtered view.
 	register_taxonomy(
 		'story_type',
 		array( 'story' ),
 		array(
 			'labels' => array(
-				'name'          => __( 'Publication Types', 'suluh-centre' ),
-				'singular_name' => __( 'Publication Type', 'suluh-centre' ),
+				'name'          => __( 'Story Types', 'suluh-centre' ),
+				'singular_name' => __( 'Story Type', 'suluh-centre' ),
 			),
 			'public'       => true,
 			'hierarchical' => true,
@@ -45,16 +33,15 @@ function suluh_register_taxonomies() {
 		)
 	);
 
-	// Taxonomy key `publication_type`: Policy Brief / Survey / Report /
-	// Commentary — drives the /research filter chips, labeled "Research
-	// Types" since the `publication` post type is now branded "Research".
+	// Publication type: Policy Brief / Survey / Report / Commentary —
+	// drives the /research filter chips.
 	register_taxonomy(
 		'publication_type',
 		array( 'publication' ),
 		array(
 			'labels' => array(
-				'name'          => __( 'Research Types', 'suluh-centre' ),
-				'singular_name' => __( 'Research Type', 'suluh-centre' ),
+				'name'          => __( 'Publication Types', 'suluh-centre' ),
+				'singular_name' => __( 'Publication Type', 'suluh-centre' ),
 			),
 			'public'       => true,
 			'hierarchical' => true,
@@ -66,17 +53,16 @@ add_action( 'init', 'suluh_register_taxonomies', 0 );
 
 function suluh_register_post_types() {
 
-	// Post type key `publication` — the research library item, now
-	// labeled "Research" in wp-admin. Archive lives at /research (matches
-	// research.html) and is rendered by archive-publication.php. URL
-	// already matched this label before the rename, so it's unchanged.
+	// Publication — Research & Advocacy library item. Archive lives at
+	// /research (matches research.html) and is rendered by
+	// archive-publication.php.
 	register_post_type(
 		'publication',
 		array(
 			'labels' => array(
-				'name'          => __( 'Research', 'suluh-centre' ),
-				'singular_name' => __( 'Research Item', 'suluh-centre' ),
-				'add_new_item'  => __( 'Add New Research Item', 'suluh-centre' ),
+				'name'          => __( 'Publications', 'suluh-centre' ),
+				'singular_name' => __( 'Publication', 'suluh-centre' ),
+				'add_new_item'  => __( 'Add New Publication', 'suluh-centre' ),
 			),
 			'public'       => true,
 			'has_archive'  => 'research',
@@ -87,29 +73,25 @@ function suluh_register_post_types() {
 		)
 	);
 
-	// Post type key `story` — the single newsroom stream item (news,
-	// convenings, podcast episodes, field write-ups), now labeled
-	// "Publications" in wp-admin. Archive moved from /stories to
-	// /publications and single posts from /stories/{slug} to
-	// /publications/{slug} as part of the same rename — run `wp rewrite
-	// flush` after deploying this change, and note any existing bookmarks
-	// or backlinks to /stories/ will need the redirect added in
-	// functions.php (suluh_redirect_old_stories_urls()). /grounded is a
-	// filtered view of this same post type, not a separate one.
+	// Story — the single newsroom stream item (news, convenings, podcast
+	// episodes, field write-ups). Archive lives at /stories (matches
+	// stories.html) and single posts at /stories/{slug} (matches
+	// story-detail.html). /grounded is a filtered view of this same post
+	// type, not a separate one.
 	register_post_type(
 		'story',
 		array(
 			'labels' => array(
-				'name'          => __( 'Publications', 'suluh-centre' ),
-				'singular_name' => __( 'Publication', 'suluh-centre' ),
-				'add_new_item'  => __( 'Add New Publication', 'suluh-centre' ),
+				'name'          => __( 'Stories', 'suluh-centre' ),
+				'singular_name' => __( 'Story', 'suluh-centre' ),
+				'add_new_item'  => __( 'Add New Story', 'suluh-centre' ),
 			),
 			'public'       => true,
-			'has_archive'  => 'publications',
+			'has_archive'  => 'stories',
 			'show_in_rest' => true,
 			'menu_icon'    => 'dashicons-megaphone',
 			'supports'     => array( 'title', 'editor', 'thumbnail', 'excerpt', 'revisions' ),
-			'rewrite'      => array( 'slug' => 'publications', 'with_front' => false ),
+			'rewrite'      => array( 'slug' => 'stories', 'with_front' => false ),
 		)
 	);
 }
@@ -117,15 +99,15 @@ add_action( 'init', 'suluh_register_post_types' );
 
 /**
  * A dedicated "Grounded" sidebar menu item, so managing episodes doesn't
- * mean hunting through the full Publications list and manually filtering
- * by type every time. This is NOT a separate post type or admin screen —
- * it's a shortcut straight to WordPress's own Publications list table,
+ * mean hunting through the full Stories list and manually filtering by
+ * type every time. This is NOT a separate post type or admin screen —
+ * it's a shortcut straight to WordPress's own Stories list table,
  * pre-filtered to story_type=grounded (the same query
  * page-templates/grounded.php uses on the front end). Episodes still
  * live under the `story` post type with the same ACF fields, still show
- * up in the main /publications/ stream, and "Add New" still happens from
- * the Publications screen (tick "Grounded" in the Publication Types box)
- * — this only adds a faster way to find existing ones.
+ * up in the main /stories/ stream, and "Add New" still happens from the
+ * Stories screen (tick "Grounded" in the Story Types box) — this only
+ * adds a faster way to find existing ones.
  */
 function suluh_add_grounded_admin_menu() {
 	$grounded_url = 'edit.php?post_type=story&story_type=grounded';
@@ -141,7 +123,7 @@ function suluh_add_grounded_admin_menu() {
 
 	// Without this, WordPress auto-generates a first submenu item under
 	// the page above using the underlying screen's own title
-	// ("Publications") instead of "Grounded" — registering it explicitly
+	// ("Stories") instead of "Grounded" — registering it explicitly
 	// with a matching slug overrides that so the menu just reads
 	// "Grounded" with no confusing submenu.
 	add_submenu_page(

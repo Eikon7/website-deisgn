@@ -1,21 +1,16 @@
 <?php
 /**
- * Records who downloads which Research item (the `publication` post
- * type — see inc/content-types.php for its current "Research" label).
- * The gate itself (name + email required before the file downloads) is
- * still enforced client-side in assets/js/concept2.js, same as the
- * approved static build — this just adds the piece that was deliberately
- * deferred until now: actually keeping the submission somewhere you can
- * look it up, instead of validating and discarding it.
+ * Records who downloads which Research publication. The gate itself
+ * (name + email required before the file downloads) is still enforced
+ * client-side in assets/js/concept2.js, same as the approved static
+ * build — this just adds the piece that was deliberately deferred
+ * until now: actually keeping the submission somewhere you can look it
+ * up, instead of validating and discarding it.
  *
  * Storage is a private "download_lead" post per submission (title
- * doubles as the admin search index: "Name <email> — Research item
+ * doubles as the admin search index: "Name <email> — Publication
  * title"), rather than a bespoke database table, so the admin list,
- * sorting, and search all come from WordPress core for free. Meta keys
- * (publication_id, publication_title) keep their original names even
- * though the post type they point at is now labeled "Research" —
- * renaming stored meta keys would require migrating every existing
- * download_lead row for no user-visible benefit.
+ * sorting, and search all come from WordPress core for free.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -46,7 +41,7 @@ function suluh_register_download_lead_cpt() {
 add_action( 'init', 'suluh_register_download_lead_cpt' );
 
 /**
- * Admin list columns: Name, Email, Research item, Date — everything you
+ * Admin list columns: Name, Email, Publication, Date — everything you
  * need to answer "who downloaded what, and when" without opening each
  * entry.
  */
@@ -55,7 +50,7 @@ function suluh_download_lead_columns( $columns ) {
 		'cb'          => $columns['cb'],
 		'lead_name'   => __( 'Name', 'suluh-centre' ),
 		'lead_email'  => __( 'Email', 'suluh-centre' ),
-		'publication' => __( 'Research item', 'suluh-centre' ),
+		'publication' => __( 'Publication', 'suluh-centre' ),
 		'date'        => __( 'Date', 'suluh-centre' ),
 	);
 	return $columns;
@@ -112,12 +107,12 @@ function suluh_capture_download_lead() {
 
 	$publication = $pub_id ? get_post( $pub_id ) : null;
 	if ( ! $publication || 'publication' !== $publication->post_type ) {
-		wp_send_json_error( array( 'message' => __( 'That research item could not be found.', 'suluh-centre' ) ), 404 );
+		wp_send_json_error( array( 'message' => __( 'That publication could not be found.', 'suluh-centre' ) ), 404 );
 	}
 
 	$pdf_url = suluh_field( 'pdf_file', $pub_id );
 	if ( ! $pdf_url ) {
-		wp_send_json_error( array( 'message' => __( 'No PDF is attached to this research item yet.', 'suluh-centre' ) ), 404 );
+		wp_send_json_error( array( 'message' => __( 'No PDF is attached to this publication yet.', 'suluh-centre' ) ), 404 );
 	}
 
 	$lead_id = wp_insert_post( array(

@@ -19,7 +19,7 @@ $q = suluh_get_stories( 'grounded', 24 );
     <div class="glow" aria-hidden="true"></div>
     <img class="grounded-hero-flame" src="http://localhost/sulu/wp-content/uploads/2026/09/MOTIF-2-scaled.png">
     <div class="wrap">
-      <p class="crumb"><a href="<?php echo esc_url( home_url( '/publications/' ) ); ?>">Publications</a> / Grounded</p>
+      <p class="crumb"><a href="<?php echo esc_url( home_url( '/stories/' ) ); ?>">Stories</a> / Grounded</p>
       <span class="eyebrow">The podcast</span>
       <h1>Grounded</h1>
       <p class="lead2">Conversations that bridge complex ideas and public understanding. Formerly POLITHINKERS.</p>
@@ -53,10 +53,10 @@ $q = suluh_get_stories( 'grounded', 24 );
       <h2>See the work behind the words</h2>
     </div>
     <div class="pillar-next-grid">
-      <a class="bento-cell a reveal2" href="<?php echo esc_url( home_url( '/publications/' ) ); ?>">
-        <h3>All publications</h3>
+      <a class="bento-cell a reveal2" href="<?php echo esc_url( home_url( '/stories/' ) ); ?>">
+        <h3>All stories</h3>
         <p>News, convenings, podcast episodes and notes from the field.</p>
-        <span class="go">Browse publications <svg><use href="#c2-ico-arrow"/></svg></span>
+        <span class="go">Browse stories <svg><use href="#c2-ico-arrow"/></svg></span>
       </a>
       <a class="bento-cell b reveal2" href="<?php echo esc_url( home_url( '/research/' ) ); ?>">
         <h3>Research &amp; Advocacy</h3>

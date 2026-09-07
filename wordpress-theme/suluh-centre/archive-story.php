@@ -20,7 +20,7 @@ $q               = new WP_Query( array(
   <!-- ============ Page hero ============ -->
   <section class="stories-hero">
     <div class="wrap">
-      <span class="eyebrow">Publications</span>
+      <span class="eyebrow">Stories</span>
       <h1 style="font-family:var(--serif);font-weight:600;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.1;margin:16px 0 18px;color:var(--forest)">What we are doing,<br>and what we are learning</h1>
       <p class="lead2">News, convenings, podcast episodes and notes from the field. One place, updated as the work happens.</p>
     </div>

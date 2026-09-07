@@ -3279,7 +3279,7 @@
                 "heading_text": "Latest",
                 "list_count": 3,
                 "story_type_filter": "",
-                "view_all_text": "All publications"
+                "view_all_text": "All stories"
               },
               "elements": [],
               "widgetType": "suluh-latest-publications"

@@ -1,12 +1,18 @@
 <?php
 /**
- * "Latest Publications" Elementor widget — one featured Publication in a
- * large card, a handful more in a list beside it, both pulled live from
- * the `story` post type (labeled "Publications" — see
- * inc/content-types.php). Renders the exact same markup/classes as the
- * static build's Stories section (.stories2-head, .story-spread,
- * .feat-story, .list-story — see concept2.css) so it's pixel-identical
- * to the original design, not an Elementor-native-widget approximation.
+ * "Latest Stories" Elementor widget — one featured Story in a large card,
+ * a handful more in a list beside it, both pulled live from the `story`
+ * post type (labeled "Stories" — see inc/content-types.php). Renders the
+ * exact same markup/classes as the static build's Stories section
+ * (.stories2-head, .story-spread, .feat-story, .list-story — see
+ * concept2.css) so it's pixel-identical to the original design, not an
+ * Elementor-native-widget approximation.
+ *
+ * The widget's internal name/slug (get_name(), the class name, this
+ * filename) are left as "publications" even though the label reverted to
+ * "Stories" — Elementor pages that already placed this widget (e.g.
+ * home.json) reference it by that slug, and changing it would orphan the
+ * widget on any page already using it.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -20,7 +26,7 @@ class Suluh_Latest_Publications_Widget extends \Elementor\Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Latest Publications', 'suluh-centre' );
+		return __( 'Latest Stories', 'suluh-centre' );
 	}
 
 	public function get_icon() {
@@ -63,19 +69,19 @@ class Suluh_Latest_Publications_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'list_count',
 			array(
-				'label'       => __( 'Publications in the list', 'suluh-centre' ),
+				'label'       => __( 'Stories in the list', 'suluh-centre' ),
 				'type'        => \Elementor\Controls_Manager::NUMBER,
 				'default'     => 3,
 				'min'         => 1,
 				'max'         => 8,
-				'description' => __( 'Not counting the one featured Publication in the large card.', 'suluh-centre' ),
+				'description' => __( 'Not counting the one featured Story in the large card.', 'suluh-centre' ),
 			)
 		);
 
 		$this->add_control(
 			'story_type_filter',
 			array(
-				'label'   => __( 'Only show this Publication Type', 'suluh-centre' ),
+				'label'   => __( 'Only show this Story Type', 'suluh-centre' ),
 				'type'    => \Elementor\Controls_Manager::SELECT,
 				'default' => '',
 				'options' => $this->get_story_type_options(),
@@ -87,7 +93,7 @@ class Suluh_Latest_Publications_Widget extends \Elementor\Widget_Base {
 			array(
 				'label'   => __( '"View all" link text', 'suluh-centre' ),
 				'type'    => \Elementor\Controls_Manager::TEXT,
-				'default' => __( 'All publications', 'suluh-centre' ),
+				'default' => __( 'All stories', 'suluh-centre' ),
 			)
 		);
 
@@ -95,10 +101,9 @@ class Suluh_Latest_Publications_Widget extends \Elementor\Widget_Base {
 	}
 
 	/**
-	 * Builds the Publication Type dropdown from the real taxonomy terms,
-	 * so the list in the Elementor editor always matches whatever terms
-	 * actually exist in wp-admin — no hardcoded term list to fall out of
-	 * sync.
+	 * Builds the Story Type dropdown from the real taxonomy terms, so the
+	 * list in the Elementor editor always matches whatever terms actually
+	 * exist in wp-admin — no hardcoded term list to fall out of sync.
 	 */
 	private function get_story_type_options() {
 		$options = array( '' => __( 'All types', 'suluh-centre' ) );
@@ -130,7 +135,7 @@ class Suluh_Latest_Publications_Widget extends \Elementor\Widget_Base {
 		$posts = $query->posts;
 
 		if ( empty( $posts ) ) {
-			echo '<p>' . esc_html__( 'No Publications published yet.', 'suluh-centre' ) . '</p>';
+			echo '<p>' . esc_html__( 'No Stories published yet.', 'suluh-centre' ) . '</p>';
 			return;
 		}
 
@@ -139,7 +144,7 @@ class Suluh_Latest_Publications_Widget extends \Elementor\Widget_Base {
 
 		$archive_link = function_exists( 'get_post_type_archive_link' )
 			? get_post_type_archive_link( 'story' )
-			: home_url( '/publications/' );
+			: home_url( '/stories/' );
 
 		$f     = suluh_story_card_data( $featured->ID );
 		$thumb = get_the_post_thumbnail_url( $featured->ID, 'large' );

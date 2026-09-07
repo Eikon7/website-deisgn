@@ -1,11 +1,8 @@
 <?php
 /**
- * ACF field groups for the two CMS-driven post types: the `story` post
- * type (labeled "Publications" in wp-admin) and the `publication` post
- * type (labeled "Research" — see inc/content-types.php for why the PHP
- * keys and the labels don't match). Registered in PHP (not the ACF UI)
- * so the field groups live in version control and travel with the theme
- * on deploy.
+ * ACF field groups for the two CMS-driven post types: Story and
+ * Publication. Registered in PHP (not the ACF UI) so the field groups
+ * live in version control and travel with the theme on deploy.
  *
  * Requires the free ACF plugin (Advanced Custom Fields). No Pro-only
  * field types are used here.
@@ -24,13 +21,13 @@ function suluh_register_acf_fields() {
 	}
 
 	// ---------------------------------------------------------------
-	// `publication` post type — Research library row. Fields match the
+	// Publication — Research & Advocacy library row. Fields match the
 	// gated-download PDF row on research.html: year, title, description
 	// (excerpt), document ID, and the PDF file itself.
 	// ---------------------------------------------------------------
 	acf_add_local_field_group( array(
 		'key'    => 'group_publication',
-		'title'  => 'Research Details',
+		'title'  => 'Publication Details',
 		'fields' => array(
 			array( 'key' => 'field_pub_year', 'label' => 'Year', 'name' => 'year', 'type' => 'number', 'instructions' => 'Shown above the title, e.g. 2026. Rows sort newest first by this value.' ),
 			array( 'key' => 'field_pub_docid', 'label' => 'Document ID', 'name' => 'document_id', 'type' => 'text', 'instructions' => 'Displayed under the description, e.g. SULUH-SV-2026-01.' ),
@@ -42,18 +39,17 @@ function suluh_register_acf_fields() {
 	) );
 
 	// ---------------------------------------------------------------
-	// `story` post type — single newsroom stream item. Fields match
-	// story-detail.html: dek/lead, display date, location + partners/scale
-	// (Convenings fact box, shown only when filled in), episode number +
-	// audio (Grounded).
+	// Story — single newsroom stream item. Fields match story-detail.html:
+	// dek/lead, display date, location + partners/scale (Convenings fact
+	// box, shown only when filled in), episode number + audio (Grounded).
 	// ---------------------------------------------------------------
 	acf_add_local_field_group( array(
 		'key'    => 'group_story',
-		'title'  => 'Publication Details',
+		'title'  => 'Story Details',
 		'fields' => array(
 			array( 'key' => 'field_story_dek', 'label' => 'Standfirst / dek', 'name' => 'dek', 'type' => 'textarea', 'rows' => 2, 'instructions' => 'One-line summary shown on the story card and under the headline on the story page.' ),
 			array( 'key' => 'field_story_date', 'label' => 'Display date', 'name' => 'display_date', 'type' => 'date_picker', 'display_format' => 'j F Y', 'return_format' => 'j F Y' ),
-			array( 'key' => 'field_story_upcoming', 'label' => 'Upcoming', 'name' => 'is_upcoming', 'type' => 'true_false', 'instructions' => 'Convenings only. Pins this story into the "Upcoming" band above the Publications stream until the date passes — then untick it and the story drops into the normal grid.' ),
+			array( 'key' => 'field_story_upcoming', 'label' => 'Upcoming', 'name' => 'is_upcoming', 'type' => 'true_false', 'instructions' => 'Convenings only. Pins this story into the "Upcoming" band above the Stories stream until the date passes — then untick it and the story drops into the normal grid.' ),
 			array(
 				'key'   => 'field_story_factbox_tab',
 				'label' => 'Fact box (Convenings)',
