@@ -176,6 +176,24 @@ rather than approximating it.
 
 Validated: 116 elements, all IDs unique, 16 top-level sections.
 
+## people.json
+
+Ports people.html: title block (no key-facts strip — that's programme-
+page-only) → Leadership (2 cards) → Advisors (3 cards) → a "Joining us"
+callout card. Each person card's avatar (pages2.css:203) is either a
+real photo or initials on a blush-tint square — built as one **HTML**
+widget per avatar so both cases render identically, since a plain Image
+widget has no initials-fallback mode. Nurul Izzah Anwar's photo uses the
+same external polity.my URL the static page itself hotlinks (not a
+`{{BASE_URL}}` placeholder, since it was never a local site asset to
+begin with); everyone else is initials-only, matching the real markup.
+Cards are built at 25% width each (matching the real 4-column grid) —
+with only 2 Leadership cards, that correctly leaves two columns of
+empty space rather than stretching them to fill the row, same as the
+source design.
+
+Validated: 62 elements, all IDs unique, 6 top-level sections.
+
 ## What's simplified vs. the static pages
 
 Being upfront about the gap, since "native widgets" was chosen over the
@@ -234,8 +252,9 @@ reproduce without Elementor Pro.
 - [x] `youth-education.json` — built, awaiting your test-import
 - [x] `ideas-ethics-society.json` — built, awaiting your test-import
 - [x] `women-leadership.json` — built, awaiting your test-import
+- [x] `people.json` — built, awaiting your test-import
 - [ ] Contact, Research, Publications, Publication Detail, Grounded,
-      People, Care & Wellbeing, Women's Leadership 2.0 — note Research/
+      Care & Wellbeing, Women's Leadership 2.0 — note Research/
       Publications/Grounded/Publication Detail are the theme's PHP
       templates (`archive-publication.php`, `archive-story.php`,
       `single-story.php`, `page-templates/grounded.php`), not Elementor
