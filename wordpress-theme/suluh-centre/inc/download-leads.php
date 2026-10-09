@@ -87,6 +87,77 @@ function suluh_download_lead_sortable_columns( $columns ) {
 add_filter( 'manage_edit-download_lead_sortable_columns', 'suluh_download_lead_sortable_columns' );
 
 /**
+ * "Export to CSV" button above the Downloads list table — CSV rather
+ * than a real .xlsx file, since it opens directly in Excel/Sheets/Numbers
+ * with zero new dependencies (a spreadsheet-writing library would be a
+ * lot of weight for a four-column export).
+ */
+function suluh_download_leads_export_button( $post_type ) {
+	if ( 'download_lead' !== $post_type ) {
+		return;
+	}
+	$url = wp_nonce_url( admin_url( 'admin-post.php?action=suluh_export_download_leads' ), 'suluh_export_download_leads' );
+	echo '<a href="' . esc_url( $url ) . '" class="button">' . esc_html__( 'Export to CSV', 'suluh-centre' ) . '</a>';
+}
+add_action( 'restrict_manage_posts', 'suluh_download_leads_export_button' );
+
+/**
+ * Neutralizes "CSV injection": a name/email that happens to start with
+ * =, +, -, or @ would otherwise be read as a formula by Excel/Sheets
+ * when the file is opened, and these fields are visitor-submitted text
+ * that was never sanitized with a spreadsheet in mind. Prefixing with a
+ * single quote stops that without changing what's visibly in the cell.
+ */
+function suluh_csv_safe( $value ) {
+	$value = (string) $value;
+	if ( preg_match( '/^[=+\-@]/', $value ) ) {
+		return "'" . $value;
+	}
+	return $value;
+}
+
+/**
+ * Streams every Download as a CSV file. No pagination — this is a export
+ * of everything recorded, not just the current admin-list page/filter.
+ */
+function suluh_export_download_leads() {
+	if ( ! current_user_can( 'edit_posts' ) ) {
+		wp_die( esc_html__( 'You do not have permission to do this.', 'suluh-centre' ) );
+	}
+	check_admin_referer( 'suluh_export_download_leads' );
+
+	$posts = get_posts( array(
+		'post_type'      => 'download_lead',
+		'post_status'    => 'publish',
+		'posts_per_page' => -1,
+		'orderby'        => 'date',
+		'order'          => 'DESC',
+	) );
+
+	nocache_headers();
+	header( 'Content-Type: text/csv; charset=utf-8' );
+	header( 'Content-Disposition: attachment; filename="download-leads-' . gmdate( 'Y-m-d' ) . '.csv"' );
+
+	$out = fopen( 'php://output', 'w' );
+	// UTF-8 BOM so Excel renders accented names correctly instead of mangling them.
+	fwrite( $out, "\xEF\xBB\xBF" );
+	fputcsv( $out, array( 'Name', 'Email', 'Publication', 'Date' ) );
+
+	foreach ( $posts as $post ) {
+		fputcsv( $out, array(
+			suluh_csv_safe( get_post_meta( $post->ID, 'lead_name', true ) ),
+			suluh_csv_safe( get_post_meta( $post->ID, 'lead_email', true ) ),
+			suluh_csv_safe( get_post_meta( $post->ID, 'publication_title', true ) ),
+			get_the_date( 'Y-m-d H:i', $post ),
+		) );
+	}
+
+	fclose( $out );
+	exit;
+}
+add_action( 'admin_post_suluh_export_download_leads', 'suluh_export_download_leads' );
+
+/**
  * The AJAX endpoint the gated-download modal posts to. Validates
  * server-side (never trust the client-side check alone), records the
  * lead, and hands back the real PDF URL for the browser to download —

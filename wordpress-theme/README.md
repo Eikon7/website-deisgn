@@ -163,6 +163,18 @@ searchable list (Name, Email, Publication, Date). See
 `inc/download-leads.php` for the AJAX endpoint the gated-download modal
 posts to.
 
+An **Export to CSV** button sits above that list table (next to the
+filter dropdowns) — exports every recorded download as a `.csv` file,
+which opens directly in Excel/Sheets/Numbers with no plugin needed.
+It's a full export, not just the current page/filter. Two things worth
+knowing if you're touching this code:
+- Visitor-submitted name/email fields are run through `suluh_csv_safe()`
+  before being written, which guards against "CSV injection" — a cell
+  starting with `=`, `+`, `-`, or `@` could otherwise be read as a
+  formula by Excel when the file is opened.
+- The file is written with a UTF-8 BOM so accented names display
+  correctly in Excel instead of getting mangled.
+
 ## Footer social links
 
 The footer's first column now has a row of 5 social icons (Facebook,
